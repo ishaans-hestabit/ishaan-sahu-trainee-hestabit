@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d9da180b-0568-43f5-8a7a-af1afad51384",
+		"name": "GitHub API – Pagination Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "52137949",
+		"_collection_link": "https://ishaans-hestabit-4232181.postman.co/workspace/Ishaan-Sahu's-Workspace~badb51e7-673b-445e-825b-1e38621a82fc/collection/52137949-d9da180b-0568-43f5-8a7a-af1afad51384?action=share&source=collection_link&creator=52137949"
+	},
+	"item": [
+		{
+			"name": "Github Pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/octocat",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"octocat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Github Pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/octocat/repos?page=1&per_page=5\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"octocat",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "5\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Github Pagination",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/octocat/repos?page=2&per_page=5\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"octocat",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "per_page",
+							"value": "5\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Github Octocat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/users/octocat/repos?page=3&per_page=5\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"users",
+						"octocat",
+						"repos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "per_page",
+							"value": "5\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

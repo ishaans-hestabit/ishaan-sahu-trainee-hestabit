@@ -1,0 +1,13 @@
+# Pagination Analysis: GitHub API
+
+GitHub APIs use pagination to return large datasets in smaller, manageable chunks.
+Pagination metadata is provided via the `Link` response header, which contains URLs for navigating between pages.
+
+### Observed Header:
+`link: <https://api.github.com/user/583231/repos?page=2&per_page=5>; rel="next", <https://api.github.com/user/583231/repos?page=2&per_page=5>; rel="last"
+
+
+- `rel="next"` points to the next page of results
+- `rel="last"` points to the final page
+
+The `page` and `per_page` query parameters control pagination. Clients should rely on `Link` headers instead of hardcoding page numbers.
