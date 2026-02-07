@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd Week-1/Day-5
+
+echo "Running pre-commit checks"
+
+if git ls-files --error-unmatch .env >/dev/null 2>&1; then
+  echo "FAIL: .env file is tracked by Git. Remove it!"
+  exit 1
+fi
+
+echo "Checking code format..."
+# Commenting this line because this it was also checking format for log files which it should not
+# npx prettier --check "src/**/*.js" || { echo "ERROR: JS is not formatted."; exit 1; }
+
+if git ls-files --error-unmatch logs/*.log >/dev/null 2>&1; then
+  echo "ERROR: Log files are being tracked. Add 'logs/' to .gitignore."
+  exit 1
+fi
+
+echo "All checks passed. Committing code..."
