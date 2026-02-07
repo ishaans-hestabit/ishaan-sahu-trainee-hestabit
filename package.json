@@ -1,0 +1,25 @@
+{
+  "name": "hestabit",
+  "version": "1.0.0",
+  "description": "Following are the task advancements for week 1 assigned tasks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/issues"
+  },
+  "homepage": "https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
