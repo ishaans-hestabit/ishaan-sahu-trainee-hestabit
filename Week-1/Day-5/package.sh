@@ -1,13 +1,13 @@
 #!/bin/bash
 
-FILES_TO_PACKAGE="src/ logs/ docs/"
+TARGET_FOLDERS="src logs docs"
 
 echo "Starting Packaging"
 
-sha1sum $FILES_TO_PACKAGE > checksums.sha1
+find $TARGET_FOLDERS -type f -exec sha1sum {} + > checksum1.sha1
 
 TS=$(date +%Y%m%d_%H%M)
 
-zip -r "bundle-$TS.zip" $FILES_TO_PACKAGE checksums.sha1
+zip -r "bundle-$TS.zip" $TARGET_FOLDERS checksum1.sha1
 
 echo "Build Complete: bundle-$TS.zip"
