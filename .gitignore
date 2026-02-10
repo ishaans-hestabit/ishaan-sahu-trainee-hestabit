@@ -1,3 +1,5 @@
 HestaBit.pub
 HestaBit
 node_modules
+.env
+logs/
