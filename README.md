@@ -162,12 +162,12 @@ Following are the task advancements for week 1 assigned tasks.
 - Learned how cron jobs help automate recurring system tasks.
 
 #### `Crontab` Crontab
-![Crontab]()
+![Crontab](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-1/Day-5/Images/Crontab%20Screenshot.png)
 
 #### `Husky Commit Failed` Husky Commit Failed
-![Husky Commit Failed]()
+![Husky Commit Failed](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-1/Day-5/Images/Husky%20Commit%20Failed.png)
 
 #### `Husky Commit Success` Husky Commit Success
-![Husky Commit Success]()
+![Husky Commit Success](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-1/Day-5/Images/Husky%20Commit%20Passed.png)
 
 ---
