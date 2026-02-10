@@ -89,7 +89,7 @@ Following are the task advancements for week 1 assigned tasks.
 - Got clarity on safely handling uncommitted changes using git stash.
 
 #### `git graph` Git Graph
-![Git Graph]()
+![Git Graph](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-1/Day-3/git%20graph/Git%20Graph%20Week-1%20Day-3%20Updated.png)
 
 ---
 
