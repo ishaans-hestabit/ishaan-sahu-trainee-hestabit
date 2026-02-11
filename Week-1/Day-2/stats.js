@@ -1,5 +1,7 @@
 const fs = require("fs/promises");
 const path = require("path");
+const {Worker} = require('worker_threads');
+
 
 
 // whenever we pass arguments from cli they are stored in argv array and 
@@ -29,64 +31,27 @@ function parseArgs(args) {
   for (let i = 0; i < args.length; i += 2) {
     tasks.push({  flag: args[i],
                   file: args[i + 1],
+                  outputDir: OUTPUT_DIR
     });
   }
   return tasks;
 }
 
-// the real logical functions
+function runWorker(task){
+    return new Promise ((resolve,reject)=>{
+        const worker = new Worker(path.join(__dirname,'worker.js'),{workerData:task});
 
-function countLines(data) {
-  return data.split("\n").length;
+        worker.on('message',(result)=>{
+            resolve(result);
+        });
+        worker.on('error',(err)=>{
+            reject(err);
+        })
+        worker.on('exit',(code)=>{
+            if(code) reject(new Error(`Worker stopped with exit code ${code}`))
+        })
+    });
 }
-
-function countWords(data) {
-  return data.trim().split(/\s+/).length;
-}
-
-function countChars(data) {
-  return data.length;
-}
-
-
-// the main processing of file based on the flag
-async function processFile({ flag, file }) {
-  const start = process.hrtime.bigint();
-  const data = await fs.readFile(file, "utf-8");
-
-  if (flag === "--lines") {
-    console.log(`${file} → Lines:`, countLines(data));
-  }
-
-  if (flag === "--words") {
-    console.log(`${file} → Words:`, countWords(data));
-  }
-
-  if (flag === "--chars") {
-    console.log(`${file} → Characters:`, countChars(data));
-  }
-
-  if (flag === "--unique") {
-    const uniqueLines = [...new Set(data.split("\n"))].join("\n");
-    const outFile = path.join(
-      OUTPUT_DIR,
-      `unique-${path.basename(file)}`
-    );
-    await fs.writeFile(outFile, uniqueLines);
-    console.log(`Unique file written → ${outFile}`);
-  }
-
-  const end = process.hrtime.bigint();
-
-  return {
-    file,
-    executionTimeMs: Number(end - start) / 1_000_000,
-    memoryMB: Number(
-      process.memoryUsage().heapUsed / 1024 / 1024
-    ).toFixed(2),
-  };
-}
-
 
 
 async function main() {
@@ -97,9 +62,8 @@ async function main() {
 
   
   // all files are processed 
-  const results = await Promise.all(
-    tasks.map(processFile)
-  );
+
+  const results = await Promise.all(tasks.map(runWorker));
 
   // now we create new log file that will contain all the system data
 
