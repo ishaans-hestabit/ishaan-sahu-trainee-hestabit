@@ -1,0 +1,89 @@
+/* these gradient colours are taken with the help of chatGPT */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background: #2f313a;
+  padding: 18px;
+  border-radius: 10px;
+  border: 6px solid #3a3d46;
+  gap: 18px;
+}
+
+.header,.footer,.sidebar,.content-1,.content-2,.content-3 {
+  border: 6px solid #111;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header, .footer {
+  background: linear-gradient(135deg, #8e63e6, #6b86ff);
+  height: 95px;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #39d2b4, #1fa187);
+  min-height: 360px;
+}
+
+.contents {
+  display: grid;
+  gap: 18px;
+}
+
+.content-1 {
+  background: linear-gradient(135deg, #5f8cff, #33c7d8);
+  height: 180px;
+}
+
+.subContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.content-2, .content-3 {
+  background: linear-gradient(135deg, #5f8cff, #33c7d8);
+  height: 160px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .subContents {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    min-height: 200px;
+  }
+}
