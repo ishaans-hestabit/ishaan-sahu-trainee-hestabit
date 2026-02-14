@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Commerce Site</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+<nav class="navbar">
+    <h1>New Product</h1>
+    
+    <ul type="none" class="menu">
+        <li class="item">All</li>
+        <li class="item">Women's</li>
+        <li class="item">Men's</li>
+        <li class="item">Kid's</li>
+        <li class="item">Accessoried</li>
+        <li class="item">Cosmetics</li>
+    </ul>
+</nav>
+
+<div class="product-wrapper">
+    <div class="controls">
+        <input type="text" id="search-bar" placeholder="Search products...">
+        <select id="sort-select">
+            <option value="default">Sort by</option>
+            <option value="high-low">Price: High to Low</option>
+            <option value="low-high">Price: Low to High</option>
+        </select>
+    </div>
+    <div id="products-grid"></div>
+</div>
+
+
+</body>
+
+<script src="./script.js"></script>
+</html>
