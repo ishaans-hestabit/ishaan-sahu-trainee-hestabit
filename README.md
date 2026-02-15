@@ -203,7 +203,7 @@ Following are the task advancements for week 1 assigned tasks.
 ---
 
 #### Semantic Skeleton 
-![Semantic Skeleton]()
+![Semantic Skeleton](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-1/Semantic%20Skeleton.png)
 
 ## Day 2: CSS Layout (Grid + Responsive Design)
 
@@ -236,7 +236,7 @@ Following are the task advancements for week 1 assigned tasks.
 ---
 
 #### Grid 
-![Grid]()
+![Grid](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-2/Comparisions%20Image/Build%20by%20ishaan.png)
 
 ## Day 3: JavaScript DOM Manipulation (Accordion)
 
@@ -268,7 +268,7 @@ Following are the task advancements for week 1 assigned tasks.
 ---
 
 #### Accordion
-![Accordion]()
+![Accordion](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-3/js-dom-practice/Accordian.png)
 
 ## Day 4: JavaScript Todo App (LocalStorage)
 
@@ -300,7 +300,7 @@ Following are the task advancements for week 1 assigned tasks.
 ---
 
 #### Todo App 
-![Todo App]()
+![Todo App](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-4/todo-app/Todo%20App.png)
 
 ## Day 5: E-Commerce Product Listing (API Integration)
 
@@ -334,4 +334,4 @@ Following are the task advancements for week 1 assigned tasks.
 ---
 
 #### Products Page
-![Products Page]()
+![Products Page](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-5/week2-frontend/Products.png)
