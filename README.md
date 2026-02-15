@@ -171,3 +171,167 @@ Following are the task advancements for week 1 assigned tasks.
 ![Husky Commit Success](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-1/Day-5/Images/Husky%20Commit%20Passed.png)
 
 ---
+
+# Week 2
+
+## Day 1: HTML5 + Semantic Layout
+
+---
+
+### Tasks Performed
+
+1. **Built a semantic blog page (`blog.html`) using proper HTML5 structure.**
+2. **Used semantic elements like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>`.**
+3. **Implemented forms with basic validation.**
+4. **Maintained proper heading hierarchy and document structure.**
+
+---
+
+### Deliverables
+
+- `blog.html`
+
+---
+
+### Learnings
+
+- Understood the importance of semantic HTML for structure and accessibility.
+- Learned how proper heading hierarchy improves readability.
+- Practiced building structured layouts without CSS.
+- Gained awareness of building a clear structure for easy to apply css later.
+
+---
+
+#### Semantic Skeleton 
+![Semantic Skeleton]()
+
+## Day 2: CSS Layout (Grid + Responsive Design)
+
+---
+
+### Tasks Performed
+
+1. **Built a structured layout using CSS Grid.**
+2. **Created a two-column hero section with sidebar and main content.**
+3. **Nested grid layouts for internal content sections.**
+4. **Applied gradients, spacing, borders, and alignment styling.**
+5. **Implemented responsive behavior using media queries.**
+
+---
+
+### Deliverables
+
+- `index.html`
+- `styles.css`
+
+---
+
+### Learnings
+
+- Understood how CSS Grid manages two-dimensional layouts.
+- Learned how nested grids improve layout structuring.
+- Practiced responsive design using media queries.
+- Gained clarity on spacing, alignment, and visual hierarchy.
+
+---
+
+#### Grid 
+![Grid]()
+
+## Day 3: JavaScript DOM Manipulation (Accordion)
+
+---
+
+### Tasks Performed
+
+1. **Built an interactive accordion component using JavaScript.**
+2. **Implemented click event listeners for toggling content visibility.**
+3. **Ensured only one accordion item remains active at a time.**
+4. **Used class toggling to control UI state dynamically.**
+5. **Styled icon changes using CSS.**
+
+---
+
+### Deliverables
+
+ `js-dom-practice/*`
+
+---
+
+### Learnings
+
+- Understood how to select and manipulate DOM elements.
+- Learned how event listeners control user interaction.
+- Practiced dynamic class management using `classList`.
+- Gained clarity on connecting JavaScript behavior with CSS state changes.
+
+---
+
+#### Accordion
+![Accordion]()
+
+## Day 4: JavaScript Todo App (LocalStorage)
+
+---
+
+### Tasks Performed
+
+1. **Built a dynamic Todo application using JavaScript.**
+2. **Implemented add, edit, and delete functionality for todos.**
+3. **Stored and retrieved data using LocalStorage.**
+4. **Rendered UI dynamically using DOM manipulation.**
+5. **Prevented empty inputs and handled user interactions.**
+
+---
+
+### Deliverables
+
+`todo-app/`
+
+---
+
+### Learnings
+
+- Understood how LocalStorage persists data across page reloads.
+- Practiced dynamic DOM creation and rendering logic.
+- Learned how to manage application state using arrays and objects.
+- Improved understanding of event handling and data updates.
+
+---
+
+#### Todo App 
+![Todo App]()
+
+## Day 5: E-Commerce Product Listing (API Integration)
+
+---
+
+### Tasks Performed
+
+1. **Built a multi-page E-Commerce layout (Home + Products).**
+2. **Fetched product data from an external API using `fetch()`.**
+3. **Dynamically rendered product cards using JavaScript.**
+4. **Implemented search functionality with real-time filtering.**
+5. **Added price-based sorting (High–Low / Low–High).**
+6. **Designed responsive product grid using CSS Grid and media queries.**
+
+---
+
+### Deliverables
+
+`week2-frontend`
+
+---
+
+### Learnings
+
+- Understood how asynchronous `fetch()` works with APIs.
+- Practiced dynamic rendering from external data.
+- Learned filtering and sorting logic using array methods.
+- Improved responsive grid layout skills.
+- Strengthened separation of structure, styling, and logic.
+
+---
+
+#### Products Page
+![Products Page]()
