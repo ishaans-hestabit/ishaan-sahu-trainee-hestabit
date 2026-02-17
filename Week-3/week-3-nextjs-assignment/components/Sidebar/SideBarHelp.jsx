@@ -14,7 +14,7 @@ export default function SideBarHelp(){
                 <h1 className="text-white font-bold">Need Help?</h1>
                 <p className="text-white">Please check our docs</p>
             </div>
-            <button className="px-6 py-3 rounded-2xl bg-white font-light text-sm">DOCUMENTATION</button>
+            <button className="px-6 py-3 rounded-2xl bg-white font-light text-sm text-black">DOCUMENTATION</button>
         </div>
     );
 }

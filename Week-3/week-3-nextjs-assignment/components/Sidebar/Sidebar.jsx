@@ -13,9 +13,9 @@ export default function Sidebar(){
 
     // we are doing this so that we dont need ot update ui by hand everytime instead we can just add it here and they are gonna handle it like a automatically
     const MAIN_NAV = [
-        { label: 'Dashboard', href: '/dashboard' ,icon:<FaHome color="white" />},
-        { label: 'Tables', href: '/dashboard/users' ,icon : <FaTableList  color="white"/>},
-        { label: 'Billing', href: '/dashboard/profile' ,icon : <FaMoneyBillAlt color="white"/>
+        { label: 'Dashboard', href: '/' ,icon:<FaHome color="white" />},
+        { label: 'Tables', href: '/tables' ,icon : <FaTableList  color="white"/>},
+        { label: 'Billing', href: '/billing' ,icon : <FaMoneyBillAlt color="white"/>
 }
         ];
 // seperated these so that wer can have seperation on concren between two types of functionality in sidebar
@@ -29,7 +29,7 @@ export default function Sidebar(){
 
             <div className="mb-10">
 
-            <div className="flex gap-3 p-6 font-bold"> 
+            <div className="flex gap-3 p-6 font-bold text-black"> 
                 <img className="" src="../logo-creative-tim-black.svg" alt="" />
                 <h1 className="text-sm">PURITY UI DASHBOARD</h1>
             </div>
