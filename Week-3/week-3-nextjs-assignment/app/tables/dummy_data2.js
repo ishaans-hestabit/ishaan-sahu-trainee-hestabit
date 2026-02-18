@@ -1,0 +1,37 @@
+export const PROJECTS = [
+  {
+    name: "Chakra Soft UI Version",
+    icon: "/projects_image/chakra.svg",
+    budget: "$14,000",
+    status: "Working",
+    completion: 60,
+  },
+  {
+    name: "Add Progress Track",
+    icon: "/projects_image/add.svg",
+    budget: "$3,000",
+    status: "Canceled",
+    completion: 10,
+  },
+  {
+    name: "Fix Platform Errors",
+    icon: "/projects_image/fix.svg",
+    budget: "Not set",
+    status: "Done",
+    completion: 100,
+  },
+  {
+    name: "Launch our Mobile App",
+    icon: "/projects_image/launch.svg",
+    budget: "$32,000",
+    status: "Done",
+    completion: 100,
+  },
+  {
+    name: "Add the New Pricing Page",
+    icon: "/projects_image/add2.svg",
+    budget: "$400",
+    status: "Working",
+    completion: 25,
+  },
+];

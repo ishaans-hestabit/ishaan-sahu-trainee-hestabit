@@ -10,8 +10,7 @@ export default function SidebarItem({ label, href, icon }) {
   return (
     <Link href={href}
     
-        className={`flex gap-3 p-4 rounded-2xl mx-4 my-2 items-center transition ${isActive ? "bg-white border border-gray-200 shadow-sm" : "hover:bg-gray-200"}
-        `} >
+        className={`flex gap-3 p-4 rounded-2xl mx-4 my-2 items-center transition ${isActive ? "bg-white border border-gray-200 shadow-sm" : "hover:bg-gray-200"}`} >
         <div className={`p-2 rounded-lg bg-primary `}>
                 {icon}
         </div>
