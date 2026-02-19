@@ -34,4 +34,18 @@ export const PROJECTS = [
     status: "Working",
     completion: 25,
   },
+  {
+    name: "Chakra Soft UI Version",
+    icon: "/projects_image/chakra.svg",
+    budget: "$14,000",
+    status: "Working",
+    completion: 60,
+  },
+  {
+    name: "Add Progress Track",
+    icon: "/projects_image/add.svg",
+    budget: "$3,000",
+    status: "Canceled",
+    completion: 10,
+  },
 ];

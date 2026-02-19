@@ -13,7 +13,7 @@ export default function Sidebar(){
 
     // we are doing this so that we dont need ot update ui by hand everytime instead we can just add it here and they are gonna handle it like a automatically
     const MAIN_NAV = [
-        { label: 'Dashboard', href: '/' ,icon:<FaHome color="white" />},
+        { label: 'Dashboard', href: '/dashboard' ,icon:<FaHome color="white" />},
         { label: 'Tables', href: '/tables' ,icon : <FaTableList  color="white"/>},
         { label: 'Billing', href: '/billing' ,icon : <FaMoneyBillAlt color="white"/>
 }

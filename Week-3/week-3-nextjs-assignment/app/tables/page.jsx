@@ -1,6 +1,6 @@
-import AuthorTable from "@/components/ui/AuthorTable";
+import AuthorTable from "@/components/ui/AuthorTable/AuthorTable";
 import Navbar from "@/components/ui/Navbar";
-import ProjectsTable from "@/components/ui/ProjectsTable";
+import ProjectsTable from "@/components/ui/ProjectsTable/ProjectsTable";
 
 export default function Tables(){
     return (
