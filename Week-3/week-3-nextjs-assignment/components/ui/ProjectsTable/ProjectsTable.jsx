@@ -1,5 +1,5 @@
 import ProjectRow from "./ProjectRow";
-import { PROJECTS } from '../../../app/tables/dummy_data2.js';
+import { PROJECTS } from '../../../app/(landing page)/tables/dummy_data2.js';
 
 export default function ProjectsTable() {
   return (

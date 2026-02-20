@@ -1,4 +1,3 @@
-import Link from "next/link";
 import SidebarItem from "./SidebarItem";
 import { FaHome } from "react-icons/fa";
 import { FaTableList } from "react-icons/fa6";
@@ -15,12 +14,12 @@ export default function Sidebar(){
     const MAIN_NAV = [
         { label: 'Dashboard', href: '/dashboard' ,icon:<FaHome color="white" />},
         { label: 'Tables', href: '/tables' ,icon : <FaTableList  color="white"/>},
-        { label: 'Billing', href: '/billing' ,icon : <FaMoneyBillAlt color="white"/>
+        { label: 'Billing', href: '' ,icon : <FaMoneyBillAlt color="white"/>
 }
         ];
 // seperated these so that wer can have seperation on concren between two types of functionality in sidebar
     const ACCOUNT_NAV = [
-    { label: 'Profile', href: '/profile', icon : <CgProfile color="white"/>},
+    { label: 'Profile', href: '/dashboard/profile', icon : <CgProfile color="white"/>},
     { label: 'Sign In', href: '/signin', icon: <VscSignIn color="white"/>},
     { label: 'Sign Up', href: '/signup', icon:  <SiGnuprivacyguard color="white"/>}
     ];

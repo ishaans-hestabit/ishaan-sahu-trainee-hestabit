@@ -1,5 +1,5 @@
 import AuthorCard from "./AuthorCard";
-import { AUTHORS } from '../../../app/tables/dummy_data.js';
+import { AUTHORS } from '../../../app/(landing page)/tables/dummy_data.js';
 
 export default function AuthorTable() {
   return (

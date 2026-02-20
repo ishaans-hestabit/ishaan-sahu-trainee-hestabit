@@ -1,7 +1,6 @@
 import ActiveUsers from "@/components/ui/Dashboard/ActiveUsers";
 import DashboardStats from "@/components/ui/Dashboard/DashboardStats";
 import Navbar from "@/components/ui/Navbar";
-import OrdersOverview from "@/components/ui/Dashboard/OrdersOverview";
 import ProjectsTable from "@/components/ui/ProjectsTable/ProjectsTable";
 import RocketsCard from "@/components/ui/Dashboard/RocketsCard";
 import SalesOverview from "@/components/ui/Dashboard/SalesOverview";
@@ -33,7 +32,6 @@ export default function Dashboard(){
                 <div className="flex-2">
                     <ProjectsTable />
                 </div>
-                <OrdersOverview/>
             </div>
 
         </div>

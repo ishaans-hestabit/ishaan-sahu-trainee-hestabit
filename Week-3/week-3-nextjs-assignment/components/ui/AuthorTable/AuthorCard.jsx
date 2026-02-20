@@ -21,9 +21,7 @@ export default function AuthorCard({
       </div>
 
       <div className="">
-        <span className={`text-xs px-3 py-1 rounded-full font-medium 
-                    ${isOnline ? "bg-green-100 text-green-600"
-                                : "bg-gray-100 text-gray-400"}`}>
+        <span className={`text-xs px-3 py-1 rounded-full font-medium ${isOnline ? "bg-green-100 text-green-600": "bg-gray-100 text-gray-400"}`}>
           {isOnline ? "Online" : "Offline"}
         </span>
       </div>

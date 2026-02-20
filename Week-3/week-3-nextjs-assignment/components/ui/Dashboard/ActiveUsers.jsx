@@ -47,10 +47,10 @@ const statsData = [
 
 export default function ActiveUsers() {
   return (
-    <div className="flex flex-col bg-white p-6 rounded-2xl w-full h-[400px]">
+    <div className="flex flex-col bg-white p-6 rounded-2xl w-full h-100">
       
-      <div className="w-full rounded-xl overflow-hidden relative h-[220px] p-4"
-        // Using a specific hex code to match the dark blue/purple background
+      <div className="w-full rounded-xl overflow-hidden relative h-55 p-4"
+        
         style={{ backgroundColor: '#2D375F' }}>
 
         <ResponsiveContainer width="100%" height="100%">
