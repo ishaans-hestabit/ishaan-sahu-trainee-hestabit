@@ -13,7 +13,7 @@ export default function AuthNavbar({ page }) {
 
   return (
     <nav className="absolute top-8 left-1/2 -translate-x-1/2 w-[90%] max-w-275 z-50">
-      
+
       <div className={`flex items-center justify-between px-8 py-4 ${isSignUp ? "bg-transparent border-transparent" : "bg-white/80 backdrop-blur-md rounded-2xl border border-white/20 shadow-sm"}`}>
 
         <Link href="/" className="flex items-center gap-2">
@@ -33,7 +33,7 @@ export default function AuthNavbar({ page }) {
           ))}
         </div>
 
-        <Link  href="/download" className={`px-6 py-2.5 text-[10px] font-bold rounded-full uppercase ${isSignUp ? "bg-white text-slate-800 hover:bg-white/90" : "bg-slate-800 text-white hover:bg-slate-700 shadow-md shadow-slate-200"}`}>
+        <Link  href="" className={`px-6 py-2.5 text-[10px] font-bold rounded-full uppercase ${isSignUp ? "bg-white text-slate-800 hover:bg-white/90" : "bg-slate-800 text-white hover:bg-slate-700 shadow-md shadow-slate-200"}`}>
           Free Download
         </Link>
       </div>
