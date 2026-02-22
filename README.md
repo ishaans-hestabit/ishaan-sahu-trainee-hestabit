@@ -335,3 +335,195 @@ Following are the task advancements for week 1 assigned tasks.
 
 #### Products Page
 ![Products Page](https://github.com/ishaans-hestabit/ishaan-sahu-trainee-hestabit/blob/main/Week-2/Day-5/week2-frontend/Products.png)
+
+
+# Week 3
+## Day 1: TailwindCSS + UI System Basics
+
+
+### Tasks Performed
+
+1. **Understood how nextJS is used to build frontend and what are the benefits of this over normal React**
+2. **Installed Tailwind CSS in nextJS app**
+3. **Made a Navbar to toogle btw various sections of website.**
+4. **Also made a Sidebar for more functionality**
+5. **Understood utility classes in Tailwind**
+
+---
+
+### Deliverables
+
+- `/app/layout.jsx`
+- `/components/ui/Navbar.jsx`
+- `/components/ui/Sidebar.jsx`
+
+---
+
+### Learnings
+
+- Understood the core difference between `page.jsx` and `layout.jsx` and why they are used
+- Understood how to use tailwind classes to apply css 
+- Also understood how to create and reuse components
+
+### Images of Components made on Day-1
+
+### Sidebar
+![SideBar](images/Sidebar.png)
+
+### Navbar
+![NavBar](images/NavBar.png)
+
+
+## Day 2: Tailwind Advanced + Component Library
+
+### Tasks Performed
+
+1. **Made Authors and Projects Table**
+2. **Divided them into sub-components so that we can reuse them.**
+3. **Used grid to position different rows element in same width columns**
+4. **Understood how props work in components**
+
+### Deliverables
+
+- `/components/ui/AuthorTable/AuthorCard.jsx`
+- `/components/ui/AuthorTable/AuthorTable.jsx`
+- `/components/ui/ProjectsTable/ProjectRow.jsx`
+- `/components/ui/ProjectsTable/ProjectsTable.jsx`
+
+### Learnings
+
+- Understood how Grid works in Tailwind and how it maintains elements in same columns
+- Also understood the importance of atomic mindset in NextJS
+- The key is to how much to break an element in components to prevent prop drilling and also reuse them effectivly.
+
+### Images of Components made on Day-2
+
+### Author Card
+![Author Card](images/AuthorCard.png)
+
+### Project Card
+![Project Card](images/ProjectCard.png)
+
+### Author Table
+![Author Table](images/AuthorTable.png)
+
+### Projects Table
+![Projects Table](images/ProjectsTable.png)
+
+
+## Day 3: Next.js Routing + Layout System
+
+### Tasks Performed
+
+1. **Created Profile Page and also created a route for it**
+2. **Also used the same Navbar component using different props to render it appropriately**
+3. **Also created Dashboard route along with dashboard page that again uses the same navbar**
+
+### Deliverables
+
+- `/dashboard/page.js`
+- `/dashboard/profile/page.js`
+
+### Learnings
+
+- Learned how to render same navbar in a custom way using conditional rendering
+- Also learned how to use grid and flex to position elements 
+- also learned how to do route grouping to use custom layouts for specific routes
+
+### Images of Components made on Day-3
+
+### Chakra Card
+![Chakra Card](images/ChakraCard.png)
+
+### Stats Card
+![Stats Card](images/StatsCard.png)
+
+### Welcome Card
+![Welcome Card](images/WelcomeCard.png)
+
+### Sales Overview
+![Sales Overview](images/SalesOverview.png)
+
+### Active Users
+![Active Users](images/ActiveUsers.png)
+
+### Dashboard Stats
+![Dashboard Stats](images/DashboardStats.png)
+
+### Rocket Card
+![Rocket Card](images/RocketCard.png)
+
+### Profile
+---
+
+### Conversations
+![Conversations](images/Conversations.png)
+
+### Platform Settings
+![PlatformSettings](images/PlatformSettings.png)
+
+### Profile Information
+![ProfileInformation](images/ProfileInformation.png)
+
+### Project Card
+![ProjectCard](images/ProjectCardd.png)
+
+### Profile Header
+![Profile Header](images/ProfileHeader.png)
+
+### Projects Section
+![Projects Section](images/ProjectsSection.png)
+
+
+## Day 4: Dynamic UI + Image Optimization
+
+### Tasks Performed
+
+1. **Build a landing page for this website**
+2. **Also understood how to do routing in Next.JS**
+3. **Also made signin and signup pages**
+4. **Build a new custom navbar for these two pages**
+
+### Deliverables
+
+- `AuthNavBar.jsx`
+- `Landing Page`
+- `Signin Page`
+- `Signup Page`
+
+### Learnings
+
+- Learned how to do routing and navigation in Next.JS
+- Understood the logic of separation of concern in this 
+
+
+### Images of Components made on Day-4
+
+### Signin Card
+![Signin Card](images/SigninCard.png)
+
+### Signup Card
+![Signup Card](images/SignupCard.png)
+
+### Landing Page
+![Landing Page](images/Landing.png)
+
+### AuthNavBar
+![AuthNavBar](images/AuthNavBar.png)
+
+## Day 5: Capstone Mini Project (No backend)
+
+### Tasks Performed
+
+1. **Held all the pages together and completed the website**
+2. **Made a footer and put it in the root layout so that it appears on all pages**
+
+### Deliverables
+
+- `footer.jsx`
+- Updated the whole README.md file
+
+### Images of Components made on Day-5
+
+### Footer
+![footer](images/footer.png)
