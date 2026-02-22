@@ -1,0 +1,87 @@
+.
+├── app
+│   ├── (auth)
+│   │   ├── layout.jsx
+│   │   ├── signin
+│   │   │   └── page.jsx
+│   │   └── signup
+│   │       └── page.jsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── (landing page)
+│   │   ├── dashboard
+│   │   │   ├── page.jsx
+│   │   │   └── profile
+│   │   │       └── page.jsx
+│   │   ├── layout.jsx
+│   │   └── tables
+│   │       ├── dummy_data2.js
+│   │       ├── dummy_data.js
+│   │       └── page.jsx
+│   ├── layout.jsx
+│   └── page.jsx
+├── components
+│   └── ui
+│       ├── AuthNavBar.jsx
+│       ├── AuthorTable
+│       │   ├── AuthorCard.jsx
+│       │   └── AuthorTable.jsx
+│       ├── Dashboard
+│       │   ├── ActiveUsers.jsx
+│       │   ├── ChakraCard.jsx
+│       │   ├── DashboardStats.jsx
+│       │   ├── RocketsCard.jsx
+│       │   ├── SalesOverview.jsx
+│       │   ├── StatsCard.jsx
+│       │   └── WelcomeCard.jsx
+│       ├── footer.jsx
+│       ├── Navbar.jsx
+│       ├── Profile
+│       │   ├── Conversations.jsx
+│       │   ├── PlatformSettings.jsx
+│       │   ├── ProfileHeader.jsx
+│       │   ├── ProfileInformation.jsx
+│       │   ├── ProjectCard.jsx
+│       │   └── ProjectsSection.jsx
+│       ├── ProjectsTable
+│       │   ├── ProjectRow.jsx
+│       │   └── ProjectsTable.jsx
+│       ├── Sidebar
+│       │   ├── SideBarHelp.jsx
+│       │   ├── SidebarItem.jsx
+│       │   └── Sidebar.jsx
+│       ├── SignInBox.jsx
+│       └── SignUpBox.jsx
+├── jsconfig.json
+├── next.config.mjs
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── author_images
+│   │   ├── Image1.svg
+│   │   ├── Image2.svg
+│   │   ├── Image3.svg
+│   │   ├── Image4.svg
+│   │   ├── Image5.svg
+│   │   └── Image6.svg
+│   ├── BigChakra.png
+│   ├── chakraLogo.png
+│   ├── logo-creative-tim-black.svg
+│   ├── projects
+│   │   ├── minimal.jpg
+│   │   ├── modern.jpg
+│   │   └── scandi.jpg
+│   ├── projects_image
+│   │   ├── add2.svg
+│   │   ├── add.svg
+│   │   ├── chakra.svg
+│   │   ├── fix.svg
+│   │   └── launch.svg
+│   ├── Rockets.png
+│   └── signupBackground.png
+├── README.md
+├── structure.txt
+└── UI-COMPONENT-DOCS.md
+
+20 directories, 65 files
