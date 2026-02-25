@@ -13,8 +13,16 @@ class AccountRepository extends BaseRepository{
         return await query;
     }
 
-    async delete(id){
-        return await this.model.findByIdAndUpdate(id,{isDeleted: true},{ new: true });
+    async delete(email){
+        return await this.model.findOneAndUpdate({email},{isDeleted: true},{ returnDocument: "after",
+    runValidators: true });
+    }
+
+    async updateName(data){
+        return await this.model.findOneAndUpdate({email: data.email},{
+            firstName: data.firstName
+        },{ returnDocument: "after",
+    runValidators: true });
     }
 }
 

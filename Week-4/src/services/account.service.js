@@ -15,6 +15,14 @@ class AccountService {
   async getByEmail(email) {
     return accountRepository.findByEmail(email);
   }
+
+  async deleteByEmail(email){
+    return accountRepository.delete(email);
+  }
+
+  async updateName(data){
+    return accountRepository.updateName(data);
+  }
 }
 
 export default new AccountService();

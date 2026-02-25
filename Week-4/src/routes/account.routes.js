@@ -7,4 +7,8 @@ router.post("/addAccount",accountController.register);
 
 router.get("/:email",accountController.getByEmail);
 
+router.delete("/:email",accountController.deleteByEmail);
+
+router.patch("/updateName",accountController.updateEmail);
+
 export default router;
