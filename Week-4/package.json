@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed:users" : "node src/seeders/accountSeeder.js",
-    "seed:orders" : "node src/seeders/orderSeeder.js"
+    "seed:orders" : "node src/seeders/orderSeeder.js",
+    "seed:products" : "node src/seeders/productSeeder.js"
   },
   "keywords": [],
   "author": "",

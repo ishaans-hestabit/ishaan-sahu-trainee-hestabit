@@ -9,8 +9,6 @@ dotenv.config({ path: ".env.local" });
 const seedOrders = async () => {
   try {
     await mongoose.connect(process.env.DATABASE_URL);
-
-    // Fetch accounts to attach orders to
     const accounts = await Account.find();
 
     if (!accounts.length) {
@@ -35,7 +33,6 @@ const seedOrders = async () => {
           }
         ],
         status: index % 2 === 0 ? "pending" : "processing"
-        // totalAmount will be auto-calculated by pre-save hook
       });
     });
 
