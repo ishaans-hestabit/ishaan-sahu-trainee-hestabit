@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed:users" : "node src/seeders/accountSeeder.js",
-    "seed:orders" : "node src/seeders/orderSeeder.js",
-    "seed:products" : "node src/seeders/productSeeder.js"
+    "seed:users": "node src/seeders/accountSeeder.js",
+    "seed:orders": "node src/seeders/orderSeeder.js",
+    "seed:products": "node src/seeders/productSeeder.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,8 @@
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
     "mongoose": "^9.2.2",
     "winston": "^3.19.0",
     "zod": "^4.3.6"
