@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "0701330b-37a6-4aeb-a451-9ca1a2e81a24",
+		"name": "Week-4 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "52137949",
+		"_collection_link": "https://ishaans-hestabit-4232181.postman.co/workspace/Ishaan-Sahu's-Workspace~badb51e7-673b-445e-825b-1e38621a82fc/collection/52137949-0701330b-37a6-4aeb-a451-9ca1a2e81a24?action=share&source=collection_link&creator=52137949"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/health",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/orders/{{orderId}}/",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"orders",
+								"{{orderId}}",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/orders/account/{{accountId}}",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"orders",
+								"account",
+								"{{accountId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl }}/orders/",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"status\": \"completed\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl }}/orders/{{orderId}}/status",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"orders",
+								"{{orderId}}",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/product/",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/product",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/product/{{productId}}",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"product",
+								"{{productId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/product/{{productId}}",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"product",
+								"{{productId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/accounts/{{ACCOUNTS_EMAIL}}",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"accounts",
+								"{{ACCOUNTS_EMAIL}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"firstName\":\"sjfbs\",\n\"lastName\" : \"jsb\",\n\"email\": \"{{accountEmail}}\",\n\"password\" : \"sohtnsoadibgf\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl }}/accounts/addAccount",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"accounts",
+								"addAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"{{accountEmail}}\",\n\"firstName\":\"sjnson\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl }}/accounts/updateName",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"accounts",
+								"updateName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl }}/accounts/{{accountEmail}}",
+							"host": [
+								"{{baseUrl }}"
+							],
+							"path": [
+								"accounts",
+								"{{accountEmail}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "requestId",
+			"value": ""
+		},
+		{
+			"key": "ACCOUNTS_EMAIL",
+			"value": ""
+		},
+		{
+			"key": "PRODUCTS_PRODUCT_ID",
+			"value": ""
+		},
+		{
+			"key": "ORDERS_ORDER_ID",
+			"value": ""
+		},
+		{
+			"key": "ORDERS_ACCOUNT_ID",
+			"value": ""
+		}
+	]
+}
