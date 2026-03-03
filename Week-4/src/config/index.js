@@ -24,7 +24,7 @@ if(envFound.error){
 }
 
 const envSchema = z.object({
-	PORT: z.coerce.number().int().min(1000).max(65535).default(3000),
+	PORT: z.coerce.number().int().min(1000).max(65535).default(3001),
 	DATABASE_URL: z.string().min(1, "DB URL is required"),
 	LOG_LEVEL: z.enum(['info', 'debug', 'error']).default('info'),
 });

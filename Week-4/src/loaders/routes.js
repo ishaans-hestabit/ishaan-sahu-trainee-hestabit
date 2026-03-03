@@ -7,7 +7,7 @@ import logger from "../utils/logger.js"
 
 export default ({ app }) => {
 
-  app.use("/health", healthRoute);
+  app.use("/health",healthRoute);
 
   app.use("/accounts", accountsRoute);
   

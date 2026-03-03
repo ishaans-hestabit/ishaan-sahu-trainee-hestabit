@@ -1,15 +1,20 @@
+import { queueWelcomeEmail } from "../jobs/email/email.queue.js";
 import accountRepository from "../repositories/account.repository.js";
+import AppError from "../utils/AppError.js";
 
 class AccountService {
   async register(data) {
     const existing = await accountRepository.findByEmail(data.email);
     if (existing) {
-      const err = new Error("Email already exists");
-      err.status = 409;
-      throw err;
+      throw new AppError("Email already exists", 409, 'Duplicate Found');
     }
 
-    return accountRepository.create(data);
+    const account = await accountRepository.create(data); 
+
+    queueWelcomeEmail(account);
+
+    return account;
+
   }
 
   async getByEmail(email) {
