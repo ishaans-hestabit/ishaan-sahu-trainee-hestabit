@@ -1,0 +1,39 @@
+
+services:
+    my-node:
+        build:
+            context: ./
+            dockerfile: "Node Dockerfile"
+
+        environment:
+            - MONGO_URL=mongodb://my-mongo:27017/week-5
+        
+        ports: 
+            - "3000:3000"
+
+        depends_on:
+            - my-mongo
+
+    my-react:
+        build: 
+            context: ./client
+            dockerfile: "../React Dockerfile"
+
+        ports: 
+            - "5173:5173"
+
+        depends_on:
+            - my-node
+
+    
+    my-mongo:
+        build:
+            context: ./
+            dockerfile: "MongoDB Dockerfile" 
+
+        volumes:
+            - mongo-volume:/data/db
+
+
+volumes:
+    mongo-volume:
