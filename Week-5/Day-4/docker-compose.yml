@@ -1,0 +1,13 @@
+services:
+
+    nginx-https:
+        image: nginx:alpine
+
+        ports:
+          - 8080:80
+          - 443:443
+
+        volumes:
+          - ./localhost-key.pem:/etc/nginx/certs/localhost-key.pem
+          - ./localhost.pem:/etc/nginx/certs/localhost.pem
+          - ./nginx.conf:/etc/nginx/nginx.conf
