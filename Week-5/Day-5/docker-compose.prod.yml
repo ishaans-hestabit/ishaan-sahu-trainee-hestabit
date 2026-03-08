@@ -1,0 +1,85 @@
+services:
+  my-nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./localhost-key.pem:/etc/nginx/certs/localhost-key.pem
+      - ./localhost.pem:/etc/nginx/certs/localhost.pem
+
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "10m"
+            max-file: "3"
+
+    restart: on-failure
+
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      retries: 3
+
+    depends_on:
+        my-backend:
+          condition: service_healthy
+        my-frontend:
+          condition: service_healthy
+
+  my-frontend:
+    build:
+      context: "./frontend/capestone-frontend"
+      dockerfile: "../React Dockerfile"
+    
+    depends_on:
+        my-backend:
+          condition: service_healthy
+
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "10m"
+            max-file: "3"
+
+    restart: on-failure
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:5173"]
+      retries: 3
+
+  my-backend:
+    build:
+      context: "./backend"
+      dockerfile: "Node Dockerfile"
+    env_file:
+      - .env
+    depends_on:
+        my-mongo:
+          condition: service_healthy
+
+    logging:
+        driver: "json-file"
+        options:
+            max-size: "10m"
+            max-file: "3"
+
+    restart: on-failure
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:3000"]
+      retries: 3
+
+  my-mongo:
+    image: mongo
+    volumes:
+      - mongo-volume:/data/db/
+
+    restart: on-failure
+
+    healthcheck:
+        test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+        retries: 3
+
+volumes:
+  mongo-volume:
