@@ -7,10 +7,12 @@ const router = Router();
 
 router.post( "/addAccount", validate(registerAccountSchema), accountController.register);
 
+router.get("/all",accountController.findAll);
+
 router.get( "/:email", validate(emailParamSchema), accountController.getByEmail);
 
 router.delete( "/:email", validate(emailParamSchema), accountController.deleteByEmail);
 
-router.patch( "/updateName", validate(updateNameSchema), accountController.updateEmail);
+router.patch( "/updateName", validate(updateNameSchema), accountController.updateName);
 
 export default router;

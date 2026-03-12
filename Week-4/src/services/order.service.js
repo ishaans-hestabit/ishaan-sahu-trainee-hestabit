@@ -1,4 +1,5 @@
 import orderRepository from "../repositories/order.repository.js";
+import AppError from "../utils/AppError.js";
 
 class OrderService {
   async createOrder(data) {
@@ -23,9 +24,7 @@ class OrderService {
     ];
 
     if (!allowedStatuses.includes(status)) {
-      const err = new Error("Invalid order status");
-      err.status = 400;
-      throw err;
+      throw new AppError("Invalid order status", 400, "Invalid Status");
     }
 
     return orderRepository.updateStatus(orderId, status);

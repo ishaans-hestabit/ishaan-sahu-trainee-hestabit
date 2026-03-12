@@ -17,6 +17,16 @@ class AccountService {
 
   }
 
+  async findAll(){
+    const users = await accountRepository.findAll();
+    if(!users){
+      throw AppError("Unable to find Accounts", 404,"Accounts not found")
+    }
+    else {
+      return users;
+    }
+  }
+
   async getByEmail(email) {
     return accountRepository.findByEmail(email);
   }

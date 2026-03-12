@@ -25,6 +25,22 @@ class AccountController {
     }
   }
 
+  async findAll(req,res){
+      try{
+        const Accounts = await accountService.findAll();
+        // console.log(Accounts);
+        
+        if (!Accounts) {
+          return res.status(404).json({ message: "Account not found" });
+        }
+        
+        res.status(200).json(Accounts);
+      }
+      catch(err){
+        next(err);
+      }
+  }
+
   async deleteByEmail(req,res,next){
     try{
         const deletedAccount = await accountService.deleteByEmail(req.params.email);
@@ -38,7 +54,7 @@ class AccountController {
     }
   }
 
-  async updateEmail(req,res,next){
+  async updateName(req,res,next){
     try{
         // console.log(req.body);
         

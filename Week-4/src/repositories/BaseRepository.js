@@ -11,6 +11,10 @@ export class BaseRepository {
         return await this.model.findById(id);
     }
 
+    async findAll(){
+        return await this.model.find({});
+    }
+
     async update(id,data){
         return await this.model.findByIdAndUpdate(id,data, { returnDocument: "after",
         runValidators: true });
