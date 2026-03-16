@@ -7,7 +7,7 @@ from features.feature_selector import feature_selection
 
 def encode_features(df):
     print("------- Encoding Features -------")
-    
+
     df = df.copy()
     categorical_cols = df.select_dtypes(include=["object", "string", "category"]).columns
 
@@ -21,7 +21,7 @@ def encode_features(df):
     return df
 
 
-def normalize_features(X_train,X_test):
+def normalize_features(X_train, X_test):
     print("------- Normalizing Features -------")
 
     scaler = StandardScaler()
@@ -31,19 +31,23 @@ def normalize_features(X_train,X_test):
 
     print("------- Normalization Completed -------")
 
-    return X_train_normalised,X_test_normalised
-
+    return X_train_normalised, X_test_normalised
 
 
 def run_feature_engineering_pipeline():
     df = pd.read_csv("data/processed/final.csv")
+
+    # Drop sl_no (just an index) and salary (target leakage)
+    df = df.drop(columns=["sl_no", "salary"], errors="ignore")
+
     df = generate_features(df)
 
-    X = df.drop("Survived", axis=1)
-    Y = df["Survived"]
+    # Target is placement status
+    X = df.drop("status", axis=1)
+    Y = df["status"].map({"Placed": 1, "Not Placed": 0})
 
     X_train, X_test, Y_train, Y_test = train_test_split(
-        X, Y, test_size=0.2, random_state=42
+        X, Y, test_size=0.2, random_state=42, stratify=Y
     )
 
     X_train = encode_features(X_train)
@@ -53,11 +57,12 @@ def run_feature_engineering_pipeline():
 
     feature_names = X_train.columns
 
-    X_train , X_test = normalize_features(X_train, X_test)
+    X_train, X_test = normalize_features(X_train, X_test)
 
-    X_train, X_test = feature_selection(X_train,Y_train,X_test, feature_names)
-
+    X_train, X_test = feature_selection(X_train, Y_train, X_test, feature_names)
 
     print(X_train)
+    return X_train, X_test, Y_train, Y_test
+
 
 run_feature_engineering_pipeline()

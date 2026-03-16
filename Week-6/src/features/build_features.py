@@ -1,41 +1,59 @@
 import pandas as pd
+import numpy as np
 
 def generate_features(df):
 
     print("------- Generating New Features -------")
-
     df = df.copy()
 
-    df["FamilySize"] = df["SibSp"] + df["Parch"] + 1
+    df["academic_avg"] = (df["ssc_p"] + df["hsc_p"] + df["degree_p"] + df["mba_p"]) / 4
 
-    df["IsAlone"] = (df["FamilySize"] == 1).astype(int)
+    df["academic_trend"] = df["mba_p"] - df["ssc_p"]
 
-    df["FarePerPerson"] = df["Fare"] / df["FamilySize"]
+    df["degree_to_mba_gap"] = df["mba_p"] - df["degree_p"]
 
-    df["AgePclass"] = df["Age"] * df["Pclass"]
+    df["etest_vs_mba"] = df["etest_p"] - df["mba_p"]
 
-    df["AgeGroup"] = pd.cut(
-        df["Age"],
-        bins=[0, 12, 18, 35, 60, 100],
-        labels=["Child", "Teen", "YoungAdult", "Adult", "Senior"]
+    df["weighted_academic"] = (
+        0.15 * df["ssc_p"] +
+        0.20 * df["hsc_p"] +
+        0.25 * df["degree_p"] +
+        0.20 * df["mba_p"] +
+        0.20 * df["etest_p"]
     )
 
-    df["FareCategory"] = pd.qcut(
-        df["Fare"],
-        q=4,
-        labels=["Low", "Medium", "High", "VeryHigh"]
+    df["same_board"] = (df["ssc_b"] == df["hsc_b"]).astype(int)
+
+    df["workex_num"] = (df["workex"] == "Yes").astype(int)
+
+    df["mba_grade"] = pd.cut(
+        df["mba_p"],
+        bins=[0, 55, 60, 65, 70, 100],
+        labels=["Poor", "Average", "Good", "VeryGood", "Excellent"]
     )
 
-    df["Title"] = df["Name"].str.extract(r" ([A-Za-z]+)\.", expand=False)
+    df["etest_tier"] = pd.qcut(
+        df["etest_p"],
+        q=3,
+        labels=["Low", "Medium", "High"]
+    )
 
-    df["Deck"] = df["Cabin"].str[0]
+    df["is_fin_spec"] = (df["specialisation"] == "Mkt&Fin").astype(int)
 
-    df["TicketLength"] = df["Ticket"].apply(len)
+    df["is_stem"] = (
+        (df["degree_t"] == "Sci&Tech") | (df["hsc_s"] == "Science")
+    ).astype(int)
 
-    df["NameLength"] = df["Name"].apply(len)
+    df["is_top_performer"] = (
+        (df["ssc_p"] >= 70) &
+        (df["hsc_p"] >= 70) &
+        (df["degree_p"] >= 70) &
+        (df["mba_p"] >= 70)
+    ).astype(int)
 
+    df["workex_fin"] = df["workex_num"] * df["is_fin_spec"]
+
+    print(f"New features added: {13}")
     print("------- Feature Generation Completed -------")
-
-    df = df.drop(columns=["Name", "Ticket", "Cabin"])
 
     return df
