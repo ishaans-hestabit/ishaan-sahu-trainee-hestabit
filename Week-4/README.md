@@ -77,4 +77,26 @@
     - cursorPrice = 
 
 
-#### For running locally command -> NODE_ENV=local node server.js
+#### For running locally command -> node server.js
+
+
+## NodeJS LifeCycle
+
+![nodejs lifecycle](images/nodejs%20lifecycle.png)
+
+## Event Loop Phases
+
+![event loop phases](images/event%20loop%20phases.png)
+
+- Between every phase, Node checks for **microtasks** first:
+
+```js
+Phase completes
+      ↓
+process.nextTick() callbacks   ← highest priority
+      ↓
+Promise .then() callbacks      ← second priority
+      ↓
+Move to next phase
+```
+

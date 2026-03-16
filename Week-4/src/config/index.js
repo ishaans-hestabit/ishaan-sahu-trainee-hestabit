@@ -27,6 +27,7 @@ const envSchema = z.object({
 	PORT: z.coerce.number().int().min(1000).max(65535).default(3001),
 	DATABASE_URL: z.string().min(1, "DB URL is required"),
 	LOG_LEVEL: z.enum(['info', 'debug', 'error']).default('info'),
+	JWT_SECRET: z.string().min(1, "JWT secret is required")
 });
 
 const envVars = envSchema.safeParse(process.env);
@@ -47,6 +48,7 @@ export default{
 	logs: {
 		level: envVars.data.LOG_LEVEL
 	},
+	JWT_SECRET:envVars.data.JWT_SECRET,
     env:process.env.NODE_ENV
 };
 

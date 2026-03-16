@@ -46,10 +46,9 @@ const AccountSchema = new Schema(
   }
 );
 
-AccountSchema.pre("save", async function () {
+AccountSchema.pre("save", async function (next) {
   try {
-    if (!this.isModified("password")) return;
-
+    if (!this.isModified("password")) return next();
     this.password = await bcrypt.hash(this.password, 12);
   } catch (err) {
     next(err);

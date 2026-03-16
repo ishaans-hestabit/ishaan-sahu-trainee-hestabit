@@ -1,10 +1,22 @@
 import Account from '../models/AccountSchema.js'
-
+import AppError from '../utils/AppError.js';
+import bcrypt from "bcrypt";
 import { BaseRepository } from './BaseRepository.js'
 
 class AccountRepository extends BaseRepository{
     constructor(){
         super(Account);
+    }
+
+    async login(data) {
+        const account = await Account.findOne({ email: data.email }).select('+password');
+
+        if (!account) return null;
+
+        const isMatch = await account.comparePassword(data.password);
+        if (!isMatch) return null;
+
+        return account;
     }
 
     async findByEmail(email, includePassword = false) {

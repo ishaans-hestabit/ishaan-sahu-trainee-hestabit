@@ -6,6 +6,7 @@ class AccountController {
         // console.log(req.body);
         
       const account = await accountService.register(req.body);
+      
       res.status(201).json(account);
     } catch (err) {
       next(err);
@@ -40,6 +41,15 @@ class AccountController {
         next(err);
       }
   }
+
+  async login(req, res, next) {
+    try {
+      const token = await accountService.login(req.body.email, req.body.password);
+      return res.status(200).json({ token });
+    } catch (err) {
+      next(err);
+    }
+}
 
   async deleteByEmail(req,res,next){
     try{

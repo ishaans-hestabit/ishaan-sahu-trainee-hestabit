@@ -5,7 +5,7 @@ import { registerAccountSchema, emailParamSchema, updateNameSchema,} from "../va
 
 const router = Router();
 
-router.post( "/addAccount", validate(registerAccountSchema), accountController.register);
+// router.post( "/addAccount", validate(registerAccountSchema), accountController.register);
 
 router.get("/all",accountController.findAll);
 
