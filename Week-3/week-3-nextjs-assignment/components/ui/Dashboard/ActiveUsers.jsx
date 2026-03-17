@@ -4,7 +4,6 @@ import React from 'react';
 import { BarChart,Bar,XAxis,YAxis,CartesianGrid,ResponsiveContainer,} from 'recharts';
 import { FaWallet, FaRocket, FaShoppingCart, FaWrench } from 'react-icons/fa';
 
-// Mock data for the chart to make it "real"
 const chartData = [
   { name: 'Page A', value: 330 },
   { name: 'Page B', value: 250 },
@@ -17,13 +16,12 @@ const chartData = [
   { name: 'Page I', value: 190 },
 ];
 
-// Mock data for the bottom stats section
 const statsData = [
   {
     icon: <FaWallet className="text-white" size={14} />,
     label: 'Users',
     value: '32,984',
-    progress: 60, // Percentage for the bar beneath
+    progress: 60, 
   },
   {
     icon: <FaRocket className="text-white" size={14} />,

@@ -18,7 +18,6 @@ export default function Profile() {
         </div>
       </div>
 
-      {/*  the header is absolute, we need a div to push the rest of the content down */}
       <div className="mt-24 px-6">
       </div>
     

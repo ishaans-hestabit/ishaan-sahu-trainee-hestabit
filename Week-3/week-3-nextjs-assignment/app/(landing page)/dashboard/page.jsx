@@ -11,23 +11,19 @@ export default function Dashboard(){
         <div >
             <Navbar page="Dashboard"/>
 
-        {/* stats of website */}
             <DashboardStats />
 
-            {/* welcome card dashboard */}
             <div className="grid grid-cols-[2fr_1.3fr] gap-6 auto-rows-[270px] p-6">
                 <WelcomeCard/>
                 <RocketsCard/>
             </div>
 
 
-            {/* graph insights */}
             <div className="flex gap-3 p-6">
                 <ActiveUsers/>
                 <SalesOverview/>
             </div>
 
-            {/* overviews */}
             <div className="flex gap-3 w-full p-6">
                 <div className="flex-2">
                     <ProjectsTable />
