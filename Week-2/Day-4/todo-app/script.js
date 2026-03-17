@@ -66,9 +66,7 @@ document.querySelector('.todo-form').addEventListener("submit",(event)=>{
     event.preventDefault();
     let todo = document.querySelector('.todo-input');
 
-    // this prevents empty todo adding
     if(todo.value.trim().length == 0) return;
-    // Date.now() gives times in miliseconds after 1 Jan 1970
     todos.push({id: Date.now(),value : todo.value, status: 'not-completed'});
 
     localStorage.setItem('my-todos',JSON.stringify(todos));

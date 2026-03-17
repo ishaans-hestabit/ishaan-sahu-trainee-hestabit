@@ -24,7 +24,6 @@
 
 #products-grid {
     display: grid;
-    /* This creates 4 equal columns. '1fr' means 1 fraction of available space. */
     grid-template-columns: repeat(4, 1fr);
     gap: 30px; 
 }
@@ -61,7 +60,7 @@
 
 @media (max-width: 768px) {
     #products-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
     .product-wrapper{
@@ -87,7 +86,7 @@
 
 @media (max-width: 480px) {
     #products-grid {
-        grid-template-columns: 1fr; /* 1 column for phones */
+        grid-template-columns: 1fr; 
     }
 }
 
