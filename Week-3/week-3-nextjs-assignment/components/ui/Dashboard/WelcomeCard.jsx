@@ -2,7 +2,7 @@ import ChakraCard from "./ChakraCard";
 
 export default function WelcomeCard() {
   return (
-    <div className="h-[270px] bg-white rounded-2xl px-6 py-5 flex justify-between">
+    <div className="h-67.5 bg-white rounded-2xl px-6 py-5 flex justify-between">
       
       <div className="flex flex-col max-w-[55%]">
         <span className="text-gray-400 text-xs font-semibold">
