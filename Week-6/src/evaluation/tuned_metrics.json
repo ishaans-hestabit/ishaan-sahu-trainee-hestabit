@@ -1,0 +1,60 @@
+{
+  "Logistic Regression": {
+    "best_params": {
+      "C": 0.01,
+      "penalty": "l2",
+      "solver": "liblinear"
+    },
+    "val_auc": 0.929,
+    "test_acc": 0.7907,
+    "test_pre": 0.9565,
+    "test_rec": 0.7333,
+    "test_f1": 0.8302,
+    "test_auc": 0.9359
+  },
+  "Random Forest": {
+    "best_params": {
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "min_samples_split": 2,
+      "n_estimators": 50
+    },
+    "val_auc": 0.9152,
+    "test_acc": 0.814,
+    "test_pre": 0.8235,
+    "test_rec": 0.9333,
+    "test_f1": 0.875,
+    "test_auc": 0.9103
+  },
+  "XGBoost": {
+    "best_params": {
+      "colsample_bytree": 0.8,
+      "learning_rate": 0.1,
+      "max_depth": 3,
+      "n_estimators": 50,
+      "subsample": 1.0
+    },
+    "val_auc": 0.913,
+    "test_acc": 0.814,
+    "test_pre": 0.8235,
+    "test_rec": 0.9333,
+    "test_f1": 0.875,
+    "test_auc": 0.8872
+  },
+  "Neural Network": {
+    "best_params": {
+      "activation": "relu",
+      "alpha": 0.0001,
+      "hidden_layer_sizes": [
+        64
+      ],
+      "learning_rate_init": 0.001
+    },
+    "val_auc": 0.9039,
+    "test_acc": 0.8372,
+    "test_pre": 0.9259,
+    "test_rec": 0.8333,
+    "test_f1": 0.8772,
+    "test_auc": 0.8744
+  }
+}
