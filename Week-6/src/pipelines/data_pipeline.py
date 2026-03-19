@@ -19,6 +19,8 @@ def clean_data(df):
         # if data.duplicated().sum() = 0 i.e. no duplicate rows
         df = df.drop_duplicates() # removed duplicates if any
 
+        df = df.drop(columns=['sl_no', 'salary'])
+
 
         numeric_cols = df.select_dtypes(include=['number']).columns.tolist()
         categorical_cols = df.select_dtypes(include=['object', 'str']).columns.tolist()
