@@ -24,8 +24,6 @@ def generate_features(df):
 
     df["same_board"] = (df["ssc_b"] == df["hsc_b"]).astype(int)
 
-    df["workex_num"] = (df["workex"] == "Yes").astype(int)
-
     df["mba_grade"] = pd.cut(
         df["mba_p"],
         bins=[0, 55, 60, 65, 70, 100],
@@ -38,12 +36,6 @@ def generate_features(df):
         labels=["Low", "Medium", "High"]
     )
 
-    df["is_fin_spec"] = (df["specialisation"] == "Mkt&Fin").astype(int)
-
-    df["is_stem"] = (
-        (df["degree_t"] == "Sci&Tech") | (df["hsc_s"] == "Science")
-    ).astype(int)
-
     df["is_top_performer"] = (
         (df["ssc_p"] >= 70) &
         (df["hsc_p"] >= 70) &
@@ -51,7 +43,6 @@ def generate_features(df):
         (df["mba_p"] >= 70)
     ).astype(int)
 
-    df["workex_fin"] = df["workex_num"] * df["is_fin_spec"]
 
     print(f"New features added: {13}")
     print("------- Feature Generation Completed -------")

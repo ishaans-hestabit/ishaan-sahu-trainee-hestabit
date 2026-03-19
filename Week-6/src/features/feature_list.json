@@ -10,14 +10,14 @@
         "etest_vs_mba",
         "weighted_academic",
         "same_board",
-        "workex_num",
-        "is_fin_spec",
         "is_top_performer",
-        "workex_fin",
         "gender_M",
+        "ssc_b_Others",
         "degree_t_Others",
         "workex_Yes",
         "specialisation_Mkt&HR",
+        "mba_grade_Good",
+        "mba_grade_VeryGood",
         "etest_tier_Medium",
         "etest_tier_High"
     ]
