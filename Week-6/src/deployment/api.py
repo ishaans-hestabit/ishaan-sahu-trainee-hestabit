@@ -5,8 +5,11 @@ import csv
 import os
 from datetime import datetime
 import numpy as np
+import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
+
+from features.build_features import generate_features  # ← add this import
 
 with open("models/scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
@@ -19,8 +22,20 @@ with open("features/feature_list.json") as f:
 
 app = FastAPI(title="MBA Placement Prediction API")
 
+# ← replace the old PredictRequest with this
 class PredictRequest(BaseModel):
-    features: dict
+    gender        : str
+    ssc_p         : float
+    ssc_b         : str
+    hsc_p         : float
+    hsc_b         : str
+    hsc_s         : str
+    degree_p      : float
+    degree_t      : str
+    workex        : str
+    etest_p       : float
+    specialisation: str
+    mba_p         : float
 
 class PredictResponse(BaseModel):
     request_id : str
@@ -32,8 +47,21 @@ class PredictResponse(BaseModel):
 @app.post("/predict", response_model=PredictResponse)
 def predict(request: PredictRequest):
 
-    X_raw   = np.array([[request.features.get(f, 0) for f in FEATURES]])
-    X       = scaler.transform(X_raw)
+    # step 1 — raw input into dataframe
+    df = pd.DataFrame([request.model_dump()])
+
+    # step 2 — same function used during training
+    df = generate_features(df)
+
+    # step 3 — encode categoricals same way as training
+    cat_cols = df.select_dtypes(include=["object", 'str']).columns
+    df = pd.get_dummies(df, columns=cat_cols, drop_first=True)
+
+    # step 4 — align to exact 20 features model expects
+    df = df.reindex(columns=FEATURES, fill_value=0)
+
+    # step 5 — scale and predict
+    X = scaler.transform(df.values)
 
     prediction  = int(model.predict(X)[0])
     probability = float(model.predict_proba(X)[0][1])
@@ -46,7 +74,7 @@ def predict(request: PredictRequest):
         if not log_exists:
             writer.writerow(["request_id", "timestamp", "prediction", "probability"] + FEATURES)
         writer.writerow([request_id, timestamp, prediction, round(probability, 4)]
-                        + [request.features.get(f, 0) for f in FEATURES])
+                        + df.values[0].tolist())
 
     return PredictResponse(
         request_id  = request_id,

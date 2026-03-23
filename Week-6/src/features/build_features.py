@@ -30,11 +30,15 @@ def generate_features(df):
         labels=["Poor", "Average", "Good", "VeryGood", "Excellent"]
     )
 
-    df["etest_tier"] = pd.qcut(
-        df["etest_p"],
-        q=3,
-        labels=["Low", "Medium", "High"]
-    )
+    # df["etest_tier"] = pd.qcut(
+    #     df["etest_p"],
+    #     q=3,
+    #     labels=["Low", "Medium", "High"]
+    # )
+
+    df["etest_tier"] = pd.cut(df["etest_p"],
+                           bins=[0, 64.5, 75.0, 100],
+                           labels=["Low","Medium","High"])
 
     df["is_top_performer"] = (
         (df["ssc_p"] >= 70) &
@@ -44,7 +48,7 @@ def generate_features(df):
     ).astype(int)
 
 
-    print(f"New features added: {13}")
+    print(f"New features added: {9}")
     print("------- Feature Generation Completed -------")
 
     return df
