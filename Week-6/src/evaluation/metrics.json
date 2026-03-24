@@ -11,7 +11,7 @@
     "test_f1": 0.8571,
     "test_roc_auc": 0.9436,
     "overfit_gap": 0.0487,
-    "is_best": false
+    "is_best": true
   },
   "Random Forest": {
     "val_accuracy": 0.8133,
@@ -25,7 +25,7 @@
     "test_f1": 0.875,
     "test_roc_auc": 0.9128,
     "overfit_gap": 0.1678,
-    "is_best": true
+    "is_best": false
   },
   "XGBoost": {
     "val_accuracy": 0.8308,
