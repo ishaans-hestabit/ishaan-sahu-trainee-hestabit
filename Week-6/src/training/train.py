@@ -98,10 +98,9 @@ def save_best_model(results,
         penalty = max(0, gap - 0.10)
         return auc - penalty
 
-    # ← only this block changed, everything below is identical
     best_name = max(results, key=combined_score)
 
-    # print so you can see why it chose what it chose
+
     print("\n===== Model Selection Scores =====")
     for name in results:
         r = results[name]
@@ -153,23 +152,17 @@ def run_training_pipeline(X_train, X_test, Y_train, Y_test):
     print("\n==============================")
     print("   TRAINING PIPELINE START")
     print("==============================")
- 
-    # step 1 — train + cross-validate
+
     results = train_all_models(X_train, Y_train)
  
-    # step 2 — test set evaluation
-    # also stores r["cm"] for each model — plot needs this
     results = evaluate_all_models(results, X_test, Y_test)
- 
-    # step 3 — pick best, save pkl + json
+
     best_name, best_model = save_best_model(
         results,
         model_dir="models",
         metrics_dir="evaluation"
     )
  
-    # step 4 — confusion matrix plot
-    # reads r["cm"] that was stored in step 2
     plot_confusion_matrices(
         results,
         save_dir="evaluation"

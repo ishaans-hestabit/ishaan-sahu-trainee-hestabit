@@ -89,7 +89,6 @@ def tune_xgboost(X_train, Y_train):
             random_state=42,
             eval_metric="logloss",
             verbosity=0,
-            scale_pos_weight=148/67
         ),
         param_grid,
         cv=CV,

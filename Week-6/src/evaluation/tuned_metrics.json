@@ -5,56 +5,56 @@
       "penalty": "l2",
       "solver": "liblinear"
     },
-    "val_auc": 0.9308,
-    "test_acc": 0.814,
-    "test_pre": 1.0,
-    "test_rec": 0.7333,
-    "test_f1": 0.8462,
-    "test_auc": 0.941
+    "val_auc": 0.6255,
+    "test_acc": 0.53,
+    "test_pre": 0.5934,
+    "test_rec": 0.4865,
+    "test_f1": 0.5347,
+    "test_auc": 0.5743
   },
   "Random Forest": {
     "best_params": {
-      "max_depth": 5,
+      "max_depth": 3,
       "min_samples_leaf": 1,
-      "min_samples_split": 2,
-      "n_estimators": 100
+      "min_samples_split": 5,
+      "n_estimators": 200
     },
-    "val_auc": 0.9152,
-    "test_acc": 0.814,
-    "test_pre": 0.8235,
-    "test_rec": 0.9333,
-    "test_f1": 0.875,
-    "test_auc": 0.9128
+    "val_auc": 0.6319,
+    "test_acc": 0.555,
+    "test_pre": 0.6,
+    "test_rec": 0.5946,
+    "test_f1": 0.5973,
+    "test_auc": 0.5767
   },
   "XGBoost": {
     "best_params": {
-      "colsample_bytree": 0.8,
-      "learning_rate": 0.1,
+      "colsample_bytree": 1.0,
+      "learning_rate": 0.01,
       "max_depth": 3,
-      "n_estimators": 50,
-      "subsample": 1.0
+      "n_estimators": 200,
+      "subsample": 0.8
     },
-    "val_auc": 0.9122,
-    "test_acc": 0.814,
-    "test_pre": 0.8235,
-    "test_rec": 0.9333,
-    "test_f1": 0.875,
-    "test_auc": 0.8923
+    "val_auc": 0.6271,
+    "test_acc": 0.595,
+    "test_pre": 0.5781,
+    "test_rec": 1.0,
+    "test_f1": 0.7327,
+    "test_auc": 0.5866
   },
   "Neural Network": {
     "best_params": {
-      "activation": "relu",
-      "alpha": 0.0001,
+      "activation": "tanh",
+      "alpha": 0.01,
       "hidden_layer_sizes": [
-        64
+        32
       ],
       "learning_rate_init": 0.001
     },
-    "val_auc": 0.9079,
-    "test_acc": 0.8605,
-    "test_pre": 0.9286,
-    "test_rec": 0.8667,
-    "test_f1": 0.8966,
-    "test_auc": 0.8923
+    "val_auc": 0.5972,
+    "test_acc": 0.55,
+    "test_pre": 0.5882,
+    "test_rec": 0.6306,
+    "test_f1": 0.6087,
+    "test_auc": 0.5666
   }
 }

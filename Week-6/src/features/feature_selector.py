@@ -1,4 +1,4 @@
-from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.feature_selection import SelectKBest, f_classif, mutual_info_classif
 from sklearn.preprocessing import StandardScaler
 import json
 import pickle
@@ -7,7 +7,7 @@ def feature_selection(X_train, Y_train, X_test, feature_names):
     print("------- Selecting Best Features -------")
 
     k = min(20, X_train.shape[1])
-    selector = SelectKBest(score_func=f_classif, k=k)
+    selector = SelectKBest(score_func=mutual_info_classif, k=k)
 
     X_train_selected = selector.fit_transform(X_train, Y_train)
     X_test_selected  = selector.transform(X_test)

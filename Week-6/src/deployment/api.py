@@ -54,7 +54,7 @@ def predict(request: PredictRequest):
     df = generate_features(df)
 
     # step 3 — encode categoricals same way as training
-    cat_cols = df.select_dtypes(include=["object", 'str']).columns
+    cat_cols = df.select_dtypes(include=["object", 'string']).columns
     df = pd.get_dummies(df, columns=cat_cols, drop_first=True)
 
     # step 4 — align to exact 20 features model expects

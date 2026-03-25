@@ -19,8 +19,7 @@ def get_models():
         "XGBoost": XGBClassifier(
             n_estimators=100, max_depth=4,
             random_state=42, learning_rate=0.1,
-            eval_metric="logloss",
-            scale_pos_weight=148/67       # ← XGBoost equivalent of class_weight
+            eval_metric="logloss",     
         ),
         "Neural Network":MLPClassifier(
             hidden_layer_sizes=(64,32),

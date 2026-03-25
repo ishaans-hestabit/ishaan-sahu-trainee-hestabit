@@ -48,7 +48,7 @@ def generate_features(df):
     ).astype(int)
 
 
-    print(f"New features added: {9}")
+    print(f"New features added: {10}")
     print("------- Feature Generation Completed -------")
 
     return df

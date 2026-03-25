@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-RAW_DATA_PATH = "data/raw/Placement_Data.csv"
+RAW_DATA_PATH = "data/raw/placement_dataset_1000.csv"
 PROCESSED_DATA_PATH = "data/processed/final.csv"
 
 def load_data(filepath):

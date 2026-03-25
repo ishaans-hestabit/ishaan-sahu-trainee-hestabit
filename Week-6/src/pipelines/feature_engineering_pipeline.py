@@ -63,7 +63,7 @@ def run_feature_engineering_pipeline():
 
     X_train, X_test, selected_features = feature_selection(X_train, Y_train, X_test, feature_names)
 
-    print(X_train)
+    # print(X_train)
 
     os.makedirs("data/splits", exist_ok=True)
 
