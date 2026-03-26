@@ -45,7 +45,7 @@ if __name__ == "__main__":
 
     test_queries = [
         
-        "What is the email of Andrew?"
+        "What is the email of Andrew Goodman?"
     ]
 
     for query in test_queries:

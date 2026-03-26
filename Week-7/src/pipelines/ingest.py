@@ -1,5 +1,6 @@
 import glob
 from pathlib import Path
+from vectorstore.bm25_store import build_bm25_index
 
 from langchain_community.document_loaders import(
     PyPDFLoader,
@@ -109,6 +110,10 @@ def chunk_documents(documents: list) -> list:
     )
 
     chunks = splitter.split_documents(documents)
+
+    for i, chunk in enumerate(chunks):
+            chunk.metadata["id"] = f"chunk_{i}"
+
     print(f"  Chunked {len(documents)} document(s)  →  {len(chunks)} chunks")
     return chunks
 
@@ -148,6 +153,8 @@ if __name__ == "__main__":
 
     chunks = chunk_documents(documents)
 
-    inspect_chunks(chunks)
+    # inspect_chunks(chunks)
 
     build_vector_pipeline(chunks, VECTORSTORE_DIR)
+
+    build_bm25_index(chunks, VECTORSTORE_DIR) 
