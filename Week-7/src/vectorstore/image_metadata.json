@@ -1,0 +1,65 @@
+{
+  "0": {
+    "image_path": "data/raw/images/bar_chart.jpg",
+    "caption": "a laptop screen displaying a graph on it",
+    "ocr_text": "",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/bar_chart.jpg",
+    "page_num": null,
+    "filename": "bar_chart.jpg"
+  },
+  "1": {
+    "image_path": "data/raw/images/somatosensory.pdf::page_2::img_0",
+    "caption": "the diagram shows the muscles and their functions",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/somatosensory.pdf",
+    "page_num": 2,
+    "filename": "somatosensory.pdf"
+  },
+  "2": {
+    "image_path": "data/raw/images/dog.jpeg",
+    "caption": "a dog sitting in the leaves",
+    "ocr_text": "",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/dog.jpeg",
+    "page_num": null,
+    "filename": "dog.jpeg"
+  },
+  "3": {
+    "image_path": "data/raw/test/cat.webp",
+    "caption": "a cat sitting in the grass",
+    "ocr_text": "",
+    "source_type": "image_file",
+    "source_file": "data/raw/test/cat.webp",
+    "page_num": null,
+    "filename": "cat.webp"
+  },
+  "4": {
+    "image_path": "data/raw/images/cat.jpeg",
+    "caption": "a cat sitting on the floor looking at the camera",
+    "ocr_text": "",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/cat.jpeg",
+    "page_num": null,
+    "filename": "cat.jpeg"
+  },
+  "5": {
+    "image_path": "data/raw/images/cat.webp",
+    "caption": "a cat sitting in the grass",
+    "ocr_text": ".\n\nwo\n]",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/cat.webp",
+    "page_num": null,
+    "filename": "cat.webp"
+  },
+  "6": {
+    "image_path": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
+    "caption": "the settings dial in the settings dial",
+    "ocr_text": "TI\n\n25) localhost\n\n\u00a9 Security x\nlocalhost\n\n@ Connection is secure\nYour information (for example,\npasswords or credit card numbers) is\nprivate when it is sent to this site.\nLearn more\n\nCertificate is valid G",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
+    "page_num": null,
+    "filename": "Screenshot from 2026-03-07 01-09-40.png"
+  }
+}

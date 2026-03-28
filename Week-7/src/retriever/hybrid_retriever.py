@@ -49,7 +49,7 @@ def rrf_combine(semantic_search_results, keyword_search_results, k=25):
 
     # Sort everything by combined score, highest first
     combined = sorted(scores.values(), key=lambda x: x["score"], reverse=True)
-    print(scores)
+    # print(scores)
     return combined
 
 
