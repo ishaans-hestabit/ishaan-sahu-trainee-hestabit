@@ -60,7 +60,7 @@ def run_ocr(image: Image.Image) -> str:
         print(x)
         return x
     except Exception as e:
-        print(f"  [OCR] Skipped: {e}")
+        print(f" [OCR] Skipped: {e}")
         return ""
 
 def run_caption(image: Image.Image) -> str:
@@ -178,7 +178,7 @@ def ingest_pdf(pdf_path: str):
 
         build_bm25_index(chunks, VECTORSTORE_DIR)
 
-        print(f"  [Text] {len(chunks)} chunks → text FAISS + BM25 ✅")
+        print(f"  [Text] {len(chunks)} chunks → text FAISS + BM25 ")
 
     print(f"\n[PDF Done] images={total_images}, text_pages={len(text_documents)}")
 
