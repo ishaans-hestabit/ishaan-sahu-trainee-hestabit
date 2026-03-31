@@ -72,7 +72,7 @@ def evaluate_all_models(results, X_test, Y_test):
         r["test_rec"] = recall_score(Y_test, Y_pred)
         r["test_f1"]  = f1_score(Y_test, Y_pred)
         r["test_auc"] = roc_auc_score(Y_test, Y_prob)
-        r["cm"]       = confusion_matrix(Y_test, Y_pred)
+        r["cm"]       = confusion_matrix(Y_test, Y_pred,labels=[1, 0])
         r["gap"]      = r["train_acc"] - r["val_acc"]
 
         print(f"\n{name}")

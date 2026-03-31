@@ -9,12 +9,12 @@ import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from features.build_features import generate_features  # ← add this import
+from features.build_features import generate_features  
 
 with open("models/scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
-with open("models/best_model.pkl", "rb") as f:
+with open("models/best_model_prod.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("features/feature_list.json") as f:
@@ -22,7 +22,6 @@ with open("features/feature_list.json") as f:
 
 app = FastAPI(title="MBA Placement Prediction API")
 
-# ← replace the old PredictRequest with this
 class PredictRequest(BaseModel):
     gender        : str
     ssc_p         : float
