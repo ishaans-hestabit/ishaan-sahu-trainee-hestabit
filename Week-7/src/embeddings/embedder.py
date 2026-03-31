@@ -1,7 +1,9 @@
 from langchain_huggingface import HuggingFaceEmbeddings
+import os
 
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 
+os.environ["HF_HUB_OFFLINE"] = "1"
 
 def get_embedding_model():
     return HuggingFaceEmbeddings(

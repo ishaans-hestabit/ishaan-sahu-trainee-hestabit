@@ -1,0 +1,245 @@
+[
+  {
+    "mode": "text",
+    "question": "laptop",
+    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to natural language processing, large language models, and retrieval systems, but does not contain any information about laptops.",
+    "faithfulness": 0.35,
+    "timestamp": "2026-03-30T17:07:50.445193"
+  },
+  {
+    "mode": "text",
+    "question": "laptop",
+    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to various topics such as somatosensory systems, conversational AI, cow information, and retrieval systems, but does not contain any information about laptops.",
+    "faithfulness": 0.41,
+    "timestamp": "2026-03-30T17:08:01.493797"
+  },
+  {
+    "mode": "image",
+    "question": "laptop",
+    "count": 3,
+    "timestamp": "2026-03-30T17:08:01.499043"
+  },
+  {
+    "mode": "image",
+    "question": "laptop",
+    "count": 3,
+    "timestamp": "2026-03-30T17:46:33.760359"
+  },
+  {
+    "mode": "image",
+    "question": "laptop",
+    "count": 3,
+    "timestamp": "2026-03-30T17:46:40.121219"
+  },
+  {
+    "mode": "image",
+    "question": "laptop",
+    "count": 3,
+    "timestamp": "2026-03-30T17:46:41.296258"
+  },
+  {
+    "mode": "text",
+    "question": "laptop",
+    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to various topics such as somatosensory systems, conversational AI, cow information, and retrieval systems, but does not contain any information about laptops.",
+    "faithfulness": 0.41,
+    "timestamp": "2026-03-30T17:49:34.623029"
+  },
+  {
+    "mode": "image",
+    "question": "laptop",
+    "count": 3,
+    "timestamp": "2026-03-30T17:49:34.633201"
+  },
+  {
+    "mode": "text",
+    "question": "can you find email of andrew",
+    "answer": "There are three customers named Andrew. Their emails are:\n\n1. meghanharmon@travis.biz (Andrew Bolton)\n2. monica69@cohen.org (Andrew Weiss)\n3. marieyates@gomez-spencer.info (Andrew Goodman)",
+    "faithfulness": 0.58,
+    "timestamp": "2026-03-30T17:51:19.852951"
+  },
+  {
+    "mode": "text",
+    "question": "show me complete details about all of them?",
+    "answer": "Based on the provided context, I can show you the complete details of the customers mentioned in the chunks. Here are the details:\n\n1. Tina Andrews\n   - Index: 867\n   - Customer Id: 2Ba8B54fb7a9cDB\n   - First Name: Tina\n   - Last Name: Andrews\n   - Company: Dickerson and Sons\n   - City: Charlenebury\n   - Country: Chile\n   - Phone 1: +1-710-467-4230x82225\n   - Phone 2: 001-571-913-7568\n   - Email: karlflynn@riley.com\n   - Subscription Date: 2022-02-03\n   - Website: https://conway-lowery.com/\n\n2. Autumn Soto\n   - Index: 456\n   - Customer Id: 7d719f1bCcaA3Ac\n   - First Name: Autumn\n   - Last Name: Soto\n   - Company: Ho-Long\n   - City: Lake Deanna\n   - Country: Niger\n   - Phone 1: 8241986767\n   - Phone 2: 001-838-932-5550x72809\n   - Email: robertasharp@vasquez.info\n   - Subscription Date: 2022-04-29\n   - Website: https://www.andrews.com/\n\n3. Nicholas Arias\n   - Index: 83\n   - Customer Id: 2bcF27a9daa2EAA\n   - First Name: Nicholas\n   - Last Name: Arias\n   - Company: Yoder-Bowen\n   - City: Lake Gavinburgh\n   - Country: Holy See (Vatican City State)\n   - Phone 1: +1-650-979-8614x97335\n   - Phone 2: +1-034-164-6367\n   - Email: boonealex@cardenas.info\n   - Subscription Date: 2020-01-31\n   - Website: http://www.wood.com/\n\nNote that chunks 3 and 4 do not contain customer information, but rather appear to be excerpts from a financial audit report.",
+    "faithfulness": 0.8,
+    "timestamp": "2026-03-30T17:52:09.328787"
+  },
+  {
+    "mode": "text",
+    "question": "cattle",
+    "answer": "According to the provided context, cattle is a general term that describes animals which are mammals and belong to the genus Bos. Within the general term of cattle are:\n\n* Cows\n* Bulls\n* Oxen\n* Heifers\n* Steers\n* Bullocks\n* Calves\n\nCattle are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach. They can be horned or polled (or hornless), depending on the breed. Cows are the most common type of large domesticated hoofed animals and are a prominent modern member of the subfamily Bovinae.",
+    "faithfulness": 0.91,
+    "timestamp": "2026-03-30T17:53:35.329575"
+  },
+  {
+    "mode": "text",
+    "question": "cattle",
+    "answer": "Cattle is a general term that describes animals which are mammals and belong to the genus Bos. Within the general term of cattle are:\n\n* Cows\n* Bulls\n* Oxen\n* Heifers\n* Steers\n* Bullocks\n* Calves\n\nCows are the most common type of large domesticated hoofed animals and are a prominent modern member of the subfamily Bovinae. They are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach.",
+    "faithfulness": 0.91,
+    "timestamp": "2026-03-30T17:53:53.879468"
+  },
+  {
+    "mode": "image",
+    "question": "cattle",
+    "count": 3,
+    "timestamp": "2026-03-30T17:53:53.884837"
+  },
+  {
+    "mode": "image",
+    "question": "cow",
+    "count": 3,
+    "timestamp": "2026-03-30T18:08:04.743426"
+  },
+  {
+    "mode": "image",
+    "question": "cow",
+    "count": 3,
+    "timestamp": "2026-03-30T18:28:36.304499"
+  },
+  {
+    "mode": "text",
+    "question": "cow",
+    "answer": "Based on the provided context, here are some key points about cows:\n\n* Cows are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach.\n* They are herbivores and eat vegetation such as grass and plants.\n* Cows have a highly developed sense of smell and can detect smells up to six miles away.\n* They have around 25,000 taste buds, which is 2.5 times more than humans.\n* Cows are social animals and usually stay together in groups called herds.\n* A cow has a lifespan of up to 25 years.\n* Cows are farmed for various agricultural products, including meat (beef), dairy products, leather, and entertainment.\n* Cows are also known as \"ruminants\" because of the largest pouch of their stomach, called the rumen.\n* They are creatures of habit and prefer a daily routine.\n* Cows can see in color, but are red and green color blind.\n* They drink a lot of water, about a full bathtub full each day, and prefer to lay in the shade to keep cool since they don't sweat.",
+    "faithfulness": 0.77,
+    "timestamp": "2026-03-30T18:29:00.771859"
+  },
+  {
+    "mode": "image",
+    "question": "cow",
+    "count": 3,
+    "timestamp": "2026-03-30T18:29:00.791821"
+  },
+  {
+    "mode": "text",
+    "question": "fastest bird",
+    "answer": "The fastest bird is the Peregrine Falcon, but it is not mentioned in the provided context. However, a subspecies of the Peregrine Falcon, the Red-capped Shaheen Falco peregrinus babylonicus, is mentioned in Chunk 5. \n\nAnother bird of prey mentioned in the context is the Merlin Falco columbarius pallidus, which is known for its speed, reaching up to 30-40 mph (48-64 km/h) during level flight and up to 60 mph (97 km/h) during dives. However, the exact speed of the birds mentioned in the context is not provided.",
+    "faithfulness": 0.26,
+    "timestamp": "2026-03-30T18:29:32.107669"
+  },
+  {
+    "mode": "image",
+    "question": "fastest bird",
+    "count": 3,
+    "timestamp": "2026-03-30T18:29:32.137573"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in day 2",
+    "answer": "On Day 2, the learning outcomes and topics are focused on Advanced Retrieval and Context Engineering. The tasks and deliverables for Day 2 are as follows:\n\n1. Improve retrieval accuracy\n2. Build hybrid retrieval (semantic + keyword + reranking)\n3. Context ranking strategies\n4. Reduce hallucination\n\nThe topics to be covered include:\n\n1. Hybrid search: BM25 + embeddings\n2. Reranking (cross-encoder / cosine)\n3. Max Marginal Relevance (MMR)\n4. Chunk deduplication\n5. Optimizing context window for LLMs\n\nThe exercise for Day 2 is to build an advanced retriever that supports:\n\n* Keyword fallback\n* Reranking\n* Deduplication\n* Traceable context sources\n\nThe deliverables for Day 2 include:\n\n1. /retriever/hybrid_retriever.py\n2. /retriever/reranker.py\n3. /pipelines/context_builder.py\n4. RETRIEVAL-STRATEGIES.md\n\nThe goals for Day 2 are to achieve higher precision, lower hallucination, and fully traceable context.",
+    "faithfulness": 0.6,
+    "timestamp": "2026-03-30T18:38:12.582478"
+  },
+  {
+    "mode": "text",
+    "question": "what is chatgpt",
+    "answer": "I don't have enough information in the documents to answer this.",
+    "faithfulness": 0.4,
+    "timestamp": "2026-03-30T18:38:53.847794"
+  },
+  {
+    "mode": "text",
+    "question": "What was the revenue all through the lifetime of the company? ",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only contains financial information for the years 2021 and 2022, and does not provide a comprehensive history of the company's revenue throughout its lifetime.",
+    "faithfulness": 0.3,
+    "timestamp": "2026-03-30T19:02:15.183388"
+  },
+  {
+    "mode": "image",
+    "question": "What was the revenue all through the lifetime of the company? ",
+    "count": 3,
+    "timestamp": "2026-03-30T19:02:15.205163"
+  },
+  {
+    "mode": "text",
+    "question": "who is cow",
+    "answer": "According to the provided context, a cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. It is a domesticated animal, specifically a female that has given birth to at least one or two calves, and is kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants.",
+    "faithfulness": 0.8,
+    "timestamp": "2026-03-30T19:03:43.948016"
+  },
+  {
+    "mode": "image",
+    "question": "who is cow",
+    "count": 3,
+    "timestamp": "2026-03-30T19:03:43.972337"
+  },
+  {
+    "mode": "text",
+    "question": "what is cow",
+    "answer": "A cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. They are domesticated animals, specifically females that have given birth to at least one or two calves, and are kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants. They are a type of cattle, which is a general term that includes cows, bulls, oxen, heifers, steers, bullocks, and calves.",
+    "faithfulness": 0.86,
+    "timestamp": "2026-03-30T19:04:21.438249"
+  },
+  {
+    "mode": "image",
+    "question": "what is cow",
+    "count": 3,
+    "timestamp": "2026-03-30T19:04:21.458569"
+  },
+  {
+    "mode": "image_text",
+    "question": "a dog standing on a dirt road",
+    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention a dog standing on a dirt road. It appears to be related to cows, birds, and somatosensory neurons, but does not contain any information about dogs.",
+    "faithfulness": 0.14,
+    "timestamp": "2026-03-30T19:06:23.382525"
+  },
+  {
+    "mode": "image",
+    "question": "images.jpeg",
+    "count": 3,
+    "timestamp": "2026-03-30T19:06:23.396781"
+  },
+  {
+    "mode": "image_text",
+    "question": "a bird perched on a tree branch",
+    "answer": "The context provided is a photo gallery of birds from Gujarat, but it does not specifically mention a bird perched on a tree branch. However, it does list various bird species, such as the Great Crested Grebe, Slender-billed Gull, and Lesser Flamingo, along with their corresponding photos taken by different photographers.",
+    "faithfulness": 0.4,
+    "timestamp": "2026-03-30T19:07:50.315296"
+  },
+  {
+    "mode": "image",
+    "question": "Photo gallery_Gujarat_page10_img4.png",
+    "count": 3,
+    "timestamp": "2026-03-30T19:07:50.328357"
+  },
+  {
+    "mode": "image",
+    "question": "cow",
+    "count": 3,
+    "timestamp": "2026-03-30T19:28:53.951092"
+  },
+  {
+    "mode": "text",
+    "question": "cow",
+    "answer": "A cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. They are domesticated animals, specifically females that have given birth to at least one or two calves, and are kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants. They have around 25,000 taste buds and can sense a smell up to six miles away. Cows can live up to 25 years and are creatures of habit, preferring a daily routine.",
+    "faithfulness": 0.88,
+    "timestamp": "2026-03-30T19:34:22.475866"
+  },
+  {
+    "mode": "text",
+    "question": "milk",
+    "answer": "Milk is a dairy product that comes from cows. Cows are raised for many purposes, including dairy products like milk, cheese, yogurts, and butter.",
+    "faithfulness": 0.93,
+    "timestamp": "2026-03-30T19:41:41.305413"
+  },
+  {
+    "mode": "text",
+    "question": "what is my name",
+    "answer": "There are multiple individuals mentioned in the context. Here are a few:\n\n1. Yvonne Jordan\n2. Meghan Moses\n3. Cristina Hanna\n4. Seth Osborne\n\nWithout more information, it's impossible to determine which one is you. Could you provide more context or clarify which individual you are referring to?",
+    "faithfulness": 0.38,
+    "timestamp": "2026-03-30T19:50:33.060139"
+  },
+  {
+    "mode": "text",
+    "question": "who is mahatma gandhi",
+    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention Mahatma Gandhi. It appears to be related to a company's financial reports and director information, but does not contain any information about Mahatma Gandhi.",
+    "faithfulness": 0.17,
+    "timestamp": "2026-03-30T19:51:55.387623"
+  },
+  {
+    "mode": "text",
+    "question": "what is my age?",
+    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention your age. It appears to be related to tax forms and customer information, but does not contain any information about your age.",
+    "faithfulness": 0.18,
+    "timestamp": "2026-03-30T19:53:55.495594"
+  }
+]

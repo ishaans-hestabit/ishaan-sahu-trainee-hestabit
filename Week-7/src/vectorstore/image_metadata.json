@@ -1,41 +1,5 @@
 {
   "0": {
-    "image_path": "data/raw/images/bar_chart.jpg",
-    "caption": "a laptop screen displaying a graph on it",
-    "ocr_text": "",
-    "source_type": "image_file",
-    "source_file": "data/raw/images/bar_chart.jpg",
-    "page_num": null,
-    "filename": "bar_chart.jpg"
-  },
-  "1": {
-    "image_path": "data/raw/images/somatosensory.pdf::page_2::img_0",
-    "caption": "the diagram shows the muscles and their functions",
-    "ocr_text": "",
-    "source_type": "pdf_page",
-    "source_file": "data/raw/images/somatosensory.pdf",
-    "page_num": 2,
-    "filename": "somatosensory.pdf"
-  },
-  "2": {
-    "image_path": "data/raw/images/dog.jpeg",
-    "caption": "a dog sitting in the leaves",
-    "ocr_text": "",
-    "source_type": "image_file",
-    "source_file": "data/raw/images/dog.jpeg",
-    "page_num": null,
-    "filename": "dog.jpeg"
-  },
-  "3": {
-    "image_path": "data/raw/test/cat.webp",
-    "caption": "a cat sitting in the grass",
-    "ocr_text": "",
-    "source_type": "image_file",
-    "source_file": "data/raw/test/cat.webp",
-    "page_num": null,
-    "filename": "cat.webp"
-  },
-  "4": {
     "image_path": "data/raw/images/cat.jpeg",
     "caption": "a cat sitting on the floor looking at the camera",
     "ocr_text": "",
@@ -44,7 +8,34 @@
     "page_num": null,
     "filename": "cat.jpeg"
   },
-  "5": {
+  "1": {
+    "image_path": "data/raw/images/bar_chart.jpg",
+    "caption": "a laptop screen displaying a graph on it",
+    "ocr_text": "USERS: LAST 7 DAYS USING MEDIAN V\n\n@ OPTIONS\n\n75K ' 100 %\n1 Median Page Load (LUX): 2.056s\nI\ni}\n60K Bounce Rate 80 %\nI &\n! 57.1%\n45K 1 60 %\nt\n4\n30K 40 %\n15K | 20 %\ni\u00a2) 2.5 5 7.5 le) 12.5 15 17.5\n\n@ Page Load (LUX) \u2014 Bounce Rate\n\n% OPT\n\nPage Load (LUX) Bounce Rate (LUX)\n\nPage Views (LUX)\n\nL) @ \u00a9\n\nSTART RENDER VS BOUNCE RATE \u00a9 OPTIONS\n40K ' 100 %\n1 Median Start Render (LUX): 1.031s\ni\ni\n32K ; 80 %\nI\n24K 60 %\n16K 40 %\n8K | 20%\nce) 1 2 3 4 5\n\n@ Start Render (LUX) \u2014 Bounce Rate\n\nSESSIONS + OPTION\n\nSessions (LUX) Session Length (LUX) PVs Per Session (LUX)\n\n0.7s 2.7Mpvs 40.6%\n\nIs 500K 100%\n0.8s 400K 80%\n0.6s 300K 60%\n\nnen $< 200K 40%\n\n479K 17min 2pvs\n\n4 pvs 100K 40min\n3.2 pvs 80K 32min\n2.4 pvs 60K 24min\n\n1.6 pvs 40K a",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/bar_chart.jpg",
+    "page_num": null,
+    "filename": "bar_chart.jpg"
+  },
+  "2": {
+    "image_path": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
+    "caption": "the settings dial in the settings dial",
+    "ocr_text": "TI\n\n25) localhost\n\n\u00a9 Security x\nlocalhost\n\n@ Connection is secure\nYour information (for example,\npasswords or credit card numbers) is\nprivate when it is sent to this site.\nLearn more\n\nCertificate is valid G",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
+    "page_num": null,
+    "filename": "Screenshot from 2026-03-07 01-09-40.png"
+  },
+  "3": {
+    "image_path": "data/raw/images/dog.jpeg",
+    "caption": "a dog sitting in the leaves",
+    "ocr_text": "",
+    "source_type": "image_file",
+    "source_file": "data/raw/images/dog.jpeg",
+    "page_num": null,
+    "filename": "dog.jpeg"
+  },
+  "4": {
     "image_path": "data/raw/images/cat.webp",
     "caption": "a cat sitting in the grass",
     "ocr_text": ".\n\nwo\n]",
@@ -53,13 +44,949 @@
     "page_num": null,
     "filename": "cat.webp"
   },
-  "6": {
-    "image_path": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
-    "caption": "the settings dial in the settings dial",
-    "ocr_text": "TI\n\n25) localhost\n\n\u00a9 Security x\nlocalhost\n\n@ Connection is secure\nYour information (for example,\npasswords or credit card numbers) is\nprivate when it is sent to this site.\nLearn more\n\nCertificate is valid G",
+  "5": {
+    "image_path": "data/raw/test/cat2.jpeg",
+    "caption": "a cat is looking at the camera",
+    "ocr_text": "",
     "source_type": "image_file",
-    "source_file": "data/raw/images/Screenshot from 2026-03-07 01-09-40.png",
+    "source_file": "data/raw/test/cat2.jpeg",
     "page_num": null,
-    "filename": "Screenshot from 2026-03-07 01-09-40.png"
+    "filename": "cat2.jpeg"
+  },
+  "6": {
+    "image_path": "data/pdf_extracted/test_pdf_page1_img0.png",
+    "caption": "structural monitoring systems, inc",
+    "ocr_text": "STRUCTURAL\n\nMONITORING\n\nSYSTEMS\nple\n\nfo",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 1,
+    "filename": "test_pdf_page1_img0.png"
+  },
+  "7": {
+    "image_path": "data/pdf_extracted/test_pdf_page1_img1.png",
+    "caption": "a large jet is on the runway at night",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 1,
+    "filename": "test_pdf_page1_img1.png"
+  },
+  "8": {
+    "image_path": "data/pdf_extracted/test_pdf_page7_img0.png",
+    "caption": "the exterior of the new building at the university of british columbia",
+    "ocr_text": "SELES -",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 7,
+    "filename": "test_pdf_page7_img0.png"
+  },
+  "9": {
+    "image_path": "data/pdf_extracted/test_pdf_page8_img0.png",
+    "caption": "a black and white photo of a man with a beard",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 8,
+    "filename": "test_pdf_page8_img0.png"
+  },
+  "10": {
+    "image_path": "data/pdf_extracted/test_pdf_page21_img0.png",
+    "caption": "a black and white photo of a man with a beard",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 21,
+    "filename": "test_pdf_page21_img0.png"
+  },
+  "11": {
+    "image_path": "data/pdf_extracted/test_pdf_page24_img0.png",
+    "caption": "a black and white photo of a man with a beard",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 24,
+    "filename": "test_pdf_page24_img0.png"
+  },
+  "12": {
+    "image_path": "data/pdf_extracted/test_pdf_page68_img0.png",
+    "caption": "the cover of the book, ' the art of the modern age '",
+    "ocr_text": "Jeffreys Henry LLP\n\nreset ox 0s 2,\nSFE oousucet momjtrasnencom \u2014 QB) Merson KS! aan\n\nLondon EC1V SEE wwnw.effreyshenry.com resemcenenon wer To",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 68,
+    "filename": "test_pdf_page68_img0.png"
+  },
+  "13": {
+    "image_path": "data/pdf_extracted/test_pdf_page77_img0.png",
+    "caption": "the cover of the album, ' the sound of the night '",
+    "ocr_text": "Computershare",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 77,
+    "filename": "test_pdf_page77_img0.png"
+  },
+  "14": {
+    "image_path": "data/pdf_extracted/test_pdf_page78_img0.png",
+    "caption": "structural monitoring systems, inc",
+    "ocr_text": "STRUCTURAL\n\nMONITORING\n\nSYSTEMS\nple\n\nfo",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 78,
+    "filename": "test_pdf_page78_img0.png"
+  },
+  "15": {
+    "image_path": "data/pdf_extracted/test_pdf_page78_img1.png",
+    "caption": "a globe with binary numbers and a binary code",
+    "ocr_text": "oo\nean oro\n\netme\n\n7\n\u2018**0010L000011,0.00\u00a50V0\u00b0\n\n04, vo\n\u201c21201001001 10040,00/00\u00a500\"\"",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/test_pdf.pdf",
+    "page_num": 78,
+    "filename": "test_pdf_page78_img1.png"
+  },
+  "16": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page1_img0.png",
+    "caption": "a sheep with the words kind country",
+    "ocr_text": "Country",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 1,
+    "filename": "Cow-Information-Sheets_page1_img0.png"
+  },
+  "17": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page1_img1.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 1,
+    "filename": "Cow-Information-Sheets_page1_img1.png"
+  },
+  "18": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page1_img2.png",
+    "caption": "a cow with horns and horns on it ' s head",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 1,
+    "filename": "Cow-Information-Sheets_page1_img2.png"
+  },
+  "19": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img0.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img0.png"
+  },
+  "20": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img1.png",
+    "caption": "a brown cow standing in a field",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img1.png"
+  },
+  "21": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img2.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img2.png"
+  },
+  "22": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img3.png",
+    "caption": "a cow eating grass on a black background",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img3.png"
+  },
+  "23": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img4.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img4.png"
+  },
+  "24": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img5.png",
+    "caption": "a cow walking across a lush green field",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img5.png"
+  },
+  "25": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img6.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img6.png"
+  },
+  "26": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img7.png",
+    "caption": "a display of meat",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img7.png"
+  },
+  "27": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img8.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img8.png"
+  },
+  "28": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img9.png",
+    "caption": "dairy products on a wooden table",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img9.png"
+  },
+  "29": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img10.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img10.png"
+  },
+  "30": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page2_img11.png",
+    "caption": "a brown leather chair",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 2,
+    "filename": "Cow-Information-Sheets_page2_img11.png"
+  },
+  "31": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img0.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img0.png"
+  },
+  "32": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img1.png",
+    "caption": "a cow and a calf",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img1.png"
+  },
+  "33": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img2.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img2.png"
+  },
+  "34": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img3.png",
+    "caption": "two cows standing on a grassy hill",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img3.png"
+  },
+  "35": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img4.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img4.png"
+  },
+  "36": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img5.png",
+    "caption": "a herd of cattle",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img5.png"
+  },
+  "37": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img6.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img6.png"
+  },
+  "38": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img7.png",
+    "caption": "a brown cow",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img7.png"
+  },
+  "39": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img8.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img8.png"
+  },
+  "40": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page3_img9.png",
+    "caption": "a cow sticking its tongue out to the camera",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 3,
+    "filename": "Cow-Information-Sheets_page3_img9.png"
+  },
+  "41": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img0.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img0.png"
+  },
+  "42": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img1.png",
+    "caption": "a group of cows",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img1.png"
+  },
+  "43": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img2.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img2.png"
+  },
+  "44": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img3.png",
+    "caption": "a cow with a white background",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img3.png"
+  },
+  "45": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img4.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img4.png"
+  },
+  "46": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img5.png",
+    "caption": "a herd of cows",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img5.png"
+  },
+  "47": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img6.png",
+    "caption": "a black background with a white and red flower",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img6.png"
+  },
+  "48": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page4_img7.png",
+    "caption": "a black and white photo of cows in a pen",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 4,
+    "filename": "Cow-Information-Sheets_page4_img7.png"
+  },
+  "49": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page5_img0.png",
+    "caption": "a poster showing different breeds of cattle",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 5,
+    "filename": "Cow-Information-Sheets_page5_img0.png"
+  },
+  "50": {
+    "image_path": "data/pdf_extracted/Cow-Information-Sheets_page5_img1.png",
+    "caption": "a diagram of the cow ' s digest",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Cow-Information-Sheets.pdf",
+    "page_num": 5,
+    "filename": "Cow-Information-Sheets_page5_img1.png"
+  },
+  "51": {
+    "image_path": "data/pdf_extracted/somatosensory_page2_img0.png",
+    "caption": "the diagram shows the muscles and their functions",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/somatosensory.pdf",
+    "page_num": 2,
+    "filename": "somatosensory_page2_img0.png"
+  },
+  "52": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page1_img0.png",
+    "caption": "a bird flying in the air over a field",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 1,
+    "filename": "Photo gallery_Gujarat_page1_img0.png"
+  },
+  "53": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page1_img1.png",
+    "caption": "a pink flamingo walking across a body of water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 1,
+    "filename": "Photo gallery_Gujarat_page1_img1.png"
+  },
+  "54": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page1_img2.png",
+    "caption": "a bird standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 1,
+    "filename": "Photo gallery_Gujarat_page1_img2.png"
+  },
+  "55": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img0.png",
+    "caption": "a group of birds standing on a beach",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img0.png"
+  },
+  "56": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img1.png",
+    "caption": "a bird standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img1.png"
+  },
+  "57": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img2.png",
+    "caption": "a duck is standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img2.png"
+  },
+  "58": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img3.png",
+    "caption": "a bird standing in the water with its beak open",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img3.png"
+  },
+  "59": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img4.png",
+    "caption": "a bird standing on the ground with its beak open",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img4.png"
+  },
+  "60": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page2_img5.png",
+    "caption": "a flock of birds flying over a body of water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 2,
+    "filename": "Photo gallery_Gujarat_page2_img5.png"
+  },
+  "61": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img0.png",
+    "caption": "two birds standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img0.png"
+  },
+  "62": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img1.png",
+    "caption": "a group of birds standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img1.png"
+  },
+  "63": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img2.png",
+    "caption": "a bird walking across a body of water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img2.png"
+  },
+  "64": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img3.png",
+    "caption": "a bird standing in a field of grass",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img3.png"
+  },
+  "65": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img4.png",
+    "caption": "a group of birds walking on a beach",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img4.png"
+  },
+  "66": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page3_img5.png",
+    "caption": "a bird standing on the beach",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 3,
+    "filename": "Photo gallery_Gujarat_page3_img5.png"
+  },
+  "67": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img0.png",
+    "caption": "a group of birds standing on a beach",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img0.png"
+  },
+  "68": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img1.png",
+    "caption": "a group of seaguls",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img1.png"
+  },
+  "69": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img2.png",
+    "caption": "a bird is splashing water on a bird",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img2.png"
+  },
+  "70": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img3.png",
+    "caption": "a bird swimming in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img3.png"
+  },
+  "71": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img4.png",
+    "caption": "a bird walking across a dirt covered field",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img4.png"
+  },
+  "72": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page4_img5.png",
+    "caption": "a group of geese",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 4,
+    "filename": "Photo gallery_Gujarat_page4_img5.png"
+  },
+  "73": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img0.png",
+    "caption": "a bird standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img0.png"
+  },
+  "74": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img1.png",
+    "caption": "two birds standing on the sand near the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img1.png"
+  },
+  "75": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img2.png",
+    "caption": "a flock of birds flying in the sky",
+    "ocr_text": "L-\nay",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img2.png"
+  },
+  "76": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img3.png",
+    "caption": "a small bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img3.png"
+  },
+  "77": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img4.png",
+    "caption": "a bird standing in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img4.png"
+  },
+  "78": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page5_img5.png",
+    "caption": "a bird swimming in the water",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 5,
+    "filename": "Photo gallery_Gujarat_page5_img5.png"
+  },
+  "79": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img0.png",
+    "caption": "a bird sitting on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img0.png"
+  },
+  "80": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img1.png",
+    "caption": "a small bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img1.png"
+  },
+  "81": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img2.png",
+    "caption": "a bird sitting on a rock in the dirt",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img2.png"
+  },
+  "82": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img3.png",
+    "caption": "a small bird sitting on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img3.png"
+  },
+  "83": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img4.png",
+    "caption": "two flamingos flying in the sky",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img4.png"
+  },
+  "84": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page6_img5.png",
+    "caption": "a bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 6,
+    "filename": "Photo gallery_Gujarat_page6_img5.png"
+  },
+  "85": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img0.png",
+    "caption": "a bird standing on a dirt covered ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img0.png"
+  },
+  "86": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img1.png",
+    "caption": "a bird flying in the sky",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img1.png"
+  },
+  "87": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img2.png",
+    "caption": "a bird standing on the ground with its head turned",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img2.png"
+  },
+  "88": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img3.png",
+    "caption": "a bird sitting on a rock in the desert",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img3.png"
+  },
+  "89": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img4.png",
+    "caption": "a bird sitting on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img4.png"
+  },
+  "90": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img5.png",
+    "caption": "a bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img5.png"
+  },
+  "91": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page7_img6.png",
+    "caption": "a bird perched on top of a tree",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 7,
+    "filename": "Photo gallery_Gujarat_page7_img6.png"
+  },
+  "92": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img0.png",
+    "caption": "a small bird perched on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img0.png"
+  },
+  "93": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img1.png",
+    "caption": "a bird standing on a rock",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img1.png"
+  },
+  "94": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img2.png",
+    "caption": "a small bird perched on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img2.png"
+  },
+  "95": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img3.png",
+    "caption": "a small bird perched on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img3.png"
+  },
+  "96": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img4.png",
+    "caption": "a small bird sitting on a rock in the desert",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img4.png"
+  },
+  "97": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page8_img5.png",
+    "caption": "a black and white bird standing on a rock",
+    "ocr_text": "aad) ~\n\nx\n.",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 8,
+    "filename": "Photo gallery_Gujarat_page8_img5.png"
+  },
+  "98": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img0.png",
+    "caption": "a bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img0.png"
+  },
+  "99": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img1.png",
+    "caption": "a bird sitting on a rock",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img1.png"
+  },
+  "100": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img2.png",
+    "caption": "a bird standing in the grass",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img2.png"
+  },
+  "101": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img3.png",
+    "caption": "a small bird standing on the ground",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img3.png"
+  },
+  "102": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img4.png",
+    "caption": "a group of birds",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img4.png"
+  },
+  "103": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page9_img5.png",
+    "caption": "a black and white bird sitting on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 9,
+    "filename": "Photo gallery_Gujarat_page9_img5.png"
+  },
+  "104": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img0.png",
+    "caption": "a small bird perched on a stick",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img0.png"
+  },
+  "105": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img1.png",
+    "caption": "a bird sitting on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img1.png"
+  },
+  "106": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img2.png",
+    "caption": "a small bird standing on a piece of wood",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img2.png"
+  },
+  "107": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img3.png",
+    "caption": "a bird is standing on a rock",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img3.png"
+  },
+  "108": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img4.png",
+    "caption": "a bird perched on a tree branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img4.png"
+  },
+  "109": {
+    "image_path": "data/pdf_extracted/Photo gallery_Gujarat_page10_img5.png",
+    "caption": "a bird sitting on a branch",
+    "ocr_text": "",
+    "source_type": "pdf_page",
+    "source_file": "data/raw/images/Photo gallery_Gujarat.pdf",
+    "page_num": 10,
+    "filename": "Photo gallery_Gujarat_page10_img5.png"
   }
 }

@@ -1,208 +1,208 @@
-import os
-import json
+import os, json
 import numpy as np
 import faiss
-import pytesseract
 import fitz
+import pytesseract
 from PIL import Image
 from io import BytesIO
 from pathlib import Path
+
 from langchain_core.documents import Document
+from langchain_community.document_loaders import TextLoader, CSVLoader, Docx2txtLoader
 from transformers import BlipProcessor, BlipForConditionalGeneration
+
 from embeddings.clip_embedder import CLIPEmbedder
 from pipelines.ingest import chunk_documents, build_vector_pipeline
 from vectorstore.bm25_store import build_bm25_index
 
-FAISS_INDEX_PATH = "vectorstore/image_faiss.index"
-METADATA_PATH    = "vectorstore/image_metadata.json"
-VECTORSTORE_DIR  = Path("vectorstore")
-EMBEDDING_DIM    = 512
+RAW_DIR             = Path("data/raw")
+VECTORSTORE_DIR     = Path("vectorstore")
+IMAGES_SAVE_DIR     = Path("data/pdf_extracted")
+IMAGE_FAISS_PATH    = "vectorstore/image_faiss.index"
+IMAGE_META_PATH     = "vectorstore/image_metadata.json"
+IMAGE_EMBEDDING_DIM = 512
 
-print("[Setup] Loading CLIP...")
-clip = CLIPEmbedder()
+SUPPORTED_IMAGES = ('.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff')
+SUPPORTED_DOCS   = ('.pdf', '.txt', '.csv', '.docx')
 
-print("[Setup] Loading BLIP...")
-blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-blip_model     = BlipForConditionalGeneration.from_pretrained( "Salesforce/blip-image-captioning-base")
-print("[Setup] Done.\n")
+_clip = None
+_blip_processor = None
+_blip_model = None
 
+def get_clip():
+    global _clip
+    if _clip is None:
+        _clip = CLIPEmbedder()
+    return _clip
 
-def _load_or_create_faiss():
+def get_blip():
+    global _blip_processor, _blip_model
+    if _blip_model is None:
+        _blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+        _blip_model     = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+    return _blip_processor, _blip_model
+
+def load_image_index():
     os.makedirs("vectorstore", exist_ok=True)
-    if os.path.exists(FAISS_INDEX_PATH):
-        index = faiss.read_index(FAISS_INDEX_PATH)
-        print(f"[FAISS-image] Loaded — {index.ntotal} vectors")
-    else:
-        index = faiss.IndexFlatIP(EMBEDDING_DIM)
-        print("[FAISS-image] Created new index")
-    return index
+    if os.path.exists(IMAGE_FAISS_PATH):
+        return faiss.read_index(IMAGE_FAISS_PATH)
+    return faiss.IndexFlatIP(IMAGE_EMBEDDING_DIM)
 
-def _save_faiss(index):
-    faiss.write_index(index, FAISS_INDEX_PATH)
-
-def _load_metadata() -> dict:
-    if os.path.exists(METADATA_PATH):
-        with open(METADATA_PATH) as f:
+def load_image_meta():
+    if os.path.exists(IMAGE_META_PATH):
+        with open(IMAGE_META_PATH) as f:
             return json.load(f)
     return {}
 
-def _save_metadata(meta: dict):
-    with open(METADATA_PATH, "w") as f:
+def save_image_index(index):
+    faiss.write_index(index, IMAGE_FAISS_PATH)
+
+def save_image_meta(meta):
+    with open(IMAGE_META_PATH, "w") as f:
         json.dump(meta, f, indent=2)
 
-def _is_already_indexed(image_id: str, meta: dict) -> bool:
-    return any(v.get("image_path") == image_id for v in meta.values())
-
-
-def run_ocr(image: Image.Image) -> str:
+def run_ocr(image):
     try:
-        x = pytesseract.image_to_string(image).strip()
-        print(x)
-        return x
-    except Exception as e:
-        print(f" [OCR] Skipped: {e}")
+        return pytesseract.image_to_string(image).strip()
+    except:
         return ""
 
-def run_caption(image: Image.Image) -> str:
-    inputs = blip_processor(image, return_tensors="pt")
-    out    = blip_model.generate(**inputs, max_new_tokens=60)
-    return blip_processor.decode(out[0], skip_special_tokens=True)
+def run_caption(image):
+    processor, model = get_blip()
+    inputs = processor(image, return_tensors="pt")
+    out    = model.generate(**inputs, max_new_tokens=60)
+    return processor.decode(out[0], skip_special_tokens=True)
 
-
-def _store_one_image(image: Image.Image, image_id: str, source_type: str, source_file: str, page_num: int = None):
+def store_image(image, saved_image_path, source_type, source_file, page_num=None):
     image = image.convert("RGB")
-    index = _load_or_create_faiss()
-    meta  = _load_metadata()
+    index = load_image_index()
+    meta  = load_image_meta()
 
-    if _is_already_indexed(image_id, meta):
-        print(f"  [Skip] Already indexed: {os.path.basename(image_id)}")
+    if any(v.get("image_path") == saved_image_path for v in meta.values()):
+        print(f"  [Skip] {os.path.basename(saved_image_path)}")
         return
 
-    ocr = run_ocr(image)
-    print(f"  [OCR] {ocr[:70]}..." if ocr else "  [OCR]     (none)")
+    ocr       = run_ocr(image)
+    caption   = run_caption(image)
+    embedding = np.array([get_clip().embed_image(image)], dtype=np.float32)
+    position  = index.ntotal
 
-    embedding = np.array([clip.embed_image(image)], dtype=np.float32)
-
-    caption = run_caption(image)
-    print(f"  [Caption] {caption}")
-
-    position = index.ntotal
     index.add(embedding)
-    _save_faiss(index)
+    save_image_index(index)
 
     meta[str(position)] = {
-        "image_path"  : image_id,
+        "image_path"  : saved_image_path,
         "caption"     : caption,
         "ocr_text"    : ocr,
         "source_type" : source_type,
         "source_file" : source_file,
         "page_num"    : page_num,
-        "filename"    : os.path.basename(source_file)
+        "filename"    : os.path.basename(saved_image_path)
     }
-    _save_metadata(meta)
-    print(f"[Stored] FAISS pos={position}\n")
+    save_image_meta(meta)
+    print(f"  [Image stored] pos={position} | {caption[:60]}")
 
-
-def ingest_image_file(image_path: str):
+def process_image_file(path, text_docs):
     try:
-        image = Image.open(image_path)
+        store_image(Image.open(path), path, "image_file", path)
     except Exception as e:
-        print(f"  [Error] Cannot open {image_path}: {e}")
-        return
-    _store_one_image(
-        image       = image,
-        image_id    = image_path,
-        source_type = "image_file",
-        source_file = image_path
-    )
+        print(f"  [Error] {path}: {e}")
 
-
-def ingest_pdf(pdf_path: str):
-    print(f"\n[PDF] Processing: {pdf_path}")
+def process_pdf(path, text_docs):
+    print(f"\n  PDF: {os.path.basename(path)}")
     try:
-        doc = fitz.open(pdf_path)
+        pdf = fitz.open(path)
     except Exception as e:
-        print(f"  [Error] Cannot open PDF: {e}")
+        print(f"  [Error] {e}")
         return
 
-    text_documents = []
-    total_images   = 0
+    pdf_name = Path(path).stem
 
-    for page_num in range(len(doc)):
-        page      = doc[page_num]
-        page_text = page.get_text().strip()
-        page_imgs = page.get_images(full=True)
+    for page_num in range(len(pdf)):
+        page = pdf[page_num]
+        text = page.get_text().strip()
+        imgs = page.get_images(full=True)
 
-        if page_text:
-            lc_doc = Document(
-                page_content=page_text,
-                metadata={
-                    "source" : pdf_path,
-                    "page"   : page_num + 1,
-                    "type"   : "pdf_text"
-                }
-            )
-            text_documents.append(lc_doc)
-            print(f"  Page {page_num+1}: {len(page_text)} chars of text → text pipeline")
+        if text:
+            text_docs.append(Document(
+                page_content = text,
+                metadata     = {"source": path, "page": page_num + 1, "type": "pdf_text"}
+            ))
 
-        if page_imgs:
-            print(f"  Page {page_num+1}: {len(page_imgs)} image(s) → image pipeline")
-            for img_idx, img_info in enumerate(page_imgs):
-                xref = img_info[0]
-                try:
-                    base_img  = doc.extract_image(xref)
-                    pil_image = Image.open(BytesIO(base_img["image"]))
-                    image_id  = f"{pdf_path}::page_{page_num+1}::img_{img_idx}"
-                    _store_one_image(
-                        image       = pil_image,
-                        image_id    = image_id,
-                        source_type = "pdf_page",
-                        source_file = pdf_path,
-                        page_num    = page_num + 1
-                    )
-                    total_images += 1
-                except Exception as e:
-                    print(f"  [Warning] img {img_idx} page {page_num+1}: {e}")
+        for idx, img_info in enumerate(imgs):
+            try:
+                raw = pdf.extract_image(img_info[0])
+                img = Image.open(BytesIO(raw["image"]))
 
-        if not page_text and not page_imgs:
-            print(f"  Page {page_num+1}: empty — skipped")
+                IMAGES_SAVE_DIR.mkdir(parents=True, exist_ok=True)
+                save_filename = f"{pdf_name}_page{page_num + 1}_img{idx}.png"
+                save_path     = str(IMAGES_SAVE_DIR / save_filename)
 
-    doc.close()
+                img.convert("RGB").save(save_path)
 
-    if text_documents:
-        print(f"\n  [Text] {len(text_documents)} pages → chunking + embedding...")
+                store_image(img, save_path, "pdf_page", path, page_num + 1)
 
-        chunks = chunk_documents(text_documents)
+            except Exception as e:
+                print(f"  [Warning] page {page_num+1} img {idx}: {e}")
 
+    pdf.close()
+
+def process_text_file(path, text_docs):
+    ext = Path(path).suffix.lower()
+    try:
+        if ext == ".txt":
+            loader = TextLoader(path, encoding="utf-8")
+        elif ext == ".csv":
+            loader = CSVLoader(path, encoding="utf-8")
+        elif ext == ".docx":
+            loader = Docx2txtLoader(path)
+        else:
+            return
+        docs = loader.load()
+        for doc in docs:
+            doc.metadata.setdefault("page", 0)
+            doc.metadata["source"] = path
+        text_docs.extend(docs)
+        print(f"  [{ext.upper()}] {os.path.basename(path)} → {len(docs)} section(s)")
+    except Exception as e:
+        print(f"  [Error] {path}: {e}")
+
+def ingest_folder(folder_path=None):
+    folder = Path(folder_path or RAW_DIR)
+    if not folder.exists():
+        print(f"Folder not found: {folder}. Create data/raw/ and add your files.")
+        return
+
+    all_files = list(folder.rglob("*"))
+    img_files = [f for f in all_files if f.suffix.lower() in SUPPORTED_IMAGES]
+    doc_files = [f for f in all_files if f.suffix.lower() in SUPPORTED_DOCS]
+
+    print(f"\nFound {len(img_files)} images and {len(doc_files)} documents in {folder}\n")
+
+    text_docs = []
+
+    for f in img_files:
+        process_image_file(str(f), text_docs)
+
+    for f in doc_files:
+        if f.suffix.lower() == ".pdf":
+            process_pdf(str(f), text_docs)
+        else:
+            process_text_file(str(f), text_docs)
+
+    if text_docs:
+        print(f"\nBuilding text index from {len(text_docs)} pages across all files...")
+        VECTORSTORE_DIR.mkdir(parents=True, exist_ok=True)
+        chunks = chunk_documents(text_docs)
         build_vector_pipeline(chunks, VECTORSTORE_DIR)
-
         build_bm25_index(chunks, VECTORSTORE_DIR)
+        print(f"Text index saved: {len(chunks)} chunks")
+    else:
+        print("No text content found.")
 
-        print(f"  [Text] {len(chunks)} chunks → text FAISS + BM25 ")
+    index = load_image_index()
+    meta  = load_image_meta()
+    print(f"\nDone — {index.ntotal} image vectors, {len(meta)} image entries, {len(text_docs)} text pages")
 
-    print(f"\n[PDF Done] images={total_images}, text_pages={len(text_documents)}")
-
-
-def ingest_folder(folder_path: str):
-    supported_img = ('.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff')
-    supported_pdf = ('.pdf',)
-
-    all_files = os.listdir(folder_path)
-    img_files = [f for f in all_files if f.lower().endswith(supported_img)]
-    pdf_files = [f for f in all_files if f.lower().endswith(supported_pdf)]
-
-    print(f"\n[Ingest] '{folder_path}'  —  {len(img_files)} images, {len(pdf_files)} PDFs")
-    print("=" * 55)
-
-    for fname in img_files:
-        print(f"\n→ Image: {fname}")
-        ingest_image_file(os.path.join(folder_path, fname))
-
-    for fname in pdf_files:
-        ingest_pdf(os.path.join(folder_path, fname))
-
-    index = _load_or_create_faiss()
-    meta  = _load_metadata()
-    print("=" * 55)
-    print(f"[Done] Image FAISS vectors   : {index.ntotal}")
-    print(f"[Done] Image metadata entries: {len(meta)}")
+if __name__ == "__main__":
+    ingest_folder()

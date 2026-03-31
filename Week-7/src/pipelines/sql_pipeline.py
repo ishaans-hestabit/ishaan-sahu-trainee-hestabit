@@ -1,4 +1,3 @@
-import os
 import re
 import sys
 import sqlite3
@@ -84,7 +83,7 @@ def answer_question(question: str, db_path: str = DB_PATH) -> dict:
     if not val["valid"]:
         print(f"  FAILED — {val['error']}")
         return {"success": False, "error": val["error"], "question": question, "sql": gen["sql"], "answer": ""}
-    print("  OK — safe to execute ✅")
+    print("  OK — safe to execute")
 
     
     print("Executing SQL on database...")

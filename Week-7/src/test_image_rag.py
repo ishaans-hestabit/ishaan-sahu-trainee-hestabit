@@ -1,6 +1,6 @@
 import os
 from pipelines.image_ingest import ingest_folder
-from retriever.image_search  import text_to_image, image_to_image, image_to_text_answer, show_stats
+from retriever.image_search  import text_to_image, image_to_image, image_to_text_answer
 
 DATA_FOLDER = "data/raw/images"
 os.makedirs(DATA_FOLDER, exist_ok=True)
@@ -22,7 +22,7 @@ else:
     print(sample)
 
     # Mode 1: text → image
-    text_to_image("what is Somatosensory?", n=3)
+    # text_to_image("what is Somatosensory?", n=3)
 
     # Mode 2: image → image
     # image_to_image(sample, n=3)

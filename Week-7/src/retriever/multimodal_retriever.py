@@ -9,79 +9,85 @@ from retriever.image_search import _search as image_faiss_search
 from embeddings.clip_embedder import CLIPEmbedder
 from pipelines.context_builder import build_context
 
-VECTORSTORE_DIR = Path("vectorstore")
-clip = CLIPEmbedder()
+VECTORSTORE_DIR    = Path("vectorstore")
+SUPPORTED_IMG_EXTS = {'.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff'}
 
-def _get_image_results(query_vector: list, n: int = 3) -> list:
+_clip = None
+
+def get_clip():
+    global _clip
+    if _clip is None:
+        _clip = CLIPEmbedder()
+    return _clip
+
+
+def _search_images(query_vector, query_text, n):
+    if n <= 0:
+        return []
     try:
-        return image_faiss_search(query_vector, n)
+       
+        return image_faiss_search(query_vector, n=n, query_text=query_text)
     except FileNotFoundError:
-        print("  [Image] No image index found — skipping image retrieval.")
         return []
 
 
-def _image_to_text_description(image_path: str) -> str:
-    
-    image = Image.open(image_path).convert("RGB")
 
+def _image_to_text(image_path):
+    image    = Image.open(image_path).convert("RGB")
     caption  = run_caption(image)
     ocr_text = run_ocr(image)
-
-    parts = [caption]
-    if ocr_text:
-        parts.append(ocr_text)
-
-    combined = " ".join(parts).strip()
-    print(f"  [Image→Text query] '{combined[:100]}...'")
-    return combined
+    return (caption + " " + ocr_text).strip() if ocr_text else caption
 
 
-def _build_combined_context(text_results: list, image_results: list) -> str:
+
+def _build_context(text_results, image_results):
     parts = []
 
     if text_results:
-        text_ctx = build_context("", text_results)
-        parts.append("=== TEXT CONTEXT ===\n" + text_ctx["context_string"])
+        ctx = build_context("", text_results)
+        parts.append("=== TEXT CONTEXT ===\n" + ctx["context_string"])
+
 
     if image_results:
-        img_lines = ["=== IMAGE CONTEXT ==="]
+        lines = ["=== IMAGE CONTEXT ==="]
+
         for i, r in enumerate(image_results, 1):
 
             src = f"[PDF p.{r['page_num']}]" if r.get("source_type") == "pdf_page" else "[IMG]"
-
-            img_lines.append(f"\n[Image {i}] {src} {r['filename']}  (similarity={r['similarity']})")
-            img_lines.append(f"  Caption : {r['caption']}")
+            lines.append(f"\n[Image {i}] {src} {r['filename']} (similarity={r['similarity']})")
+            lines.append(f"  Caption : {r['caption']}")
             
             if r.get("ocr_text"):
-                ocr = r["ocr_text"][:300] + ("..." if len(r["ocr_text"]) > 300 else "")
-                img_lines.append(f"  OCR text: {ocr}")
-        parts.append("\n".join(img_lines))
+                lines.append(f"  OCR text: {r['ocr_text'][:300]}")
+        parts.append("\n".join(lines))
 
     return "\n\n" + ("\n\n" + "─" * 50 + "\n\n").join(parts)
 
 
-def retrieve_from_text(query: str, top_k_text: int = 5, top_k_images: int = 3) -> dict:
-    
-    print(f"\n{'='*55}")
-    print(f"[Multimodal Retrieve — TEXT] '{query}'")
-    print(f"{'='*55}")
 
-    print("\nHybrid text retrieval (FAISS + BM25 + RRF)...")
+
+def _text_retrieve(query, top_k):
+
     vectorstore, bm25_data = load_indexes(VECTORSTORE_DIR)
-    raw_results = hybrid_retrieve(query, vectorstore, bm25_data, top_k=top_k_text * 2)
 
-    print("Reranking text results...")
-    text_results = rerank(query, raw_results, top_k=top_k_text)
+    raw = hybrid_retrieve(query, vectorstore, bm25_data, top_k=top_k * 2)
 
-    print("Image retrieval via CLIP text embedding...")
-    query_vector  = clip.embed_text(query)
-    image_results = _get_image_results(query_vector, n=top_k_images)
+    return rerank(query, raw, top_k=top_k)
 
-    context = _build_combined_context(text_results, image_results)
 
-    text_ctx = build_context(query, text_results) if text_results else {"sources": []}
 
-    print(f"\n[Done] text={len(text_results)} chunks, images={len(image_results)}")
+def retrieve_from_text(query, top_k_text=5, top_k_images=3):
+
+    text_results  = _text_retrieve(query, top_k_text) if top_k_text > 0 else []
+
+    query_vector  = get_clip().embed_text(query)
+
+    image_results = _search_images(query_vector, query_text=query, n=top_k_images)
+
+    context       = _build_context(text_results, image_results)
+
+    sources       = build_context(query, text_results)["sources"] if text_results else []
+
 
     return {
         "query_type"   : "text",
@@ -89,37 +95,32 @@ def retrieve_from_text(query: str, top_k_text: int = 5, top_k_images: int = 3) -
         "text_results" : text_results,
         "image_results": image_results,
         "context"      : context,
-        "sources"      : text_ctx.get("sources", [])
+        "sources"      : sources
     }
 
 
-def retrieve_from_image(image_path: str, top_k_text: int = 5, top_k_images: int = 3) -> dict:
+def retrieve_from_image(image_path, top_k_text=5, top_k_images=3):
 
-    print(f"\n{'='*55}")
-    print(f"[Multimodal Retrieve — IMAGE] '{os.path.basename(image_path)}'")
-    print(f"{'='*55}")
+    query_image   = Image.open(image_path).convert("RGB")
 
-    print("\nVisual similarity search (CLIP image embedding)...")
-    query_image  = Image.open(image_path).convert("RGB")
-    query_vector = clip.embed_image(query_image)
-    image_results = _get_image_results(query_vector, n=top_k_images)
+    query_vector  = get_clip().embed_image(query_image)
 
-    print("Converting image to text description for text retrieval...")
-    text_query = _image_to_text_description(image_path)
+    text_query    = _image_to_text(image_path)
 
-    print("Hybrid text retrieval using image description...")
-    text_results = []
-    try:
-        vectorstore, bm25_data = load_indexes(VECTORSTORE_DIR)
-        raw_results  = hybrid_retrieve(text_query, vectorstore, bm25_data, top_k=top_k_text * 2)
-        text_results = rerank(text_query, raw_results, top_k=top_k_text)
-    except Exception as e:
-        print(f"[Text] Retrieval failed: {e}")
+    image_results = _search_images(query_vector, query_text=text_query, n=top_k_images)
+    
+    text_results  = []
 
-    context = _build_combined_context(text_results, image_results)
-    text_ctx = build_context(text_query, text_results) if text_results else {"sources": []}
+    if top_k_text > 0:
+        try:
+            text_results = _text_retrieve(text_query, top_k_text)
+        except Exception as e:
+            print(f"[Text retrieval failed] {e}")
 
-    print(f"\n[Done] text={len(text_results)} chunks, images={len(image_results)}")
+    context = _build_context(text_results, image_results)
+
+    sources = build_context(text_query, text_results)["sources"] if text_results else []
+
     return {
         "query_type"    : "image",
         "query"         : image_path,
@@ -127,15 +128,14 @@ def retrieve_from_image(image_path: str, top_k_text: int = 5, top_k_images: int 
         "text_results"  : text_results,
         "image_results" : image_results,
         "context"       : context,
-        "sources"       : text_ctx.get("sources", [])
+        "sources"       : sources
     }
 
-def retrieve(query: str, top_k_text: int = 5, top_k_images: int = 3) -> dict:
-   
-    supported_img_exts = {'.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff'}
+def retrieve(query, top_k_text=5, top_k_images=3):
+    
     ext = Path(query).suffix.lower()
 
-    if ext in supported_img_exts and os.path.exists(query):
+    if ext in SUPPORTED_IMG_EXTS and os.path.exists(query):
         return retrieve_from_image(query, top_k_text, top_k_images)
-    else:
-        return retrieve_from_text(query, top_k_text, top_k_images)
+    
+    return retrieve_from_text(query, top_k_text, top_k_images)
