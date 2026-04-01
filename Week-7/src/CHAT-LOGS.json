@@ -241,5 +241,11 @@
     "answer": "I don't have enough information in the documents to answer this. The provided context does not mention your age. It appears to be related to tax forms and customer information, but does not contain any information about your age.",
     "faithfulness": 0.18,
     "timestamp": "2026-03-30T19:53:55.495594"
+  },
+  {
+    "mode": "image",
+    "question": "dog",
+    "count": 3,
+    "timestamp": "2026-03-31T22:55:47.231322"
   }
 ]
