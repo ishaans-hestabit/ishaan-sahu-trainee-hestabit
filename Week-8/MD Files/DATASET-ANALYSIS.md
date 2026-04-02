@@ -1,9 +1,6 @@
 # Data Preparation (Day 1)
 
 
-
-## What we do in this day
-
 - Understand basic LLM structure 
 - Prepare dataset for instruction tuning
 - Convert raw data → structured JSONL format
