@@ -25,22 +25,22 @@ IMAGE_EMBEDDING_DIM = 512
 SUPPORTED_IMAGES = ('.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff')
 SUPPORTED_DOCS   = ('.pdf', '.txt', '.csv', '.docx')
 
-_clip = None
-_blip_processor = None
-_blip_model = None
+clip = None
+blip_processor = None
+blip_model = None
 
 def get_clip():
-    global _clip
-    if _clip is None:
-        _clip = CLIPEmbedder()
-    return _clip
+    global clip
+    if clip is None:
+        clip = CLIPEmbedder()
+    return clip
 
 def get_blip():
-    global _blip_processor, _blip_model
-    if _blip_model is None:
-        _blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-        _blip_model     = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
-    return _blip_processor, _blip_model
+    global blip_processor, blip_model
+    if blip_model is None:
+        blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+        blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+    return blip_processor, blip_model
 
 def load_image_index():
     os.makedirs("vectorstore", exist_ok=True)
