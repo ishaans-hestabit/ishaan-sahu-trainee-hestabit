@@ -24,7 +24,7 @@ const AccountSchema = new Schema(
       trim: true,
       unique: true,
       index: true,
-      match: [/^\S+@\S+\.\S+$/, "Invalid email format"]
+      match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email format"]
     },
 
     password: {
