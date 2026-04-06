@@ -3,6 +3,7 @@ import logger from '../utils/logger.js';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+  secure: true,
   auth: {
     user: 'ishaansahu2030@gmail.com',
     pass: 'oznudshytilyxtvj', 
