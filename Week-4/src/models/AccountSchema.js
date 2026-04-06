@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import validator from 'validator';
 
 const { Schema } = mongoose;
 
@@ -24,7 +25,10 @@ const AccountSchema = new Schema(
       trim: true,
       unique: true,
       index: true,
-      match: [/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email format"]
+      validate: {
+      validator: validator.isEmail,
+      message: "Invalid email format"
+    }
     },
 
     password: {
