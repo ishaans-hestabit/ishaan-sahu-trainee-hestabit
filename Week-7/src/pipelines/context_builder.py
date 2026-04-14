@@ -1,19 +1,15 @@
 def build_context(query: str, results: list) -> dict:
 
-    seen_texts = []
+    seen_texts = set()
     chunks_to_use = []
 
     for result in results:
         text = result["doc"].page_content.strip()
         
-        is_duplicate = any(
-            text[:150] == seen[:150]  
-            for seen in seen_texts
-        )
-
-        if not is_duplicate:
-            seen_texts.append(text)
+        if text not in seen_texts:
+            seen_texts.add(text)
             chunks_to_use.append(result)
+
 
     context_parts = []
     sources = []

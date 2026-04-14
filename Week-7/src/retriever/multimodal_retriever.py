@@ -12,27 +12,27 @@ from pipelines.context_builder import build_context
 VECTORSTORE_DIR    = Path("vectorstore")
 SUPPORTED_IMG_EXTS = {'.png', '.jpg', '.jpeg', '.bmp', '.webp', '.tiff'}
 
-_clip = None
+clip = None
 
 def get_clip():
-    global _clip
-    if _clip is None:
-        _clip = CLIPEmbedder()
-    return _clip
+    global clip
+    if clip is None:
+        clip = CLIPEmbedder()
+    return clip
 
 
-def _search_images(query_vector, query_text, n):
+def search_images(query_vector, query_text, n, is_image_query=False):
     if n <= 0:
         return []
     try:
        
-        return image_faiss_search(query_vector, n=n, query_text=query_text)
+        return image_faiss_search(query_vector, n=n, query_text=query_text, is_image_query=is_image_query)
     except FileNotFoundError:
         return []
 
 
 
-def _image_to_text(image_path):
+def image_to_text(image_path):
     image    = Image.open(image_path).convert("RGB")
     caption  = run_caption(image)
     ocr_text = run_ocr(image)
@@ -66,7 +66,7 @@ def _build_context(text_results, image_results):
 
 
 
-def _text_retrieve(query, top_k):
+def text_retrieve(query, top_k):
 
     vectorstore, bm25_data = load_indexes(VECTORSTORE_DIR)
 
@@ -78,11 +78,11 @@ def _text_retrieve(query, top_k):
 
 def retrieve_from_text(query, top_k_text=5, top_k_images=3):
 
-    text_results  = _text_retrieve(query, top_k_text) if top_k_text > 0 else []
+    text_results  = text_retrieve(query, top_k_text) if top_k_text > 0 else []
 
     query_vector  = get_clip().embed_text(query)
 
-    image_results = _search_images(query_vector, query_text=query, n=top_k_images)
+    image_results = search_images(query_vector, query_text=query, n=top_k_images, is_image_query=False)
 
     context       = _build_context(text_results, image_results)
 
@@ -105,15 +105,15 @@ def retrieve_from_image(image_path, top_k_text=5, top_k_images=3):
 
     query_vector  = get_clip().embed_image(query_image)
 
-    text_query    = _image_to_text(image_path)
+    text_query    = image_to_text(image_path)
 
-    image_results = _search_images(query_vector, query_text=text_query, n=top_k_images)
+    image_results = search_images(query_vector, query_text=text_query, n=top_k_images, is_image_query=True)
     
     text_results  = []
 
     if top_k_text > 0:
         try:
-            text_results = _text_retrieve(text_query, top_k_text)
+            text_results = text_retrieve(text_query, top_k_text)
         except Exception as e:
             print(f"[Text retrieval failed] {e}")
 

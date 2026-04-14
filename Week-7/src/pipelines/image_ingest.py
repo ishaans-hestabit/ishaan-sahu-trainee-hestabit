@@ -86,6 +86,8 @@ def store_image(image, saved_image_path, source_type, source_file, page_num=None
     caption   = run_caption(image)
     embedding = np.array([get_clip().embed_image(image)], dtype=np.float32)
     position  = index.ntotal
+    faiss.normalize_L2(embedding)
+    
 
     index.add(embedding)
     save_image_index(index)

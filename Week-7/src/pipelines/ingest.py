@@ -18,8 +18,8 @@ CLEANED_DIR = Path("data/cleaned")
 CHUNKS_DIR = Path("data/chunks")
 VECTORSTORE_DIR = Path("vectorstore")
 
-CHUNK_SIZE = 600
-CHUNK_OVERLAP = 65
+CHUNK_SIZE = 800
+CHUNK_OVERLAP = 100
 
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 

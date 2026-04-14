@@ -1,7 +1,7 @@
 from langchain_core.documents import Document
 from vectorstore.store import load_vectorstore
 from embeddings.embedder import get_embedding_model
-from vectorstore.bm25_store import load_bm25_data
+from vectorstore.bm25_store import load_bm25_data, tokenize
 
 def load_indexes(vectorstore_dir):
 
@@ -20,14 +20,16 @@ def rrf_combine(semantic_search_results, keyword_search_results, k=25):
     dense_weight  = 1.5
     sparse_weight = 1.0  
 
-    for rank, doc in enumerate(semantic_search_results):
+    for rank, (doc, faiss_score) in enumerate(semantic_search_results):
         doc_id = doc.metadata.get("id")
 
         if doc_id is None:
             continue
 
+        cosine_sim = 1.0 - (faiss_score / 2.0)
+
         if doc_id not in scores:
-            scores[doc_id] = {"doc": doc, "score": 0.0}
+            scores[doc_id] = {"doc": doc, "score": 0.0, "faiss_similarity": cosine_sim}
 
         scores[doc_id]["score"] += dense_weight * (1 / (k + rank + 1))
 
@@ -47,7 +49,7 @@ def rrf_combine(semantic_search_results, keyword_search_results, k=25):
         scores[doc_id]["score"] += sparse_weight * (1 / (k + rank + 1))
 
 
-    # Sort everything by combined score, highest first
+    # Sortnig everything by combined score, highest first
     combined = sorted(scores.values(), key=lambda x: x["score"], reverse=True)
     # print(scores)
     return combined
@@ -55,11 +57,11 @@ def rrf_combine(semantic_search_results, keyword_search_results, k=25):
 
 def hybrid_retrieve(query, vectorstore, bm25_data, top_k):
 
-    fetch_k = top_k * 2
+    fetch_k = top_k * 3
     
-    dense_results = vectorstore.similarity_search(query,k = fetch_k)
+    dense_results = vectorstore.similarity_search_with_score(query, k=fetch_k)
 
-    tokenized_query = query.lower().split()
+    tokenized_query = tokenize(query)
     bm25_scores = bm25_data["index"].get_scores(tokenized_query)
 
 

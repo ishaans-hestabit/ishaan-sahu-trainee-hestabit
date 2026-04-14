@@ -1,10 +1,15 @@
 from rank_bm25 import BM25Okapi
 import pickle
+import re
+
+
+def tokenize(text: str) -> list:
+    return re.findall(r'[a-z0-9]+', text.lower())
 
 def build_bm25_index(chunks, output_dir):
     texts = [chunk.page_content for chunk in chunks]
 
-    tokenized = [text.lower().split() for text in texts]
+    tokenized = [tokenize(text) for text in texts]
 
     bm25 = BM25Okapi(tokenized)
 

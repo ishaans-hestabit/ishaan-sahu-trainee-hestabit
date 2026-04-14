@@ -1,251 +1,716 @@
 [
   {
     "mode": "text",
-    "question": "laptop",
-    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to natural language processing, large language models, and retrieval systems, but does not contain any information about laptops.",
-    "faithfulness": 0.35,
-    "timestamp": "2026-03-30T17:07:50.445193"
+    "question": "what is a cow",
+    "answer": "According to the provided context, a cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. It is a type of cattle, which is a general term that includes cows, bulls, oxen, heifers, steers, bullocks, and calves. A cow is specifically a fully grown female animal of a domesticated breed that has given birth to at least one or two calves, kept to produce beef or milk. Cows are herbivores, eating vegetation such as grass and plants, and are known for their unique characteristics, such as having around 25,000 taste buds and being able to see in color (except for red and green).",
+    "faithfulness": 0.81,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T14:25:55.510609"
+  },
+  {
+    "mode": "image",
+    "question": "what is a cow",
+    "count": 3,
+    "timestamp": "2026-04-10T14:25:55.533451"
   },
   {
     "mode": "text",
-    "question": "laptop",
-    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to various topics such as somatosensory systems, conversational AI, cow information, and retrieval systems, but does not contain any information about laptops.",
-    "faithfulness": 0.41,
-    "timestamp": "2026-03-30T17:08:01.493797"
+    "question": "what is a not a cow",
+    "answer": "According to the provided context, the following are not cows:\n\n1. Bulls - a fully grown male used for breeding purposes.\n2. Oxen - mentioned as part of the general term \"cattle\", but not specifically defined as cows.\n3. Heifers - not explicitly defined, but implied to be young female cattle that have not yet given birth to calves.\n4. Steers - not explicitly defined, but implied to be young male cattle that have been castrated.\n5. Bullocks - not explicitly defined, but implied to be young male cattle.\n6. Calves - young cattle that have not yet become adults.\n\nNote that the term \"cow\" specifically refers to a fully grown female animal of a domesticated breed that has given birth to at least one or two calves, kept to produce beef or milk.",
+    "faithfulness": 0.72,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T14:26:20.085635"
   },
   {
     "mode": "image",
-    "question": "laptop",
+    "question": "what is a not a cow",
     "count": 3,
-    "timestamp": "2026-03-30T17:08:01.499043"
+    "timestamp": "2026-04-10T14:26:20.113109"
   },
   {
     "mode": "image",
-    "question": "laptop",
+    "question": "what is a llm",
     "count": 3,
-    "timestamp": "2026-03-30T17:46:33.760359"
-  },
-  {
-    "mode": "image",
-    "question": "laptop",
-    "count": 3,
-    "timestamp": "2026-03-30T17:46:40.121219"
-  },
-  {
-    "mode": "image",
-    "question": "laptop",
-    "count": 3,
-    "timestamp": "2026-03-30T17:46:41.296258"
+    "timestamp": "2026-04-10T14:32:34.442663"
   },
   {
     "mode": "text",
-    "question": "laptop",
-    "answer": "I don't have enough information in the documents to answer this. The context provided does not mention laptops. It appears to be related to various topics such as somatosensory systems, conversational AI, cow information, and retrieval systems, but does not contain any information about laptops.",
-    "faithfulness": 0.41,
-    "timestamp": "2026-03-30T17:49:34.623029"
+    "question": "breeds of dog",
+    "answer": "According to the context, there are around 340 different dog breeds. These breeds are the result of people breeding dogs to have specific characteristics, such as size, shape, or purpose (e.g., hunting). Examples of dog breeds mentioned in the context include Labrador, Beagle, and Bulldog.",
+    "faithfulness": 0.52,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T14:34:06.025511"
   },
   {
     "mode": "image",
-    "question": "laptop",
+    "question": "breeds of dog",
     "count": 3,
-    "timestamp": "2026-03-30T17:49:34.633201"
-  },
-  {
-    "mode": "text",
-    "question": "can you find email of andrew",
-    "answer": "There are three customers named Andrew. Their emails are:\n\n1. meghanharmon@travis.biz (Andrew Bolton)\n2. monica69@cohen.org (Andrew Weiss)\n3. marieyates@gomez-spencer.info (Andrew Goodman)",
-    "faithfulness": 0.58,
-    "timestamp": "2026-03-30T17:51:19.852951"
-  },
-  {
-    "mode": "text",
-    "question": "show me complete details about all of them?",
-    "answer": "Based on the provided context, I can show you the complete details of the customers mentioned in the chunks. Here are the details:\n\n1. Tina Andrews\n   - Index: 867\n   - Customer Id: 2Ba8B54fb7a9cDB\n   - First Name: Tina\n   - Last Name: Andrews\n   - Company: Dickerson and Sons\n   - City: Charlenebury\n   - Country: Chile\n   - Phone 1: +1-710-467-4230x82225\n   - Phone 2: 001-571-913-7568\n   - Email: karlflynn@riley.com\n   - Subscription Date: 2022-02-03\n   - Website: https://conway-lowery.com/\n\n2. Autumn Soto\n   - Index: 456\n   - Customer Id: 7d719f1bCcaA3Ac\n   - First Name: Autumn\n   - Last Name: Soto\n   - Company: Ho-Long\n   - City: Lake Deanna\n   - Country: Niger\n   - Phone 1: 8241986767\n   - Phone 2: 001-838-932-5550x72809\n   - Email: robertasharp@vasquez.info\n   - Subscription Date: 2022-04-29\n   - Website: https://www.andrews.com/\n\n3. Nicholas Arias\n   - Index: 83\n   - Customer Id: 2bcF27a9daa2EAA\n   - First Name: Nicholas\n   - Last Name: Arias\n   - Company: Yoder-Bowen\n   - City: Lake Gavinburgh\n   - Country: Holy See (Vatican City State)\n   - Phone 1: +1-650-979-8614x97335\n   - Phone 2: +1-034-164-6367\n   - Email: boonealex@cardenas.info\n   - Subscription Date: 2020-01-31\n   - Website: http://www.wood.com/\n\nNote that chunks 3 and 4 do not contain customer information, but rather appear to be excerpts from a financial audit report.",
-    "faithfulness": 0.8,
-    "timestamp": "2026-03-30T17:52:09.328787"
-  },
-  {
-    "mode": "text",
-    "question": "cattle",
-    "answer": "According to the provided context, cattle is a general term that describes animals which are mammals and belong to the genus Bos. Within the general term of cattle are:\n\n* Cows\n* Bulls\n* Oxen\n* Heifers\n* Steers\n* Bullocks\n* Calves\n\nCattle are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach. They can be horned or polled (or hornless), depending on the breed. Cows are the most common type of large domesticated hoofed animals and are a prominent modern member of the subfamily Bovinae.",
-    "faithfulness": 0.91,
-    "timestamp": "2026-03-30T17:53:35.329575"
-  },
-  {
-    "mode": "text",
-    "question": "cattle",
-    "answer": "Cattle is a general term that describes animals which are mammals and belong to the genus Bos. Within the general term of cattle are:\n\n* Cows\n* Bulls\n* Oxen\n* Heifers\n* Steers\n* Bullocks\n* Calves\n\nCows are the most common type of large domesticated hoofed animals and are a prominent modern member of the subfamily Bovinae. They are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach.",
-    "faithfulness": 0.91,
-    "timestamp": "2026-03-30T17:53:53.879468"
-  },
-  {
-    "mode": "image",
-    "question": "cattle",
-    "count": 3,
-    "timestamp": "2026-03-30T17:53:53.884837"
-  },
-  {
-    "mode": "image",
-    "question": "cow",
-    "count": 3,
-    "timestamp": "2026-03-30T18:08:04.743426"
-  },
-  {
-    "mode": "image",
-    "question": "cow",
-    "count": 3,
-    "timestamp": "2026-03-30T18:28:36.304499"
-  },
-  {
-    "mode": "text",
-    "question": "cow",
-    "answer": "Based on the provided context, here are some key points about cows:\n\n* Cows are large grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach.\n* They are herbivores and eat vegetation such as grass and plants.\n* Cows have a highly developed sense of smell and can detect smells up to six miles away.\n* They have around 25,000 taste buds, which is 2.5 times more than humans.\n* Cows are social animals and usually stay together in groups called herds.\n* A cow has a lifespan of up to 25 years.\n* Cows are farmed for various agricultural products, including meat (beef), dairy products, leather, and entertainment.\n* Cows are also known as \"ruminants\" because of the largest pouch of their stomach, called the rumen.\n* They are creatures of habit and prefer a daily routine.\n* Cows can see in color, but are red and green color blind.\n* They drink a lot of water, about a full bathtub full each day, and prefer to lay in the shade to keep cool since they don't sweat.",
-    "faithfulness": 0.77,
-    "timestamp": "2026-03-30T18:29:00.771859"
-  },
-  {
-    "mode": "image",
-    "question": "cow",
-    "count": 3,
-    "timestamp": "2026-03-30T18:29:00.791821"
-  },
-  {
-    "mode": "text",
-    "question": "fastest bird",
-    "answer": "The fastest bird is the Peregrine Falcon, but it is not mentioned in the provided context. However, a subspecies of the Peregrine Falcon, the Red-capped Shaheen Falco peregrinus babylonicus, is mentioned in Chunk 5. \n\nAnother bird of prey mentioned in the context is the Merlin Falco columbarius pallidus, which is known for its speed, reaching up to 30-40 mph (48-64 km/h) during level flight and up to 60 mph (97 km/h) during dives. However, the exact speed of the birds mentioned in the context is not provided.",
-    "faithfulness": 0.26,
-    "timestamp": "2026-03-30T18:29:32.107669"
-  },
-  {
-    "mode": "image",
-    "question": "fastest bird",
-    "count": 3,
-    "timestamp": "2026-03-30T18:29:32.137573"
-  },
-  {
-    "mode": "text",
-    "question": "what to do in day 2",
-    "answer": "On Day 2, the learning outcomes and topics are focused on Advanced Retrieval and Context Engineering. The tasks and deliverables for Day 2 are as follows:\n\n1. Improve retrieval accuracy\n2. Build hybrid retrieval (semantic + keyword + reranking)\n3. Context ranking strategies\n4. Reduce hallucination\n\nThe topics to be covered include:\n\n1. Hybrid search: BM25 + embeddings\n2. Reranking (cross-encoder / cosine)\n3. Max Marginal Relevance (MMR)\n4. Chunk deduplication\n5. Optimizing context window for LLMs\n\nThe exercise for Day 2 is to build an advanced retriever that supports:\n\n* Keyword fallback\n* Reranking\n* Deduplication\n* Traceable context sources\n\nThe deliverables for Day 2 include:\n\n1. /retriever/hybrid_retriever.py\n2. /retriever/reranker.py\n3. /pipelines/context_builder.py\n4. RETRIEVAL-STRATEGIES.md\n\nThe goals for Day 2 are to achieve higher precision, lower hallucination, and fully traceable context.",
-    "faithfulness": 0.6,
-    "timestamp": "2026-03-30T18:38:12.582478"
-  },
-  {
-    "mode": "text",
-    "question": "what is chatgpt",
-    "answer": "I don't have enough information in the documents to answer this.",
-    "faithfulness": 0.4,
-    "timestamp": "2026-03-30T18:38:53.847794"
-  },
-  {
-    "mode": "text",
-    "question": "What was the revenue all through the lifetime of the company? ",
-    "answer": "I don't have enough information in the documents to answer this. The provided context only contains financial information for the years 2021 and 2022, and does not provide a comprehensive history of the company's revenue throughout its lifetime.",
-    "faithfulness": 0.3,
-    "timestamp": "2026-03-30T19:02:15.183388"
-  },
-  {
-    "mode": "image",
-    "question": "What was the revenue all through the lifetime of the company? ",
-    "count": 3,
-    "timestamp": "2026-03-30T19:02:15.205163"
-  },
-  {
-    "mode": "text",
-    "question": "who is cow",
-    "answer": "According to the provided context, a cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. It is a domesticated animal, specifically a female that has given birth to at least one or two calves, and is kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants.",
-    "faithfulness": 0.8,
-    "timestamp": "2026-03-30T19:03:43.948016"
-  },
-  {
-    "mode": "image",
-    "question": "who is cow",
-    "count": 3,
-    "timestamp": "2026-03-30T19:03:43.972337"
-  },
-  {
-    "mode": "text",
-    "question": "what is cow",
-    "answer": "A cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. They are domesticated animals, specifically females that have given birth to at least one or two calves, and are kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants. They are a type of cattle, which is a general term that includes cows, bulls, oxen, heifers, steers, bullocks, and calves.",
-    "faithfulness": 0.86,
-    "timestamp": "2026-03-30T19:04:21.438249"
-  },
-  {
-    "mode": "image",
-    "question": "what is cow",
-    "count": 3,
-    "timestamp": "2026-03-30T19:04:21.458569"
-  },
-  {
-    "mode": "image_text",
-    "question": "a dog standing on a dirt road",
-    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention a dog standing on a dirt road. It appears to be related to cows, birds, and somatosensory neurons, but does not contain any information about dogs.",
-    "faithfulness": 0.14,
-    "timestamp": "2026-03-30T19:06:23.382525"
-  },
-  {
-    "mode": "image",
-    "question": "images.jpeg",
-    "count": 3,
-    "timestamp": "2026-03-30T19:06:23.396781"
-  },
-  {
-    "mode": "image_text",
-    "question": "a bird perched on a tree branch",
-    "answer": "The context provided is a photo gallery of birds from Gujarat, but it does not specifically mention a bird perched on a tree branch. However, it does list various bird species, such as the Great Crested Grebe, Slender-billed Gull, and Lesser Flamingo, along with their corresponding photos taken by different photographers.",
-    "faithfulness": 0.4,
-    "timestamp": "2026-03-30T19:07:50.315296"
+    "timestamp": "2026-04-10T14:34:06.049524"
   },
   {
     "mode": "image",
     "question": "Photo gallery_Gujarat_page10_img4.png",
     "count": 3,
-    "timestamp": "2026-03-30T19:07:50.328357"
+    "timestamp": "2026-04-10T14:35:55.872472"
   },
   {
     "mode": "image",
-    "question": "cow",
+    "question": "burger.jpeg",
     "count": 3,
-    "timestamp": "2026-03-30T19:28:53.951092"
+    "timestamp": "2026-04-10T14:37:41.239629"
+  },
+  {
+    "mode": "image",
+    "question": "burger.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:38:01.820233"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:38:52.241789"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:39:47.279491"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:48:25.463804"
   },
   {
     "mode": "text",
-    "question": "cow",
-    "answer": "A cow is a large, grass-eating mammal with two-toed or cloven hooves and a four-chambered stomach. They are domesticated animals, specifically females that have given birth to at least one or two calves, and are kept to produce beef or milk. Cows are also known as \"ruminants\" and are herbivores, eating vegetation such as grass and plants. They have around 25,000 taste buds and can sense a smell up to six miles away. Cows can live up to 25 years and are creatures of habit, preferring a daily routine.",
-    "faithfulness": 0.88,
-    "timestamp": "2026-03-30T19:34:22.475866"
+    "question": "breeds of dog",
+    "answer": "There are around 340 different dog breeds. Examples of dog breeds mentioned in the context include:\n\n1. Labrador\n2. Beagle\n3. Bulldog\n\nThese breeds were developed through the process of breeding dogs to have specific characteristics, such as size, shape, or purpose (e.g., hunting).",
+    "faithfulness": 0.48,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T14:54:19.927845"
+  },
+  {
+    "mode": "image",
+    "question": "breeds of dog",
+    "count": 3,
+    "timestamp": "2026-04-10T14:54:19.956915"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:55:31.612446"
+  },
+  {
+    "mode": "image",
+    "question": "WhatsApp Image 2026-03-31 at 1.10.51 PM.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:55:59.689173"
+  },
+  {
+    "mode": "image",
+    "question": "WhatsApp Image 2026-03-31 at 1.10.51 PM.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T14:56:49.785085"
   },
   {
     "mode": "text",
-    "question": "milk",
-    "answer": "Milk is a dairy product that comes from cows. Cows are raised for many purposes, including dairy products like milk, cheese, yogurts, and butter.",
-    "faithfulness": 0.93,
-    "timestamp": "2026-03-30T19:41:41.305413"
+    "question": "who is a dog",
+    "answer": "According to the context, a dog is a domesticated animal that originated from wolves in central Asia and has been a companion to humans as far back as 13,000 BC. They are known for their ability to form strong bonds with humans, earning them the nickname \"man's best friend.\"",
+    "faithfulness": 0.71,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T16:04:12.859974"
   },
   {
     "mode": "text",
-    "question": "what is my name",
-    "answer": "There are multiple individuals mentioned in the context. Here are a few:\n\n1. Yvonne Jordan\n2. Meghan Moses\n3. Cristina Hanna\n4. Seth Osborne\n\nWithout more information, it's impossible to determine which one is you. Could you provide more context or clarify which individual you are referring to?",
-    "faithfulness": 0.38,
-    "timestamp": "2026-03-30T19:50:33.060139"
+    "question": "who is a dog",
+    "answer": "I don't have enough information in the documents to answer this question as it seems to be asking for a definition or description of a dog as a living being, rather than just providing breed information or characteristics. The context only provides information about dog breeds, their characteristics, and fun facts, but does not explicitly define what a dog is.",
+    "faithfulness": 0.25,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-10T16:04:42.755558"
   },
   {
     "mode": "text",
-    "question": "who is mahatma gandhi",
-    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention Mahatma Gandhi. It appears to be related to a company's financial reports and director information, but does not contain any information about Mahatma Gandhi.",
+    "question": "who is a dog",
+    "answer": "A dog is a domesticated animal that originated from wolves in central Asia and has been a companion to humans as far back as 13,000 BC. They are known for forming strong bonds with humans, earning them the nickname \"man's best friend.\"",
+    "faithfulness": 0.76,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T16:06:09.499251"
+  },
+  {
+    "mode": "text",
+    "question": "who is a dog",
+    "answer": "I don't have enough information in the documents to answer this question as it is too broad and doesn't provide a clear context. The provided chunks talk about the history, characteristics, and breeds of dogs, but they don't define who a dog is in a direct sense.",
     "faithfulness": 0.17,
-    "timestamp": "2026-03-30T19:51:55.387623"
+    "hallucination_ok": false,
+    "timestamp": "2026-04-10T16:06:54.360979"
   },
   {
     "mode": "text",
-    "question": "what is my age?",
-    "answer": "I don't have enough information in the documents to answer this. The provided context does not mention your age. It appears to be related to tax forms and customer information, but does not contain any information about your age.",
-    "faithfulness": 0.18,
-    "timestamp": "2026-03-30T19:53:55.495594"
+    "question": "who is a dog",
+    "answer": "A dog is a domesticated animal that originated from wolves in central Asia and has been a companion to humans for at least 13,000 years. They are carnivorous or omnivorous, and there are around 340 different breeds of dogs, ranging from the largest to the smallest, all descended from the same wolf ancestors. Dogs are known for their strong bonds with humans, earning them the nickname \"man's best friend.\"",
+    "faithfulness": 0.77,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T16:19:53.280696"
+  },
+  {
+    "mode": "text",
+    "question": "who is a dog",
+    "answer": "According to the provided context, a dog is a domesticated animal that originated from wolves in central Asia and has been a companion to humans for at least 13,000 years. They are known for their ability to form strong bonds with humans, earning them the nickname \"man's best friend.\"",
+    "faithfulness": 0.5,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T16:20:41.432228"
+  },
+  {
+    "mode": "image",
+    "question": "who is a dog",
+    "count": 3,
+    "timestamp": "2026-04-10T16:20:41.459347"
+  },
+  {
+    "mode": "text",
+    "question": "dog",
+    "answer": "Dogs are carnivorous animals that have been domesticated and now live in human homes and yards, eating a diet that consists of scraps, animals they catch, and mainly processed food given to them by their owners. They are omnivorous, eating grains, vegetables, and meats. Dogs can be found in various habitats, from apartments to ranches and farms, and can perform various tasks for humans such as hunting, shepherding, companionship, and more. The average lifespan of a dog is 10 to 14 years, and they go through different stages of life, including puppy, adolescence, adult, and senior.",
+    "faithfulness": 0.8,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T16:21:44.711445"
   },
   {
     "mode": "image",
     "question": "dog",
     "count": 3,
-    "timestamp": "2026-03-31T22:55:47.231322"
+    "timestamp": "2026-04-10T16:21:44.732184"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T16:28:31.979910"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T16:56:00.560939"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 2,
+    "timestamp": "2026-04-10T17:28:40.000025"
+  },
+  {
+    "mode": "image",
+    "question": "dog.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T17:30:58.244259"
+  },
+  {
+    "mode": "image",
+    "question": "Cow-Information-Sheets_page3_img3.png",
+    "count": 3,
+    "timestamp": "2026-04-10T17:31:51.639621"
+  },
+  {
+    "mode": "image",
+    "question": "Cow-Information-Sheets_page3_img3.png",
+    "count": 3,
+    "timestamp": "2026-04-10T17:32:05.487978"
+  },
+  {
+    "mode": "text",
+    "question": "breed of dog",
+    "answer": "According to the context, a breed of dog refers to a different type of the same animal. Examples of dog breeds include Labrador, Beagle, and Bulldog. There are approximately 340 different dog breeds worldwide, all of which originated from the same ancestors, wolves.",
+    "faithfulness": 0.67,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T17:34:07.542975"
+  },
+  {
+    "mode": "text",
+    "question": "breeds of dog",
+    "answer": "There are around 340 different dog breeds worldwide, and they all originated from the same ancestors, wolves. These breeds come in different shapes and sizes, and have different purposes, as a result of people breeding dogs to achieve specific characteristics. Examples of dog breeds include Labrador, Beagle, and Bulldog.",
+    "faithfulness": 0.76,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T17:34:30.813452"
+  },
+  {
+    "mode": "text",
+    "question": "breeds of wolf",
+    "answer": "I don't have enough information in the documents to answer about breeds of wolf. The provided context discusses dog breeds and their origin from wolves, but it does not mention specific breeds of wolves.",
+    "faithfulness": 0.2,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-10T17:34:56.010085"
+  },
+  {
+    "mode": "text",
+    "question": "dogs",
+    "answer": "Dogs originated in central Asia from wolves and have been companions to humans as far back as 13,000 BC. They can perform various tasks such as hunting, shepherding, companionship, and more. Dogs can be found in various habitats, including human homes and yards, and their diet consists of scraps, animals, and processed food. There are around 340 different dog breeds, all of which came from the same ancestors, wolves. Dogs are known for forming strong bonds with humans and have earned the nickname \"man's best friend.\"",
+    "faithfulness": 0.86,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T17:35:30.009163"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T17:52:56.103082"
+  },
+  {
+    "mode": "image",
+    "question": "dogs",
+    "count": 3,
+    "timestamp": "2026-04-10T17:53:18.359970"
+  },
+  {
+    "mode": "text",
+    "question": "dogs",
+    "answer": "Dogs originated from wolves in central Asia and have been companions to humans since 13,000 BC. They were initially tolerated for cleaning up garbage and rats, and later valued for their alarm barking. Today, dogs can be found in various human habitats, from apartments to farms, and have adapted to an omnivorous diet. There are around 340 different breeds of dogs, and they are known for their strong bonds with humans, earning them the nickname \"man's best friend.\" Dogs can perform various tasks such as hunting, shepherding, companionship, and more, and there are approximately 400 million dogs on the planet.",
+    "faithfulness": 0.74,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T17:53:30.011637"
+  },
+  {
+    "mode": "image",
+    "question": "dogs",
+    "count": 3,
+    "timestamp": "2026-04-10T17:53:30.031454"
+  },
+  {
+    "mode": "image",
+    "question": "Image.png",
+    "count": 3,
+    "timestamp": "2026-04-10T18:05:52.082435"
+  },
+  {
+    "mode": "image",
+    "question": "Photo gallery_Gujarat_page1_img1.png",
+    "count": 3,
+    "timestamp": "2026-04-10T18:09:59.305829"
+  },
+  {
+    "mode": "image",
+    "question": "puppy.webp",
+    "count": 3,
+    "timestamp": "2026-04-10T18:11:59.972032"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7?",
+    "answer": "In Week 7, interns are expected to learn about various topics, including Advanced Retrieval-Augmented Generation (RAG) architecture, Local LLM setup, hybrid retrieval, multimodal embeddings, SQL-based question answering, and more. \n\nThe completion requirements for Week 7 include building an end-to-end functioning RAG system, implementing hybrid retrieval and reranking, image RAG with CLIP + OCR + multimodal vectors, and natural language to SQL question answering. \n\nAfter completing Week 7, interns are expected to be able to build enterprise-grade GenAI systems, handle documents, images, and SQL databases, and reduce hallucination by over 70%.",
+    "faithfulness": 0.77,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T18:15:18.964857"
+  },
+  {
+    "mode": "text",
+    "question": "who is the chairman of the company?",
+    "answer": "The Executive Chairman of the company is Ross Love, who was appointed on July 13, 2022.",
+    "faithfulness": 0.9,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-10T18:19:21.031057"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-10T19:25:56.103285"
+  },
+  {
+    "mode": "image",
+    "question": "donkey.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-14T19:04:34.350617"
+  },
+  {
+    "mode": "image",
+    "question": "469f9c51-b23c-45b8-b4d0-fffdf31745f8.jpg",
+    "count": 3,
+    "timestamp": "2026-04-14T19:10:54.754171"
+  },
+  {
+    "mode": "image",
+    "question": "469f9c51-b23c-45b8-b4d0-fffdf31745f8.jpg",
+    "count": 3,
+    "timestamp": "2026-04-14T19:14:03.789143"
+  },
+  {
+    "mode": "image",
+    "question": "burger.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-14T19:14:34.950686"
+  },
+  {
+    "mode": "text",
+    "question": "dog",
+    "answer": "Dogs are carnivorous animals that have been domesticated and now live in human homes and yards, eating a diet that consists of scraps, animals they catch, and mainly processed food given to them by their owners. They are omnivorous, eating grains, vegetables, and meats. Dogs can be found in various habitats, from apartments to ranches and farms, and can perform various tasks for humans such as hunting, shepherding, companionship, and more. The average lifespan of a dog is 10 to 14 years, and they go through different stages of life, including puppy, adolescence, adult, and senior.",
+    "faithfulness": 0.8,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-14T23:45:38.422638"
+  },
+  {
+    "mode": "image",
+    "question": "dog",
+    "count": 3,
+    "timestamp": "2026-04-14T23:45:38.459778"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7?",
+    "answer": "In Week 7, interns are expected to build an enterprise-grade GenAI system that can answer questions from internal documents, retrieve and reason over images, query structured data using natural language, and provide faithful responses. The system should be able to run on either local open-source models or hosted LLM APIs. \n\nThe completion requirements for Week 7 include:\n\n1. End-to-end functioning of the RAG system\n2. Advanced retrieval with hybrid and reranking capabilities\n3. Image RAG with CLIP, OCR, and multimodal vectors\n4. SQL question answering with natural language to SQL conversion\n5. Context retention and evaluation with faithfulness and context matching\n6. Documentation of all systems\n\nThe expected outcome after Week 7 is that interns will be able to build enterprise-grade GenAI systems, handle documents, images, and SQL databases, run LLMs locally or via OpenAI/Claude/Gemini keys, reduce hallucination by over 70%, and build multimodal and hybrid RAG pipelines.",
+    "faithfulness": 0.89,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:08:54.372697"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7",
+    "answer": "In Week 7, interns are expected to build an enterprise-grade GenAI system that can:\n\n1. Answer questions from internal documents (PDFs, DOCX, TXT)\n2. Retrieve and reason over images (diagrams, charts, forms)\n3. Query structured data using natural language \u2192 SQL \u2192 result\n4. Run on either local open-source models or hosted LLM APIs (OpenAI / Claude / Gemini)\n5. Provide faithful, non-hallucinated responses with evaluation and monitoring\n\nThe objectives of Week 7 include learning Advanced Retrieval-Augmented Generation (RAG) architecture and setting up and optimizing Local LLM or integrating API-based LLM. \n\nInterns will work on completing the requirements for the RAG system, including end-to-end functioning, advanced retrieval, image RAG, SQL QA, memory, evaluation, and documentation. \n\nThe expected outcome is that interns will be able to build enterprise-grade GenAI systems, handle documents, images, and SQL databases, run LLMs locally or via OpenAI/Claude/Gemini keys, reduce hallucination by over 70%, and build multimodal and hybrid RAG pipelines.",
+    "faithfulness": 0.84,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:23:21.060574"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks for day 4",
+    "answer": "The tasks for Day 4 are related to SQL Question Answering System (Text \u2192 SQL \u2192 Answer). The learning outcomes for Day 4 include:\n\n1. Convert natural language queries into SQL\n2. Schema-aware reasoning\n3. SQL query correction / validation\n4. Injection-safe execution\n\nThe topics covered on Day 4 include:\n\n1. Schema extraction\n2. Prompting patterns for SQL generation\n3. Query validation\n4. Error correction\n5. Summarizing result tables",
+    "faithfulness": 0.74,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:29:09.011537"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks for DAY 4",
+    "answer": "For DAY 4, the tasks are related to SQL QUESTION ANSWERING SYSTEM (Text \u2192 SQL \u2192 Answer). The learning outcomes include:\n\n1. Convert natural language queries into SQL\n2. Schema-aware reasoning\n3. SQL query correction / validation\n4. Injection-safe execution\n\nThe topics covered on DAY 4 include:\n\n1. Schema extraction\n2. Prompting patterns for SQL generation\n3. Query validation\n4. Error correction\n5. Summarizing result tables",
+    "faithfulness": 0.74,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:29:56.222449"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in day 2",
+    "answer": "On Day 2, the focus is on Advanced Retrieval + Context Engineering. The learning outcomes for this day include:\n\n1. Improving retrieval accuracy\n2. Building hybrid retrieval (semantic + keyword + reranking)\n3. Context ranking strategies\n4. Reducing hallucination\n\nThe topics to be covered include:\n\n1. Hybrid search: BM25 + embeddings\n2. Reranking (cross-encoder / cosine)\n3. Max Marginal Relevance (MMR)\n4. Chunk deduplication\n5. Optimizing context window for LLMs\n\nThe exercise for Day 2 is to build an advanced retriever that supports a query, with an example query being \"Explain how credit underwriting works\".",
+    "faithfulness": 0.67,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:33:28.998404"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks we need to do in day-5 of week-7",
+    "answer": "According to the context, on Day 5 of Week 7, the tasks are related to \"ADVANCED RAG + MEMORY + EVALUATION (CAPSTONE)\". However, the specific tasks are not explicitly mentioned in the provided chunks. \n\nBut based on the Week 7 objectives and completion requirements, it can be inferred that the tasks on Day 5 might include:\n\n* Advanced Retrieval-Augmented Generation (RAG) architecture\n* Memory (Context retention)\n* Evaluation (Faithfulness & context matching)\n\nHowever, the exact tasks are not clearly mentioned in the provided context.",
+    "faithfulness": 0.52,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:34:45.059369"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks we need to do in day-3 of week-7",
+    "answer": "According to Chunk 4, on Day 3 of Week 7, the tasks are related to IMAGE-RAG (MULTIMODAL RAG). The learning outcomes for this day are:\n\n1. Handle images inside RAG\n2. Generate & store vision embeddings\n3. OCR extraction + captioning\n\nThese tasks are part of the IMAGE-RAG learning objectives.",
+    "faithfulness": 0.71,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:35:01.034144"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks we need to do in day-1 of week-7",
+    "answer": "According to Chunk 4, on Day 1 of Week 7, the learning outcomes and tasks include:\n\n1. Learning about RAG architecture (Retriever \u2192 Generator)\n2. Local LLM loading and inference\n3. Embedding generation\n4. Document chunking strategies\n5. Semantic indexing (HNSW / IVF / Flat)\n\nThese tasks are part of the Local RAG System + Pipeline Architecture.",
+    "faithfulness": 0.67,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:35:18.129667"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks we need to do in day-2 of week-7",
+    "answer": "According to Chunk 4, on Day 2 of Week 7, the tasks and learning outcomes are:\n\n1. Improve retrieval accuracy\n2. Build hybrid retrieval (semantic + keyword + reranking)\n3. Implement context ranking strategies\n4. Reduce hallucination\n\nThe topics to be covered include:\n\n1. Hybrid search: BM25 + embeddings\n2. Reranking (cross-encoder / cosine)\n3. Max Marginal Relevance (MMR)\n4. Chunk deduplication\n5. Optimizing context window for LLMs\n\nThere is also an exercise to build an advanced retriever that supports a given query.",
+    "faithfulness": 0.7,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T00:35:31.538784"
+  },
+  {
+    "mode": "text",
+    "question": "what was the task given in week-7 day-4",
+    "answer": "I don't have enough information in the documents to answer this.",
+    "faithfulness": 0.0,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:24:24.665731"
+  },
+  {
+    "mode": "text",
+    "question": "what was the task given in week-7 day-2",
+    "answer": "I don't have enough information in the documents to answer this.",
+    "faithfulness": 0.0,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:24:46.163494"
+  },
+  {
+    "mode": "text",
+    "question": "what was the task given in week 7 day 2",
+    "answer": "I don't have enough information in the documents to answer this.",
+    "faithfulness": 0.0,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:25:00.907485"
+  },
+  {
+    "mode": "text",
+    "question": "what was the task given in week 7",
+    "answer": "I don't have enough information in the documents to answer this.",
+    "faithfulness": 0.0,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:25:12.173222"
+  },
+  {
+    "mode": "text",
+    "question": "so what to do in day-2 specifically?",
+    "answer": "On Day 2, the focus is on Advanced Retrieval + Context Engineering. The learning outcomes for this day include:\n\n1. Improving retrieval accuracy\n2. Building hybrid retrieval (semantic + keyword + reranking)\n3. Context ranking strategies\n4. Reducing hallucination\n\nThe topics to be covered include:\n\n1. Hybrid search: BM25 + embeddings\n2. Reranking (cross-encoder / cosine)\n3. Max Marginal Relevance (MMR)\n4. Chunk deduplication\n5. Optimizing context window for LLMs\n\nThe exercise for Day 2 is to build an advanced retriever that supports a query, with an example query being \"Explain how credit underwriting works\".",
+    "faithfulness": 0.67,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:28:59.226584"
+  },
+  {
+    "mode": "text",
+    "question": "so what to do in week-7 day-4",
+    "answer": "In Week 7, Day 4, the focus is on SQL Question Answering System (Text \u2192 SQL \u2192 Answer). The learning outcomes for this day include:\n\n* Convert natural language queries into SQL\n* Schema-aware reasoning\n* SQL query correction/validation\n* Injection-safe execution\n\nThe topics to be covered on this day are:\n\n* Schema extraction\n* Prompting patterns for SQL generation\n* Query validation\n* Error correction\n* Summarizing result tables\n\nSo, on Week 7, Day 4, you will be working on building a SQL Question Answering System that can take natural language queries, convert them into SQL, and execute them to provide answers.",
+    "faithfulness": 0.64,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:29:26.036541"
+  },
+  {
+    "mode": "text",
+    "question": "day 2?",
+    "answer": "There are multiple \"Day 2\" mentions in the context. \n\nOne \"Day 2\" is about Docker Compose + Multi-Container Apps, where the task is to deploy a client (React) + server (Node) + MongoDB using one command: docker compose up -d.\n\nAnother \"Day 2\" is from Week 7, which is about ADVANCED RETRIEVAL + CONTEXT ENGINEERING, with topics such as hybrid search, reranking, and optimizing context window for LLMs. \n\nAdditionally, Day 2 is also mentioned in the context of using the complete UI from Day 2 to create a static page for routing and layout system in a multi-page structure.",
+    "faithfulness": 0.78,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:32:33.550522"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-4 day-3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions the objectives and learning outcomes for Week 4, but it does not specify the activities or tasks for each day, including Day 3.",
+    "faithfulness": 0.26,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:33:09.991881"
+  },
+  {
+    "mode": "text",
+    "question": "what are the deliverables in week-4 day-3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions the objectives and learning outcomes for Week 4, but it does not specify the deliverables for Day 3 of Week 4.",
+    "faithfulness": 0.44,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:33:42.348927"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-4 day-3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions the objectives and learning outcomes for Week 4, but it only specifies the topics for Day 1. There is no information about the tasks or topics for Day 3 of Week 4.",
+    "faithfulness": 0.33,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:34:24.031251"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-4 day 3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions the objectives and learning outcomes for Week 4, but it does not specify the tasks for each day, except for Day 1.",
+    "faithfulness": 0.28,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:34:36.321261"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-4",
+    "answer": "In Week 4, the tasks are focused on Backend Systems & Production Engineering. The objectives are to demonstrate independent backend engineering capability by:\n\n1. Designing custom backend system architecture\n2. Implementing strict separation of concerns with enforced contracts\n3. Applying database optimization & query strategies\n4. Building defensive, production-safe APIs\n5. Introducing observability & async workflows\n6. Producing auditable documentation & artifacts\n\nAdditionally, on Day 1 of Week 4, the learning outcomes include:\n\n1. Node.js runtime lifecycle (not just event loop)\n2. Environment-driven bootstrapping\n\nThese are the tasks and objectives outlined for Week 4.",
+    "faithfulness": 0.89,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:35:09.501954"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-5 day-3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions Week 5 Day 1 topics, but not Day 3.",
+    "faithfulness": 0.33,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:35:21.677063"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-5 day-1",
+    "answer": "In Week 5, Day 1, you have to cover Docker Fundamentals + Linux Internals. The tasks include:\n\n1. Learning about:\n   - Images, containers, volumes, networks\n   - Basic container OS operations (users, permissions, logs, processes inside containers)\n   - Dockerfile basics\n\n2. Exercises:\n   - Running a container with a Node app\n   - Entering the container (like SSH) using: docker exec -it <container> /bin/sh\n\n3. Exploration:\n   - Using commands like ls, ps, top, disk usage, logs inside the container\n   - Documenting the structure.",
+    "faithfulness": 0.82,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T01:35:36.023350"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-5 day-2",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions the topics and exercises for Week 5 Day 1, but does not provide information about Week 5 Day 2.",
+    "faithfulness": 0.21,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:35:50.350232"
+  },
+  {
+    "mode": "text",
+    "question": "what are the tasks that i have to do in week-5 day-3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context only mentions Week 5 Day 1 topics, but not Day 3.",
+    "faithfulness": 0.33,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T01:36:13.501545"
+  },
+  {
+    "mode": "image_text",
+    "question": "a puppy running through a field",
+    "answer": "I don't have enough information in the documents to answer this question. The provided chunks do not mention dogs or puppies, but rather discuss topics such as machine learning models, Node.js, Docker, and Git.",
+    "faithfulness": 0.29,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:02:47.064231"
+  },
+  {
+    "mode": "image",
+    "question": "puppy.webp",
+    "count": 3,
+    "timestamp": "2026-04-15T02:02:47.082094"
+  },
+  {
+    "mode": "image_text",
+    "question": "a puppy running through a field",
+    "answer": "A puppy running through a field is likely in the puppy stage of its lifecycle, which lasts from birth to 6-18 months. At this stage, the puppy is still developing and is likely to be full of energy, making running through a field a typical behavior. According to the text, puppies need to be with their mother for the first 8 weeks, but after that, they can start to explore their surroundings and engage in playful activities like running.",
+    "faithfulness": 0.31,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:08:25.994600"
+  },
+  {
+    "mode": "image",
+    "question": "puppy.webp",
+    "count": 3,
+    "timestamp": "2026-04-15T02:08:26.005974"
+  },
+  {
+    "mode": "image_text",
+    "question": "a burger with a lot of flying ingredients",
+    "answer": "I don't have enough information in the documents to answer this question. The provided chunks discuss topics such as cow anatomy, aviation technology, financial statements, and business operations, but do not mention burgers or flying ingredients.",
+    "faithfulness": 0.26,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:09:56.300782"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-15T02:09:56.316383"
+  },
+  {
+    "mode": "image_text",
+    "question": "a burger with a lot of flying ingredients",
+    "answer": "I don't have enough information in the documents to answer this question. The provided chunks discuss topics such as cow anatomy, aviation technology, financial statements, and business operations, but do not mention burgers or flying ingredients.",
+    "faithfulness": 0.26,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:10:31.629456"
+  },
+  {
+    "mode": "image",
+    "question": "burger2.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-15T02:10:31.658019"
+  },
+  {
+    "mode": "image_text",
+    "question": "a dog standing on a dirt road",
+    "answer": "Based on the provided context, a dog standing on a dirt road could be in its natural habitat, as dogs can be found in various environments, including yards, farms, and rural areas, as mentioned in Chunk 1. The dog's diet and lifestyle may vary depending on its location and owner, but it is likely to be an omnivorous animal, eating a combination of processed food, grains, and meats, as stated in Chunk 1.",
+    "faithfulness": 0.41,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T02:10:45.456114"
+  },
+  {
+    "mode": "image",
+    "question": "images.jpeg",
+    "count": 3,
+    "timestamp": "2026-04-15T02:10:45.481994"
+  },
+  {
+    "mode": "image_text",
+    "question": "a cow walking across a lush green field",
+    "answer": "A cow walking across a lush green field is a typical scenario, as cows are herbivores that eat vegetation such as grass and plants. They spend most of their time grazing in fields, and their four-chambered stomach helps break down the grass and plants they eat. With their nearly 360-degree vision, they can easily monitor their surroundings while walking and grazing. As creatures of habit, cows are likely to follow a routine and return to the same fields to graze, and they can drink large amounts of water, about a full bathtub full each day, to stay hydrated.",
+    "faithfulness": 0.65,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T02:12:04.399225"
+  },
+  {
+    "mode": "image",
+    "question": "Cow-Information-Sheets_page2_img5.png",
+    "count": 3,
+    "timestamp": "2026-04-15T02:12:04.425960"
+  },
+  {
+    "mode": "text",
+    "question": "dog",
+    "answer": "Dogs originated in central Asia and have been companions to humans as far back as 13,000 BC. They were initially wolves that were run off of camps, but people later realized that it was cleaner to have them around because they ate garbage and rats. Dogs also served as an alarm system, barking when something was approaching. \n\nSome fun facts about dogs include: \n- They have a highly developed sense of smell, able to differentiate smells that are lower than 1 million times that which a human can.\n- They can hear sounds that are four times the distance away than a human can.\n- The average lifespan of a dog is 10 to 14 years.\n- Dogs tend to have more than one puppy at a time, and those puppies are called a litter.\n- There are approximately 400 million dogs on the planet.\n- Dogs have formed strong bonds with humans, earning them the nickname \"man's best friend.\"",
+    "faithfulness": 0.82,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T02:17:21.320810"
+  },
+  {
+    "mode": "image",
+    "question": "dog",
+    "count": 3,
+    "timestamp": "2026-04-15T02:17:21.341009"
+  },
+  {
+    "mode": "text",
+    "question": "what does cow eat?",
+    "answer": "According to the provided context, cows are herbivores that eat vegetation such as grass and plants. Their diet typically consists of:\n\n* Grass (in fields during summer months)\n* Preserved grass (silage) during winter months\n* Cereals (such as barley)\n* Protein feeds (such as beans)\n\nCows also have a four-chambered stomach that helps break down the tough plants and grasses they eat.",
+    "faithfulness": 0.81,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T02:17:47.948888"
+  },
+  {
+    "mode": "image",
+    "question": "what does cow eat?",
+    "count": 3,
+    "timestamp": "2026-04-15T02:17:47.970025"
+  },
+  {
+    "mode": "image_text",
+    "question": "a bird standing in the grass",
+    "answer": "Based on the provided context, it is possible that the bird standing in the grass is one of the many bird species mentioned in the chunks, such as the Eurasian Curlew, Whimbrel, Common Shelduck, Dunlin, Caspian Tern, or others. The context provides a list of bird species found in Gujarat, along with photos and information about them.",
+    "faithfulness": 0.47,
+    "hallucination_ok": true,
+    "timestamp": "2026-04-15T02:18:18.462700"
+  },
+  {
+    "mode": "image",
+    "question": "Photo gallery_Gujarat_page9_img2.png",
+    "count": 3,
+    "timestamp": "2026-04-15T02:18:18.486658"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7 day-4",
+    "answer": "I don't have enough information in the documents to answer this. The provided context appears to be related to financial reports, tax forms, and company meetings, but it does not contain any information about a specific week-7 day-4 or any tasks or activities associated with it.",
+    "faithfulness": 0.22,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:20:38.849564"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7 day-5",
+    "answer": "I don't have enough information in the documents to answer this. The provided context does not contain any information about a specific week-7 day-5 or any tasks or activities associated with it. The context appears to be related to financial reports, tax forms, and company meetings, but it does not provide any guidance on what to do on a specific day or week.",
+    "faithfulness": 0.21,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:21:35.479133"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7 day 3",
+    "answer": "I don't have enough information in the documents to answer this. The provided context appears to be related to financial reports, tax forms, and company meetings, but it does not contain any information about a specific week-7 day-3 or any tasks or activities associated with it.",
+    "faithfulness": 0.22,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:23:53.632459"
+  },
+  {
+    "mode": "text",
+    "question": "what to do in week-7",
+    "answer": "I don't have enough information in the documents to answer this. The provided context does not contain any information about a specific week-7 or any tasks or activities associated with it. The context appears to be related to financial reports, tax forms, and company meetings, but it does not provide any guidance on what to do on a specific week.",
+    "faithfulness": 0.23,
+    "hallucination_ok": false,
+    "timestamp": "2026-04-15T02:24:04.573070"
   }
 ]
