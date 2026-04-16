@@ -4,7 +4,7 @@ from config import MAX_NEW_TOKENS, TEMPERATURE, TOP_P, TOP_K
 
 API_URL = "http://localhost:8000"
 
-st.set_page_config(page_title="Local LLM", page_icon="🤖")
+st.set_page_config(page_title="Local LLM")
 st.title("Local LLM — Week 8 Capstone")
 
 st.sidebar.header("Generation Settings")

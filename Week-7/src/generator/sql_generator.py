@@ -92,6 +92,7 @@ def summarize_result(question: str, sql: str, columns: list, rows: list) -> str:
         Write a clear, specific 2-3 sentence answer to the user's question based on these results.
         - Use actual numbers and names from the data
         - Do NOT mention SQL, databases, or technical terms
+        - Do NOT use any markdown formatting (no backticks, no bold, no bullet points)
         - Write as if you're a human analyst explaining findings to a business user"""
 
     try:

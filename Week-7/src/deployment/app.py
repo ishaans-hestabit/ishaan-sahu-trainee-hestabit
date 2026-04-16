@@ -25,7 +25,7 @@ except Exception as e:
     MEMORY_OK = False
 
 try:
-    from evaluation.rag_eval import generate_answer, check_faithfulness, rewrite_query_with_history
+    from evaluation.rag_eval import generate_answer, rewrite_query_with_history
     EVAL_OK = True
 except Exception as e:
     EVAL_OK, EVAL_ERROR = False, str(e)
@@ -111,12 +111,13 @@ def show_text_answer(question, text_results, mode):
     with st.spinner("Generating answer..."):
         answer = generate_answer(question, context, get_history())
 
-    faith_score      = check_faithfulness(answer, context)
+    faith_score      = 0.0
     hallucination_ok = True
     hall_message     = ""
 
     if GUARD_OK:
         hall             = check_hallucination(answer, context)
+        faith_score      = hall["score"]
         hallucination_ok = hall["ok"]
         hall_message     = hall["message"]
 
@@ -218,11 +219,6 @@ def handle_sql(question):
 
     st.subheader("Generated SQL")
     st.code(res["sql"], language="sql")
-
-    if res.get("rows"):
-        import pandas as pd
-        st.subheader("Results")
-        st.dataframe(pd.DataFrame(res["rows"], columns=res["columns"]))
 
     st.subheader("Answer")
     st.write(res["answer"])

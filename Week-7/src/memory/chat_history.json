@@ -148,5 +148,215 @@
     "role": "assistant",
     "content": "I don't have enough information in the documents to answer this. The provided context does not contain any information about a specific week-7 or any tasks or activities associated with it. The context appears to be related to financial reports, tax forms, and company meetings, but it does not provide any guidance on what to do on a specific week.",
     "timestamp": "2026-04-15T02:24:04.569503"
+  },
+  {
+    "role": "user",
+    "content": "what to do in week-7",
+    "timestamp": "2026-04-15T02:28:02.238723"
+  },
+  {
+    "role": "assistant",
+    "content": "In Week 7, you should focus on API + Architectures.",
+    "timestamp": "2026-04-15T02:28:02.240558"
+  },
+  {
+    "role": "user",
+    "content": "what to do in week-7  tell in detail",
+    "timestamp": "2026-04-15T02:28:28.048550"
+  },
+  {
+    "role": "assistant",
+    "content": "In Week 7, you should focus on API + Architectures. This suggests that the activities and tasks for Week 7 are related to learning and understanding Application Programming Interfaces (APIs) and software architectures.\n\nAlthough the provided context does not give a detailed outline of the specific tasks or activities for Week 7, it implies that you should be studying and working on topics such as:\n\n* Designing and building APIs\n* Understanding different API architectures (e.g., RESTful APIs, GraphQL)\n* Learning about software architecture patterns and principles\n* Possibly working on projects or assignments that involve designing and implementing APIs and software architectures\n\nThe context does not provide more detailed information about the specific tasks or activities for Week 7, but it gives a general idea of the topic that you should be focusing on during that week.",
+    "timestamp": "2026-04-15T02:28:28.050191"
+  },
+  {
+    "role": "user",
+    "content": "what to do in week-3 day-3",
+    "timestamp": "2026-04-15T02:28:56.203110"
+  },
+  {
+    "role": "assistant",
+    "content": "According to the provided context, in Week 3, Day 3, the topic is JavaScript ES6 + DOM Manipulation. \n\nThe learning outcomes for this day are:\n\n* Modern JS (ES6) + manipulating DOM without frameworks\n* Topics to be covered include:\n\t+ Variables/functions (let/const, arrow functions)\n\t+ Arrays/objects (map, filter, reduce)\n\t+ DOM manipulation (build navbar toggle, dropdown, modal)\n\t+ Event listeners (build counter + key events)\n\nThe exercise for this day is to build an interactive FAQ accordion using JS (click to expand).\n\nThe deliverable for this day is: /js-dom-practice/*",
+    "timestamp": "2026-04-15T02:28:56.205614"
+  },
+  {
+    "role": "user",
+    "content": "what to do in week-3 day-4",
+    "timestamp": "2026-04-15T02:29:18.118338"
+  },
+  {
+    "role": "assistant",
+    "content": "In Week 3, Day 4, the topic is JS Utilities + LocalStorage Mini-Project. \n\nThe learning outcomes for this day are:\n\n* Modular JS functions\n* LocalStorage persistence\n\nThe topics to be covered include:\n\n* Modular JS functions\n* LocalStorage persistence\n* Debugging DevTools (breakpoints, watch)\n\nThe activity for this day is to work on a mini-project that involves JS Utilities and LocalStorage.",
+    "timestamp": "2026-04-15T02:29:18.119951"
+  },
+  {
+    "role": "user",
+    "content": "what to do in week-4 day-2",
+    "timestamp": "2026-04-15T02:29:33.067847"
+  },
+  {
+    "role": "assistant",
+    "content": "In Week 4, Day 2, the topic is likely related to Backend Systems & Production Engineering, as Week 4 is focused on this area. \n\nAlthough the provided context does not explicitly mention the learning outcomes or activities for Day 2, based on the objectives for Week 4, it can be inferred that Day 2 may cover topics such as:\n\n* Implementing strict separation of concerns with enforced contracts\n* Applying database optimization & query strategies\n* Building defensive, production-safe APIs\n\nThe context for Day 1 of Week 4 mentions Node.js runtime lifecycle and environment-driven bootstrapping, so Day 2 may build upon these topics or introduce new ones related to Backend Systems & Production Engineering. \n\nHowever, without more specific information, it's difficult to provide a detailed answer. The context only provides information on the objectives for Week 4 and the learning outcomes for Day 1, but not for Day 2.",
+    "timestamp": "2026-04-15T02:29:33.069185"
+  },
+  {
+    "role": "user",
+    "content": "what is a dog?",
+    "timestamp": "2026-04-15T17:13:55.823705"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on the provided context, a dog is a domesticated animal that belongs to various breeds, with around 340 different types worldwide, all originating from the same ancestors, the wolves. Dogs can be described as:\n\n* Docile: easily taught, led, or controlled\n* Carnivorous or omnivorous: they eat meat, but domestic dogs also eat grains, vegetables, and other plants\n* Having a specific lifecycle: puppies are born and need to be with their mother for 8 weeks, then enter adolescence at 6-18 months, and reach adult size\n* Living in human homes and yards, with a diet consisting of scraps, animals they catch, and mainly processed food given by their owners\n\nOverall, a dog is a domesticated mammal that is widely varied in terms of breed, size, and characteristics, but shares a common ancestry with wolves.",
+    "timestamp": "2026-04-15T17:13:55.825712"
+  },
+  {
+    "role": "user",
+    "content": "what is a dog?",
+    "timestamp": "2026-04-15T17:14:06.168474"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question directly, as the provided context does not explicitly define what a dog is. The context provides information about dog breeds, habitats, diets, lifecycles, and characteristics, but it does not give a direct definition of a dog.",
+    "timestamp": "2026-04-15T17:14:06.170856"
+  },
+  {
+    "role": "user",
+    "content": "what is a dog?",
+    "timestamp": "2026-04-15T17:14:26.851561"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question directly. The provided context discusses dog breeds, habitats, diets, lifecycles, and characteristics, but it does not give a direct definition of what a dog is.",
+    "timestamp": "2026-04-15T17:14:26.853815"
+  },
+  {
+    "role": "user",
+    "content": "what is cow?",
+    "timestamp": "2026-04-15T18:24:00.986451"
+  },
+  {
+    "role": "assistant",
+    "content": "According to the provided context, a cow is a fully grown female animal of a domesticated breed that has given birth to at least one or two calves, kept to produce beef or milk. However, the term \"cow\" can also be used more broadly to refer to cattle in general, which includes males (bulls), females (cows), and young animals (calves). Cows are large, grass-eating mammals with two-toed or cloven hooves and a four-chambered stomach, and they are commonly farmed for agricultural products such as meat, dairy, and leather.",
+    "timestamp": "2026-04-15T18:24:00.988367"
+  },
+  {
+    "role": "user",
+    "content": "a burger with a lot of flying ingredients",
+    "timestamp": "2026-04-15T18:24:41.741184"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context does not mention burgers or flying ingredients. It appears to be related to financial reports, business operations, and technical training, but does not provide any information about food or culinary topics.",
+    "timestamp": "2026-04-15T18:24:41.743124"
+  },
+  {
+    "role": "user",
+    "content": "Who is the Executive Chairman of the company?",
+    "timestamp": "2026-04-16T09:39:54.083594"
+  },
+  {
+    "role": "assistant",
+    "content": "The Executive Chairman of the company is Ross Love. He was appointed as Executive Chairman on July 13, 2022, subsequent to the reporting date.",
+    "timestamp": "2026-04-16T09:39:54.087292"
+  },
+  {
+    "role": "user",
+    "content": "Who is the Executive Chairman of the company?",
+    "timestamp": "2026-04-16T09:45:25.890672"
+  },
+  {
+    "role": "assistant",
+    "content": "The Executive Chairman of the company is Ross Love. He was appointed as Executive Chairman on July 13, 2022, subsequent to the reporting date.",
+    "timestamp": "2026-04-16T09:45:25.894737"
+  },
+  {
+    "role": "user",
+    "content": "what is dinosaur?",
+    "timestamp": "2026-04-16T09:51:21.531021"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context is about cows, their characteristics, habits, and uses, as well as some general terms related to animals, but it does not mention dinosaurs.",
+    "timestamp": "2026-04-16T09:51:21.533510"
+  },
+  {
+    "role": "user",
+    "content": "what we have to do in week-4 day-3?",
+    "timestamp": "2026-04-16T09:52:06.828100"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context only mentions the objectives and learning outcomes for Week 4, but it does not provide a detailed schedule or tasks for each day of Week 4, including Day 3.",
+    "timestamp": "2026-04-16T09:52:06.829978"
+  },
+  {
+    "role": "user",
+    "content": "what we have to do in week-4 day 3?",
+    "timestamp": "2026-04-16T09:52:49.755833"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context only mentions the objectives and learning outcomes for Week 4, and the learning outcomes for Day 1 of Week 4, but it does not provide information about the tasks or learning outcomes for Day 3 of Week 4.",
+    "timestamp": "2026-04-16T09:52:49.757519"
+  },
+  {
+    "role": "user",
+    "content": "what we have to do in week-4?",
+    "timestamp": "2026-04-16T09:53:08.911944"
+  },
+  {
+    "role": "assistant",
+    "content": "In Week 4, you will be learning about Backend Systems & Production Engineering, focusing on Node.js, Express, MongoDB, API Architecture, Security, and Scalability. The advanced objectives for Week 4 include:\n\n1. Designing custom backend system architecture\n2. Implementing strict separation of concerns with enforced contracts\n3. Applying database optimization & query strategies\n4. Building defensive, production-safe APIs\n5. Introducing observability & async workflows\n6. Producing auditable documentation & artifacts\n\nOn Day 1 of Week 4, the learning outcomes are:\n\n1. Node.js runtime lifecycle (not just event loop)\n2. Environment-driven bootstrapping\n\nHowever, the specific tasks or learning outcomes for Day 3 of Week 4 are not mentioned in the provided context.",
+    "timestamp": "2026-04-16T09:53:08.914909"
+  },
+  {
+    "role": "user",
+    "content": "what is the objective of week-4 day-3?",
+    "timestamp": "2026-04-16T09:53:39.585871"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context only mentions the objectives and learning outcomes for Week 4, and the learning outcomes for Day 1 of Week 4, but it does not provide information about the tasks or learning outcomes for Day 3 of Week 4.",
+    "timestamp": "2026-04-16T09:53:39.587348"
+  },
+  {
+    "role": "user",
+    "content": "I think the last year revenue was 100 dollars only",
+    "timestamp": "2026-04-16T09:57:33.563134"
+  },
+  {
+    "role": "assistant",
+    "content": "That's incorrect. According to the provided context, the revenue for the year ended 30 June 2021 was $15.34m, and for the year ended 30 June 2022, it was $15.70m. There is no mention of the revenue being $100.",
+    "timestamp": "2026-04-16T09:57:33.565593"
+  },
+  {
+    "role": "user",
+    "content": "how is dog as an animal",
+    "timestamp": "2026-04-16T13:26:46.696266"
+  },
+  {
+    "role": "assistant",
+    "content": "According to the provided context, dogs as animals have the following characteristics:\n\n1. They originated from wolves in central Asia and have been companions to humans as far back as 13,000 BC.\n2. They have a highly developed sense of smell, able to differentiate smells that are lower than 1 million times that which a human can.\n3. They have a keen sense of hearing, able to hear sounds that are four times the distance away than a human can.\n4. The average lifespan of a dog is 10 to 14 years.\n5. They go through different life stages, including:\n\t* Adulthood: between 1 and 3 years old, when they are less energetic but should be well-trained.\n\t* Senior: between 6 and 10 years old, when they become more tired and calm, and their muzzle may turn gray.\n6. There are around 340 different dog breeds worldwide, all of which originated from the same ancestors, wolves.",
+    "timestamp": "2026-04-16T13:26:46.699063"
+  },
+  {
+    "role": "user",
+    "content": "how is fish as an animal",
+    "timestamp": "2026-04-16T13:27:45.589133"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context only talks about cows, their characteristics, habits, and uses, but does not mention fish.",
+    "timestamp": "2026-04-16T13:27:45.591275"
+  },
+  {
+    "role": "user",
+    "content": "a burger with a lot of flying ingredients",
+    "timestamp": "2026-04-16T13:28:28.010561"
+  },
+  {
+    "role": "assistant",
+    "content": "I don't have enough information in the documents to answer this question. The provided context does not mention burgers or flying ingredients. It appears to be a collection of unrelated texts, including financial reports, technical notes, and training materials, but none of them relate to burgers or flying ingredients.",
+    "timestamp": "2026-04-16T13:28:28.013904"
   }
 ]

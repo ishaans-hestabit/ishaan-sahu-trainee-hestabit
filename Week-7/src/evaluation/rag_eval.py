@@ -86,32 +86,3 @@ def generate_answer(question: str, context: str, chat_history: list) -> str:
 
     return _call_llm(messages)
 
-
-def check_faithfulness(answer: str, context: str) -> float:
-
-    stop_words = {
-        "the", "a", "an", "is", "are", "was", "were", "be", "been",
-        "have", "has", "had", "do", "does", "will", "would", "could",
-        "to", "of", "in", "on", "at", "by", "for", "with", "and",
-        "or", "but", "that", "this", "it", "not", "i", "you", "we",
-        "they", "their", "from", "as", "its", "also", "about", "more"
-    }
-
-    answer_words = set(
-        w.lower().strip(".,!?;:\"'()")
-        for w in answer.split()
-        if w.lower().strip(".,!?;:\"'()") not in stop_words
-        and len(w) > 2
-    )
-
-    context_words = set(
-        w.lower().strip(".,!?;:\"'()")
-        for w in context.split()
-    )
-
-    if not answer_words:
-        return 0.0
-
-    overlap = answer_words & context_words
-    score   = len(overlap) / len(answer_words)
-    return round(score, 2)
