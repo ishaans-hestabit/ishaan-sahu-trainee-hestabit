@@ -10,8 +10,7 @@ def get_llm_config():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     env_path = os.path.join(current_dir, "..", ".env")
     load_dotenv(dotenv_path=env_path)
-    
-    config = {
+    return {
         "config_list": [
             {
                 "model": "llama-3.3-70b-versatile",
@@ -24,25 +23,19 @@ def get_llm_config():
         "temperature": 0.3,
         "cache_seed": None,
     }
-    return config
 
 
 def pick_next_speaker(last_speaker, groupchat):
     if last_speaker.name == "User":
         return groupchat.agents[1]
-
     if last_speaker.name == "ResearchAgent":
         return groupchat.agents[2]
-
     if last_speaker.name == "SummarizerAgent":
         return groupchat.agents[3]
-
     return None
 
 
-def run_chain(query):
-    llm_config = get_llm_config()
-
+def build_system(llm_config):
     research_agent   = create_research_agent(llm_config)
     summarizer_agent = create_summarizer_agent(llm_config)
     answer_agent     = create_answer_agent(llm_config)
@@ -52,13 +45,10 @@ def run_chain(query):
         human_input_mode="NEVER",
         max_consecutive_auto_reply=0,
         code_execution_config=False,
-        default_auto_reply="",
     )
 
-    all_agents = [user, research_agent, summarizer_agent, answer_agent]
-
     groupchat = autogen.GroupChat(
-        agents=all_agents,
+        agents=[user, research_agent, summarizer_agent, answer_agent],
         messages=[],
         max_round=8,
         speaker_selection_method=pick_next_speaker,
@@ -70,17 +60,25 @@ def run_chain(query):
         is_termination_msg=lambda msg: "ANSWER COMPLETE" in msg.get("content", ""),
     )
 
-    print("=" * 50)
-    print("QUERY:", query)
-    print("=" * 50)
-
-    user.initiate_chat(
-        manager,
-        message=query,
-        clear_history=True,
-    )
+    return user, manager, groupchat
 
 
 if __name__ == "__main__":
-    query = "What is retrieval-augmented generation (RAG) and why is it used?" # This is sample query 
-    run_chain(query)
+    llm_config = get_llm_config()
+    user, manager, groupchat = build_system(llm_config)
+
+    print("=" * 50)
+    print("  Multi-Agent Chain  |  Day 1")
+    print("  Type 'exit' to quit.")
+    print("=" * 50)
+
+    while True:
+        query = input("\nYou: ").strip()
+        if not query:
+            continue
+        if query.lower() == "exit":
+            print("Goodbye.")
+            break
+
+        groupchat.messages.clear()
+        user.initiate_chat(manager, message=query, clear_history=Fale)
