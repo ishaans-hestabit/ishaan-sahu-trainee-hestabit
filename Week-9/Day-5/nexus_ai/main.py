@@ -12,18 +12,18 @@ os.makedirs(LOGS_DIR, exist_ok=True)
 LOG_FILE = os.path.join(LOGS_DIR, "nexus_log.txt")
 
 
-def _start_log(task):
+def start_log(task):
     ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(LOG_FILE, "a") as f:
         f.write(f"\n{'='*60}\nTASK: {task}\nTIME: {ts}\n{'='*60}\n\n")
 
 
-def _log_step(step_num, agent, reason, output):
+def log_step(step_num, agent, reason, output):
     with open(LOG_FILE, "a") as f:
         f.write(f"[Step {step_num} - {agent.upper()}]\nJob: {reason}\nOutput:\n{output}\n{'-'*40}\n\n")
 
 
-def _log_final(answer):
+def log_final(answer):
     with open(LOG_FILE, "a") as f:
         f.write(f"FINAL ANSWER:\n{answer}\n{'='*60}\n\n")
 
@@ -33,7 +33,7 @@ async def run_nexus(user_task):
     print("  NEXUS AI")
     print(f"  TASK: {user_task}")
     print("=" * 55)
-    _start_log(user_task)
+    start_log(user_task)
 
     memory_ctx = build_memory_context(user_task)
 
@@ -68,7 +68,7 @@ async def run_nexus(user_task):
             output = await think(THINKING_AGENTS[agent_type], prompt)
 
         history.append({"step": i, "agent": agent_type, "reason": reason, "output": output})
-        _log_step(i, agent_type, reason, output)
+        log_step(i, agent_type, reason, output)
         print("    done")
 
     has_thinking = any(s["agent"] in THINKING_AGENTS for s in steps)
@@ -91,7 +91,7 @@ async def run_nexus(user_task):
 
     print("[4/4] Saving to memory...")
     update_memory(user_task, final_output)
-    _log_final(final_output)
+    log_final(final_output)
 
     print("\n" + "=" * 55)
     print("  FINAL ANSWER")

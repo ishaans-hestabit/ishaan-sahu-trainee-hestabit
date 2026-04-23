@@ -29,7 +29,7 @@ async def think(agent, prompt):
     return (result.get("content") if isinstance(result, dict) else result or "").strip()
 
 
-def _extract_code_block(text):
+def extract_code_block(text):
     
     if "```python" not in text:
         return ""
@@ -40,7 +40,7 @@ def _extract_code_block(text):
     return text[start: end + 3]
 
 
-def _find_last_meaningful_message(assistant, proxy):
+def find_last_meaningful_message(assistant, proxy):
     
     all_messages = []
     if proxy in assistant.chat_messages:
@@ -71,7 +71,7 @@ def run_tool_agent(agent_type, task, tool_agents):
                     continue
                 content = msg.get("content", "")
                 if isinstance(content, str):
-                    block = _extract_code_block(content)
+                    block = extract_code_block(content)
                     if block:
                         code_block = block
                         break
@@ -98,14 +98,14 @@ def run_tool_agent(agent_type, task, tool_agents):
         elif agent_type == "db":
             assistant, proxy = tool_agents["db"]
             proxy.initiate_chat(assistant, message=task, max_turns=8, silent=True)
-            result = _find_last_meaningful_message(assistant, proxy)
+            result = find_last_meaningful_message(assistant, proxy)
             if not result:
                 result = "[db agent returned no output]"
 
         elif agent_type == "file":
             assistant, proxy = tool_agents["file"]
             proxy.initiate_chat(assistant, message=task, max_turns=5, silent=True)
-            result = _find_last_meaningful_message(assistant, proxy)
+            result = find_last_meaningful_message(assistant, proxy)
             if not result:
                 result = "[file agent returned no output]"
 
