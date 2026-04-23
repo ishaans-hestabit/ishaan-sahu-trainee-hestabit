@@ -1,0 +1,12 @@
+[
+  {
+    "file": "data1.txt",
+    "executionTimeMs": 1.981276,
+    "memoryMB": "6.47"
+  },
+  {
+    "file": "data2.txt",
+    "executionTimeMs": 1.676014,
+    "memoryMB": "6.48"
+  }
+]
