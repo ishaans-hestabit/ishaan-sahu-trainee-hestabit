@@ -12,17 +12,20 @@ def make_agent(name, system_message):
 
 THINKING_AGENTS = {
     "planner": make_agent("Planner",
-        "You are the Planner. Write exactly 3 numbered, specific, actionable steps to solve the task."),
+        "You are the Planner. Decompose the task into clear, actionable steps. "
+        "Use as many steps as the task requires — no more, no less."),
 
     "researcher": make_agent("Researcher",
-        "You are the Researcher. List the key facts, concepts, and domain knowledge needed for this task."),
+        "You are the Researcher. Identify the domain knowledge, constraints, and "
+        "relevant facts needed to solve the task. Focus on what is non-obvious."),
 
     "analyst": make_agent("Analyst",
-        "You are the Analyst. Extract the 3 most important insights from the available context. Be specific."),
+        "You are the Analyst. Given the research and plan, identify the key trade-offs, "
+        "assumptions, and risks. Be specific about cause and effect."),
 
     "critic": make_agent("Critic",
-        "You are the Critic. Identify exactly 2 specific problems or gaps. Be precise."),
-
+        "You are the Critic. Identify the most significant flaws, gaps, or unstated "
+        "assumptions in the current approach. Prioritize problems by impact."),
 
     "optimizer": make_agent("Optimizer",
         "You are the Optimizer. You receive a task, a previous answer, and a critique. "
