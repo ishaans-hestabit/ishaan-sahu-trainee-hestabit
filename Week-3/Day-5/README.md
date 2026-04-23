@@ -1,15 +1,30 @@
 # Next.js & Tailwind CSS Dashboard
 
-A beginner-friendly dashboard project built with Next.js and Tailwind CSS. It includes pages for a dashboard, user profile, data tables, and authentication.
 
 ## Screenshots
 
-- **Dashboard:** `public/screenshots/dashboard.png` (Add your screenshot here)
-- **Profile:** `public/screenshots/profile.png` (Add your screenshot here)
-- **Tables:** `public/screenshots/tables.png` (Add your screenshot here)
-- **Sign In:** `public/screenshots/signin.png` (Add your screenshot here)
+### Chakra Card
+![Chakra Card](../../images/ChakraCard.png)
 
-*(Please place your actual screenshot images at the paths above)*
+### Stats Card
+![Stats Card](../../images/StatsCard.png)
+
+### Welcome Card
+![Welcome Card](../../images/WelcomeCard.png)
+
+### Sales Overview
+![Sales Overview](../../images/SalesOverview.png)
+
+### Active Users
+![Active Users](../../images/ActiveUsers.png)
+
+### Dashboard Stats
+![Dashboard Stats](../../images/DashboardStats.png)
+
+### Rocket Card
+![Rocket Card](../../images/RocketCard.png)
+
+
 
 ## Folder Structure
 

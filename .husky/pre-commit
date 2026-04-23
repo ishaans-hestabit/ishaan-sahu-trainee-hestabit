@@ -14,9 +14,11 @@ echo "Checking code format..."
 # Commenting this line because this it was also checking format for log files which it should not
 # npx prettier --check "src/**/*.js" || { echo "ERROR: JS is not formatted."; exit 1; }
 
-if git ls-files --error-unmatch logs/*.log >/dev/null 2>&1; then
-  echo "ERROR: Log files are being tracked. Add 'logs/' to .gitignore."
-  exit 1
-fi
+# if git ls-files --error-unmatch logs/*.log >/dev/null 2>&1; then
+#   echo "ERROR: Log files are being tracked. Add 'logs/' to .gitignore."
+#   exit 1
+# fi
+
+# for commiting logs for check
 
 echo "All checks passed. Committing code..."

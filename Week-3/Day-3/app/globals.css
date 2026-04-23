@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4FD1C5;
+  --color-sidebar-bg: #F8F9FA; /* That soft grey from the SS */
+  --color-card-bg: #FFFFFF;
+  --font-sans: Helvetica, Arial, sans-serif; /* Standard for SaaS UIs */
+}
+
+body {
+  font-family: var(--font-sans);
+  
+}
