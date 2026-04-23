@@ -1,0 +1,698 @@
+2026-03-03 18:00:11.237 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-03 18:00:45.102 info : Successfully connected to Redis
+2026-03-03 18:00:45.123 info : ✔ Database connected
+2026-03-03 18:00:45.126 info : ✔ Middlewares loaded
+2026-03-03 18:00:45.127 info : ✔ Routes loaded
+2026-03-03 18:00:45.128 info :  Background Email Worker initialized
+2026-03-03 18:00:45.130 info : ✔ Server started on port 3001
+2026-03-03 18:02:39.877 info : Successfully connected to Redis
+2026-03-03 18:02:39.888 info : ✔ Database connected
+2026-03-03 18:02:39.891 info : ✔ Middlewares loaded
+2026-03-03 18:02:39.891 info : ✔ Routes loaded
+2026-03-03 18:02:39.892 info :  Background Email Worker initialized
+2026-03-03 18:02:39.894 info : ✔ Server started on port 3001
+2026-03-03 18:02:56.861 info [ID:4d4a2a54-4ea1-4a18-9860-5724b09fca83] : Starting Email Job: for 123@gmail.com
+2026-03-03 18:03:01.205 info [ID:4d4a2a54-4ea1-4a18-9860-5724b09fca83] : Email sent successfully: <0b61d326-10d3-dbfe-fec2-dd8c8783292d@localhost>
+2026-03-03 18:04:45.189 info : Successfully connected to Redis
+2026-03-03 18:04:45.200 info : ✔ Database connected
+2026-03-03 18:04:45.202 info : ✔ Middlewares loaded
+2026-03-03 18:04:45.203 info : ✔ Routes loaded
+2026-03-03 18:04:45.204 info :  Background Email Worker initialized
+2026-03-03 18:04:45.205 info : ✔ Server started on port 3001
+2026-03-03 18:06:30.687 info : Successfully connected to Redis
+2026-03-03 18:06:30.698 info : ✔ Database connected
+2026-03-03 18:06:30.700 info : ✔ Middlewares loaded
+2026-03-03 18:06:30.700 info : ✔ Routes loaded
+2026-03-03 18:06:30.701 info :  Background Email Worker initialized
+2026-03-03 18:06:30.703 info : ✔ Server started on port 3001
+2026-03-03 18:08:42.217 info : Successfully connected to Redis
+2026-03-03 18:08:42.228 info : ✔ Database connected
+2026-03-03 18:08:42.230 info : ✔ Middlewares loaded
+2026-03-03 18:08:42.230 info : ✔ Routes loaded
+2026-03-03 18:08:42.231 info :  Background Email Worker initialized
+2026-03-03 18:08:42.236 info : ✔ Server started on port 3001
+2026-03-03 18:08:45.668 error [ID:e8c3de02-dedf-4fe7-a594-a2cdfd3ee629] : Error Occured Message: Email already exists statusCode: 409
+2026-03-03 23:45:42.004 info : Successfully connected to Redis
+2026-03-03 23:45:42.053 info : ✔ Database connected
+2026-03-03 23:45:42.064 info : ✔ Middlewares loaded
+2026-03-03 23:45:42.066 info : ✔ Routes loaded
+2026-03-03 23:45:42.070 info : Background Email Worker initialized
+2026-03-03 23:45:42.080 info : ✔ Server started on port 3001
+2026-03-03 23:49:11.377 error [ID:e0b390b9-890d-42d3-a3cb-7348be32a517] : Error Occured Message: body.password: Password must be at least 8 characters statusCode: 422
+2026-03-03 23:49:21.944 info [ID:3c769be4-1b3e-495a-930a-1405ee53a085] : Starting Email Job: for test@example.com
+2026-03-03 23:49:26.963 info [ID:3c769be4-1b3e-495a-930a-1405ee53a085] : Email sent successfully: <51037ba7-0f94-f5e1-f646-fa4fb7d03658@localhost>
+2026-03-04 00:35:04.800 info : Successfully connected to Redis
+2026-03-04 00:35:04.815 info : ✔ Database connected
+2026-03-04 00:35:04.819 info : ✔ Middlewares loaded
+2026-03-04 00:35:04.820 info : ✔ Routes loaded
+2026-03-04 00:35:04.822 info : Background Email Worker initialized
+2026-03-04 00:35:04.825 info : ✔ Server started on port 3001
+2026-03-04 00:35:29.651 info : Successfully connected to Redis
+2026-03-04 00:35:29.688 info : ✔ Database connected
+2026-03-04 00:35:29.694 info : ✔ Middlewares loaded
+2026-03-04 00:35:29.695 info : ✔ Routes loaded
+2026-03-04 00:35:29.698 info : Background Email Worker initialized
+2026-03-04 00:35:29.701 info : ✔ Server started on port 3001
+2026-03-09 11:27:03.420 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-09 11:27:42.428 info : Successfully connected to Redis
+2026-03-09 11:27:42.440 info : ✔ Database connected
+2026-03-09 11:27:42.442 info : ✔ Middlewares loaded
+2026-03-09 11:27:42.443 info : ✔ Routes loaded
+2026-03-09 11:27:42.444 info : Background Email Worker initialized
+2026-03-09 11:27:42.446 info : ✔ Server started on port 3001
+2026-03-09 11:29:44.933 info [ID:37618429-bb65-438e-93ae-75bcfc351f73] : Starting Email Job: for aaditya.sharma@hestabit.in
+2026-03-09 11:29:49.588 info [ID:37618429-bb65-438e-93ae-75bcfc351f73] : Email sent successfully: <e663f792-a146-3dd5-98fb-3f9a8aec657b@localhost>
+2026-03-12 17:05:23.516 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-12 17:07:08.076 info : Successfully connected to Redis
+2026-03-12 17:07:08.091 info : ✔ Database connected
+2026-03-12 17:38:55.538 info : Successfully connected to Redis
+2026-03-12 17:38:55.549 info : ✔ Database connected
+2026-03-12 17:40:22.556 info : Successfully connected to Redis
+2026-03-12 17:40:22.566 info : ✔ Database connected
+2026-03-12 17:41:09.747 info : Successfully connected to Redis
+2026-03-12 17:41:09.758 info : ✔ Database connected
+2026-03-12 17:41:31.022 info : Successfully connected to Redis
+2026-03-12 17:41:31.034 info : ✔ Database connected
+2026-03-12 17:42:45.488 info : Successfully connected to Redis
+2026-03-12 17:42:45.499 info : ✔ Database connected
+2026-03-12 17:43:01.999 info : Successfully connected to Redis
+2026-03-12 17:43:02.010 info : ✔ Database connected
+2026-03-12 17:43:02.013 info : ✔ Middlewares loaded
+2026-03-12 17:43:02.013 info : ✔ Routes loaded
+2026-03-12 17:43:02.014 info : Background Email Worker initialized
+2026-03-12 17:43:02.016 info : ✔ Server started on port 3002
+2026-03-12 17:48:43.979 info : Successfully connected to Redis
+2026-03-12 17:48:43.992 info : ✔ Database connected
+2026-03-12 17:48:43.997 info : ✔ Middlewares loaded
+2026-03-12 17:48:43.997 info : ✔ Routes loaded
+2026-03-12 17:48:43.998 info : Background Email Worker initialized
+2026-03-12 17:48:44.000 info : ✔ Server started on port 3001
+2026-03-12 17:48:58.534 info : Successfully connected to Redis
+2026-03-12 17:48:58.553 info : ✔ Database connected
+2026-03-12 17:48:58.558 info : ✔ Middlewares loaded
+2026-03-12 17:48:58.559 info : ✔ Routes loaded
+2026-03-12 17:48:58.561 info : Background Email Worker initialized
+2026-03-12 17:48:58.564 info : ✔ Server started on port 3000
+2026-03-12 18:34:41.452 info : Successfully connected to Redis
+2026-03-12 18:34:41.468 info : ✔ Database connected
+2026-03-12 18:34:41.473 info : ✔ Middlewares loaded
+2026-03-12 18:34:41.474 info : ✔ Routes loaded
+2026-03-12 18:34:41.477 info : Background Email Worker initialized
+2026-03-12 18:34:41.480 info : ✔ Server started on port 3001
+2026-03-12 18:36:26.996 info [ID:dc8aa687-8243-49a9-addf-e3b3724ba1ef] : Starting Email Job: for aaditya.sharma@hestabt.in
+2026-03-12 18:36:31.661 info [ID:dc8aa687-8243-49a9-addf-e3b3724ba1ef] : Email sent successfully: <91601290-290d-d150-22f3-212e1012a356@localhost>
+2026-03-12 18:51:54.781 info : Successfully connected to Redis
+2026-03-12 18:51:54.792 info : ✔ Database connected
+2026-03-12 18:51:54.794 info : ✔ Middlewares loaded
+2026-03-12 18:51:54.795 info : ✔ Routes loaded
+2026-03-12 18:51:54.796 info : Background Email Worker initialized
+2026-03-12 18:51:54.797 info : ✔ Server started on port 3001
+2026-03-12 18:52:00.429 error [ID:ac1f57ad-e22c-42ca-873e-9ecd68db4473] : Error Occured Message: params.email: Invalid email format statusCode: 422
+2026-03-12 18:52:49.927 error [ID:0150427f-d116-41ea-92fb-4289d8d7ad2c] : Error Occured Message: params.email: Invalid email format statusCode: 422
+2026-03-12 18:54:06.802 error [ID:36d78f34-f828-43d0-ad1c-b73144591beb] : Error Occured Message: params.email: Invalid email format statusCode: 422
+2026-03-12 18:54:07.613 error [ID:b25b4823-651a-4217-bf42-21fa4ba4ac2a] : Error Occured Message: params.email: Invalid email format statusCode: 422
+2026-03-12 18:57:18.654 info : Successfully connected to Redis
+2026-03-12 18:57:18.665 info : ✔ Database connected
+2026-03-12 18:57:18.668 info : ✔ Middlewares loaded
+2026-03-12 18:57:18.668 info : ✔ Routes loaded
+2026-03-12 18:57:18.669 info : Background Email Worker initialized
+2026-03-12 18:57:18.671 info : ✔ Server started on port 3001
+2026-03-12 18:57:22.357 error [ID:5b406b2f-c033-4a3a-b745-440fc2222e67] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-12 18:57:58.605 info : Successfully connected to Redis
+2026-03-12 18:57:58.616 info : ✔ Database connected
+2026-03-12 18:57:58.618 info : ✔ Middlewares loaded
+2026-03-12 18:57:58.619 info : ✔ Routes loaded
+2026-03-12 18:57:58.620 info : Background Email Worker initialized
+2026-03-12 18:57:58.621 info : ✔ Server started on port 3001
+2026-03-12 18:58:04.042 error [ID:684a1397-e54e-4868-af2f-53b2c4b53fff] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-12 18:58:53.090 info : Successfully connected to Redis
+2026-03-12 18:58:53.102 info : ✔ Database connected
+2026-03-12 18:58:53.104 info : ✔ Middlewares loaded
+2026-03-12 18:58:53.105 info : ✔ Routes loaded
+2026-03-12 18:58:53.106 info : Background Email Worker initialized
+2026-03-12 18:58:53.107 info : ✔ Server started on port 3001
+2026-03-12 18:58:55.682 error [ID:42dc3682-f29a-4cbf-bec5-dc027a40905e] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-12 18:59:13.584 info : Successfully connected to Redis
+2026-03-12 18:59:13.595 info : ✔ Database connected
+2026-03-12 18:59:13.597 info : ✔ Middlewares loaded
+2026-03-12 18:59:13.598 info : ✔ Routes loaded
+2026-03-12 18:59:13.599 info : Background Email Worker initialized
+2026-03-12 18:59:13.600 info : ✔ Server started on port 3001
+2026-03-12 18:59:16.677 error [ID:63a523cf-94a7-4984-8fb2-fbd954a3383c] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-12 19:00:13.672 info : Successfully connected to Redis
+2026-03-12 19:00:13.682 info : ✔ Database connected
+2026-03-12 19:00:13.684 info : ✔ Middlewares loaded
+2026-03-12 19:00:13.685 info : ✔ Routes loaded
+2026-03-12 19:00:13.686 info : Background Email Worker initialized
+2026-03-12 19:00:13.688 info : ✔ Server started on port 3001
+2026-03-12 19:08:53.671 error [ID:e290eb59-2674-40c4-a3a9-074af15d3527] : Error Occured Message: Email already exists statusCode: 409
+2026-03-12 22:24:40.035 error [ID:82f9393f-44d3-406e-99e8-3083ee47042f] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-12 22:27:52.018 info : Successfully connected to Redis
+2026-03-12 22:27:52.040 info : ✔ Database connected
+2026-03-12 22:27:52.045 info : ✔ Middlewares loaded
+2026-03-12 22:27:52.047 info : ✔ Routes loaded
+2026-03-12 22:27:52.049 info : Background Email Worker initialized
+2026-03-12 22:27:52.052 info : ✔ Server started on port 3001
+2026-03-12 22:27:56.494 error [ID:366b6de4-4be6-4e83-bfe4-d07f92794bca] : Error Occured Message: Invalid order status statusCode: 400
+2026-03-12 22:31:04.487 info : Successfully connected to Redis
+2026-03-12 22:31:04.516 info : ✔ Database connected
+2026-03-12 22:31:04.520 info : ✔ Middlewares loaded
+2026-03-12 22:31:04.521 info : ✔ Routes loaded
+2026-03-12 22:31:04.523 info : Background Email Worker initialized
+2026-03-12 22:31:04.525 info : ✔ Server started on port 3001
+2026-03-12 22:52:17.495 error [ID:7dcac5df-e7f1-43c3-8b38-b3ec86256ed9] : Error Occured Message: Product not found or already deleted statusCode: 404
+2026-03-13 00:19:17.211 info : Successfully connected to Redis
+2026-03-13 00:19:17.254 info : ✔ Database connected
+2026-03-13 00:19:17.263 info : ✔ Middlewares loaded
+2026-03-13 00:19:17.265 info : ✔ Routes loaded
+2026-03-13 00:19:17.268 info : Background Email Worker initialized
+2026-03-13 00:19:17.273 info : ✔ Server started on port 3001
+2026-03-13 00:19:24.652 error [ID:ac611640-b6b4-4767-91d2-ee8a7da6feb0] : Error Occured Message: Product not found or already deleted statusCode: 404
+2026-03-13 00:19:41.452 error [ID:b1e6a0d2-9948-41cc-b993-b35ef75d365e] : Error Occured Message: Product not found statusCode: 404
+2026-03-13 00:43:40.436 info : Successfully connected to Redis
+2026-03-13 00:43:40.479 info : ✔ Database connected
+2026-03-13 00:43:40.487 info : ✔ Middlewares loaded
+2026-03-13 00:43:40.489 info : ✔ Routes loaded
+2026-03-13 00:43:40.491 info : Background Email Worker initialized
+2026-03-13 00:43:40.496 info : ✔ Server started on port 3001
+2026-03-13 01:01:55.647 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-13 01:09:13.957 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-13 01:28:00.424 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-13 11:18:04.284 info : Successfully connected to Redis
+2026-03-13 11:18:04.296 info : ✔ Database connected
+2026-03-13 11:18:04.298 info : ✔ Middlewares loaded
+2026-03-13 11:18:04.299 info : ✔ Routes loaded
+2026-03-13 11:18:04.300 info : Background Email Worker initialized
+2026-03-13 11:18:04.301 info : ✔ Server started on port 3001
+2026-03-13 11:20:53.807 error [ID:64bc6a5c-545c-41e6-8a4c-8fa659972c13] : Error Occured Message: body.firstName: Invalid input: expected string, received number statusCode: 422
+2026-03-13 11:40:09.309 info : Successfully connected to Redis
+2026-03-13 11:40:09.322 info : ✔ Database connected
+2026-03-13 11:40:09.324 info : ✔ Middlewares loaded
+2026-03-13 11:40:09.325 info : ✔ Routes loaded
+2026-03-13 11:40:09.326 info : Background Email Worker initialized
+2026-03-13 11:40:09.329 info : ✔ Server started on port 3001
+2026-03-13 11:52:47.032 info : Successfully connected to Redis
+2026-03-13 11:52:47.045 info : ✔ Database connected
+2026-03-13 11:52:47.047 info : ✔ Middlewares loaded
+2026-03-13 11:52:47.048 info : ✔ Routes loaded
+2026-03-13 11:52:47.049 info : Background Email Worker initialized
+2026-03-13 11:52:47.050 info : ✔ Server started on port 3001
+2026-03-13 13:04:49.917 info : Successfully connected to Redis
+2026-03-13 13:04:49.932 info : ✔ Database connected
+2026-03-13 13:04:49.937 info : ✔ Middlewares loaded
+2026-03-13 13:04:49.938 info : ✔ Routes loaded
+2026-03-13 13:04:49.940 info : Background Email Worker initialized
+2026-03-13 13:04:49.943 info : ✔ Server started on port 3001
+2026-03-13 13:05:12.529 info : Successfully connected to Redis
+2026-03-13 13:05:12.539 info : ✔ Database connected
+2026-03-13 13:05:12.541 info : ✔ Middlewares loaded
+2026-03-13 13:05:12.542 info : ✔ Routes loaded
+2026-03-13 13:05:12.543 info : Background Email Worker initialized
+2026-03-13 13:05:12.544 info : ✔ Server started on port 3001
+2026-03-13 13:14:40.915 info : Successfully connected to Redis
+2026-03-13 13:14:40.926 info : ✔ Database connected
+2026-03-13 13:14:40.928 info : ✔ Middlewares loaded
+2026-03-13 13:14:40.929 info : ✔ Routes loaded
+2026-03-13 13:14:40.930 info : Background Email Worker initialized
+2026-03-13 13:14:40.931 info : ✔ Server started on port 3001
+2026-03-16 13:07:56.002 info : Successfully connected to Redis
+2026-03-16 13:07:56.013 info : ✔ Database connected
+2026-03-16 13:07:56.015 info : ✔ Middlewares loaded
+2026-03-16 13:07:56.016 info : ✔ Routes loaded
+2026-03-16 13:07:56.017 info : Background Email Worker initialized
+2026-03-16 13:07:56.018 info : ✔ Server started on port 3001
+2026-03-16 13:10:16.484 error [ID:8c518653-27f1-4919-be03-c754779030a0] : Error Occured Message: query.sort: Invalid sort format statusCode: 422
+2026-03-16 23:09:53.647 info : Successfully connected to Redis
+2026-03-16 23:09:53.687 info : ✔ Database connected
+2026-03-16 23:12:18.389 info : Successfully connected to Redis
+2026-03-16 23:12:18.446 info : ✔ Database connected
+2026-03-16 23:12:18.466 info : ✔ Middlewares loaded
+2026-03-16 23:12:18.470 info : ✔ Routes loaded
+2026-03-16 23:12:18.474 info : Background Email Worker initialized
+2026-03-16 23:12:18.482 info : ✔ Server started on port 3001
+2026-03-16 23:20:36.215 error [ID:f29603cb-20c0-4acd-91fd-5faa32fc7bd3] : Error Occured Message: Product not found statusCode: 404
+2026-03-16 23:20:40.669 error [ID:087db1e5-8962-4273-8943-cb1ada08b3e0] : Error Occured Message: Product not found statusCode: 404
+2026-03-16 23:24:43.853 error [ID:f5e01fc5-6a8c-4cfd-af11-d7472f9755ac] : Error Occured Message: Email already exists statusCode: 409
+2026-03-16 23:26:05.711 info : Successfully connected to Redis
+2026-03-16 23:26:05.733 info : ✔ Database connected
+2026-03-16 23:26:05.738 info : ✔ Middlewares loaded
+2026-03-16 23:26:05.741 info : ✔ Routes loaded
+2026-03-16 23:26:05.744 info : Background Email Worker initialized
+2026-03-16 23:26:05.748 info : ✔ Server started on port 3001
+2026-03-16 23:26:11.310 error [ID:b1a9a6c6-066c-4a79-b093-48b3c2097bb8] : Error Occured Message: Email already exists statusCode: 409
+2026-03-16 23:26:26.466 error [ID:474a5dbb-8081-4f37-8cec-7914e5d343bf] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:27:43.449 error [ID:03c040db-3f48-4274-bdcf-3abc8ba4d822] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:28:40.236 info : Successfully connected to Redis
+2026-03-16 23:28:40.257 info : ✔ Database connected
+2026-03-16 23:28:40.261 info : ✔ Middlewares loaded
+2026-03-16 23:28:40.262 info : ✔ Routes loaded
+2026-03-16 23:28:40.265 info : Background Email Worker initialized
+2026-03-16 23:28:40.268 info : ✔ Server started on port 3001
+2026-03-16 23:28:43.164 error [ID:1ccf9b99-70b0-4b7a-a416-9ee17ffd3470] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:28:59.958 info : Successfully connected to Redis
+2026-03-16 23:28:59.980 info : ✔ Database connected
+2026-03-16 23:28:59.986 info : ✔ Middlewares loaded
+2026-03-16 23:28:59.987 info : ✔ Routes loaded
+2026-03-16 23:28:59.990 info : Background Email Worker initialized
+2026-03-16 23:28:59.993 info : ✔ Server started on port 3001
+2026-03-16 23:29:02.273 error [ID:fcfb6bd0-f53d-4087-919e-856e20480f33] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:31:14.087 info : Successfully connected to Redis
+2026-03-16 23:31:14.111 info : ✔ Database connected
+2026-03-16 23:31:14.117 info : ✔ Middlewares loaded
+2026-03-16 23:31:14.118 info : ✔ Routes loaded
+2026-03-16 23:31:14.120 info : Background Email Worker initialized
+2026-03-16 23:31:14.124 info : ✔ Server started on port 3001
+2026-03-16 23:31:17.199 error [ID:f8bb1a18-4980-4c6a-b02b-c15268f7459d] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:31:38.385 info : Successfully connected to Redis
+2026-03-16 23:31:38.408 info : ✔ Database connected
+2026-03-16 23:31:38.413 info : ✔ Middlewares loaded
+2026-03-16 23:31:38.414 info : ✔ Routes loaded
+2026-03-16 23:31:38.417 info : Background Email Worker initialized
+2026-03-16 23:31:38.421 info : ✔ Server started on port 3001
+2026-03-16 23:31:41.258 error [ID:ab637a87-d85a-44a1-b784-71b9bbedcabd] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:32:20.881 error [ID:06070449-277c-4918-a0ae-6b257aad8a2d] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:32:48.125 error [ID:86dd55b4-3a98-4b2e-b6dd-a75845c0a570] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:32:51.372 error [ID:2630e5c0-658c-4d52-afd8-b8714f7cc57a] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:33:51.103 info : Successfully connected to Redis
+2026-03-16 23:33:51.136 info : ✔ Database connected
+2026-03-16 23:33:51.140 info : ✔ Middlewares loaded
+2026-03-16 23:33:51.141 info : ✔ Routes loaded
+2026-03-16 23:33:51.144 info : Background Email Worker initialized
+2026-03-16 23:33:51.147 info : ✔ Server started on port 3001
+2026-03-16 23:33:54.173 error [ID:3db5ad4f-0b85-4ce2-bea4-1a613f5185c3] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:34:27.333 info : Successfully connected to Redis
+2026-03-16 23:34:27.354 info : ✔ Database connected
+2026-03-16 23:34:27.358 info : ✔ Middlewares loaded
+2026-03-16 23:34:27.360 info : ✔ Routes loaded
+2026-03-16 23:34:27.362 info : Background Email Worker initialized
+2026-03-16 23:34:27.365 info : ✔ Server started on port 3001
+2026-03-16 23:34:30.069 error [ID:0484eb1c-91e4-40be-8c2e-825e7d97ebf5] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:34:45.386 info : Successfully connected to Redis
+2026-03-16 23:34:45.406 info : ✔ Database connected
+2026-03-16 23:34:45.410 info : ✔ Middlewares loaded
+2026-03-16 23:34:45.411 info : ✔ Routes loaded
+2026-03-16 23:34:45.414 info : Background Email Worker initialized
+2026-03-16 23:34:45.417 info : ✔ Server started on port 3001
+2026-03-16 23:34:47.807 error [ID:acd6625e-d654-44ab-b32b-4f6fb82f2b48] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:35:26.460 info : Successfully connected to Redis
+2026-03-16 23:35:26.496 info : ✔ Database connected
+2026-03-16 23:35:26.504 info : ✔ Middlewares loaded
+2026-03-16 23:35:26.507 info : ✔ Routes loaded
+2026-03-16 23:35:26.511 info : Background Email Worker initialized
+2026-03-16 23:35:26.517 info : ✔ Server started on port 3001
+2026-03-16 23:35:29.116 error [ID:1d3c5658-2e23-4490-a893-3cb2737362ca] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-16 23:36:02.277 info : Successfully connected to Redis
+2026-03-16 23:36:02.296 info : ✔ Database connected
+2026-03-16 23:36:02.300 info : ✔ Middlewares loaded
+2026-03-16 23:36:02.301 info : ✔ Routes loaded
+2026-03-16 23:36:02.304 info : Background Email Worker initialized
+2026-03-16 23:36:02.307 info : ✔ Server started on port 3001
+2026-03-16 23:36:06.734 info [ID:b5f77f05-5a97-4c0f-ad93-9656c27ce057] : Starting Email Job: for aadityfa.shasdfjnrma@hestabt.in
+2026-03-16 23:36:11.191 info [ID:b5f77f05-5a97-4c0f-ad93-9656c27ce057] : Email sent successfully: <a891d480-f832-ea0d-d559-c2a2796e52f1@localhost>
+2026-03-16 23:36:46.088 info [ID:dc16705d-400f-4fc2-8764-908aa9785491] : Starting Email Job: for aadityfa.shwvbasdfjnrma@hestabt.in
+2026-03-16 23:36:49.769 info [ID:dc16705d-400f-4fc2-8764-908aa9785491] : Email sent successfully: <19503903-1db8-80b3-5828-7ffa5ed4c1eb@localhost>
+2026-03-16 23:41:54.429 info : Successfully connected to Redis
+2026-03-16 23:41:54.462 info : ✔ Database connected
+2026-03-16 23:41:54.468 info : ✔ Middlewares loaded
+2026-03-16 23:41:54.470 info : ✔ Routes loaded
+2026-03-16 23:41:54.474 info : Background Email Worker initialized
+2026-03-16 23:41:54.478 info : ✔ Server started on port 3001
+2026-03-17 11:36:14.514 info : Successfully connected to Redis
+2026-03-17 11:36:14.525 info : ✔ Database connected
+2026-03-17 11:36:14.527 info : ✔ Middlewares loaded
+2026-03-17 11:36:14.528 info : ✔ Routes loaded
+2026-03-17 11:36:14.529 info : Background Email Worker initialized
+2026-03-17 11:36:14.530 info : ✔ Server started on port 3001
+2026-03-17 11:37:58.057 error [ID:4db68bba-769f-47ef-9a03-21c15d20ef76] : Error Occured Message: body.password: Password must be at least 8 characters statusCode: 422
+2026-03-17 11:38:08.466 error [ID:bdb09c7e-3565-43fd-a850-7fdf8c98d276] : Error Occured Message: Email already exists statusCode: 409
+2026-03-17 11:38:53.989 error [ID:561362ad-077c-4bee-95e2-2d1b88332770] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-17 11:38:55.954 error [ID:7c192470-1726-4457-8434-82f452f44637] : Error Occured Message: Something went wrong statusCode: 500
+2026-03-17 11:39:11.068 info [ID:3441cbb0-3242-48dc-aec3-8deca4b5386d] : Starting Email Job: for 2k22.csaiml.2212034@gl.com
+2026-03-17 11:39:15.537 info [ID:3441cbb0-3242-48dc-aec3-8deca4b5386d] : Email sent successfully: <dd8c7b7a-3169-c1aa-7f97-d965f5ba1c1b@localhost>
+2026-03-17 11:40:26.176 info [ID:27edd486-23f3-4daf-9b1c-fa427b21cee7] : Starting Email Job: for hesta@sfn.com
+2026-03-17 11:40:30.174 info [ID:27edd486-23f3-4daf-9b1c-fa427b21cee7] : Email sent successfully: <1b9caf64-6676-f927-29c2-86713f7eeddc@localhost>
+2026-03-17 11:43:57.425 info : Successfully connected to Redis
+2026-03-17 11:43:57.531 info : Successfully connected to Redis
+2026-03-17 11:43:57.737 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:43:58.215 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:43:58.691 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:43:59.138 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:43:59.560 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:00.013 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:00.478 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:00.943 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:01.396 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:01.824 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:02.280 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:02.732 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:03.177 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:03.607 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:04.043 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:04.475 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:04.942 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:05.386 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:05.856 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:06.301 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:06.737 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:07.175 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:07.601 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:08.057 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:08.492 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:08.923 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:09.345 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:09.822 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:10.254 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:10.690 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:11.153 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:11.589 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:12.020 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:12.530 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:12.961 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:13.416 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:13.880 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:14.317 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:14.780 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:15.230 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:15.667 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:16.106 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:16.539 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:16.995 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:17.461 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:17.942 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:18.380 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:18.864 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:19.286 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:19.769 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:20.199 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:20.638 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:21.081 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:21.548 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:21.994 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:22.476 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:22.941 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:23.420 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:23.891 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:24.335 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:24.762 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:25.199 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:25.629 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:26.061 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:26.488 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:26.915 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:27.346 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:27.788 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:28.224 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:28.651 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:29.084 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:29.510 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:29.948 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:30.375 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:30.823 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:31.249 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:31.682 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:32.121 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:32.556 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:33.004 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:33.470 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:33.885 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:34.335 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:34.785 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:35.212 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:35.654 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:36.076 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:36.492 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:36.921 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:37.371 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:37.821 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:38.260 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:38.735 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:39.166 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:39.602 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:40.026 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:40.454 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:40.888 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:41.346 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:41.787 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:42.213 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:42.648 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:43.089 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:43.515 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:43.950 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:44.373 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:44.821 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:45.308 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:45.731 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:46.156 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:46.644 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:47.095 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:47.539 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:48.000 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:48.445 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:48.892 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:49.328 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:49.763 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:50.204 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:50.633 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:51.100 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:51.548 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:51.979 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:52.413 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:52.833 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:53.276 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:53.696 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:54.134 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:54.607 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:55.074 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:55.516 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:55.955 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:56.527 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:56.979 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:57.465 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:57.912 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:58.340 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:58.792 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:59.244 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:44:59.686 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:00.147 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:00.584 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:01.013 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:01.493 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:01.945 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:02.393 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:02.868 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:03.322 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:03.757 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:04.245 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:04.665 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:05.106 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:05.547 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:05.975 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:06.408 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:06.862 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:07.301 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:07.731 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:08.177 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:08.658 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:09.092 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:09.510 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:09.984 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:10.419 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:10.853 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:11.393 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:11.808 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:12.267 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:12.690 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:13.122 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:13.547 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:13.979 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:14.409 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:14.844 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:15.268 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:15.737 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:16.173 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:16.599 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:17.040 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:17.458 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:17.904 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:18.328 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:18.757 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:19.182 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:19.608 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:20.045 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:20.466 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:20.909 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:21.350 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:21.785 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:22.228 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:22.658 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:23.090 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:23.515 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:23.949 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:24.388 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:24.823 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:25.252 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:25.675 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:26.098 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:26.531 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:26.958 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:27.391 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:27.818 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:28.250 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:28.687 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:29.118 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:29.551 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:29.972 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:30.410 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:30.831 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:31.262 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:31.688 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:32.122 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:32.570 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:33.003 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:33.440 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:33.892 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:34.322 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:34.740 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:35.187 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:35.602 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:36.036 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:36.468 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:36.897 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:37.334 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:37.764 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:38.212 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:38.650 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:39.071 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:39.501 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:39.927 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:40.359 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:40.782 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:41.219 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:41.645 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:42.084 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:42.513 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:42.952 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:43.388 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:43.844 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:44.291 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:44.756 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:45.219 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:45.783 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:46.264 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:46.709 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:47.137 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:47.565 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:47.994 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:48.433 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:48.861 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:49.303 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:49.733 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:50.160 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:50.595 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:51.035 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:51.462 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:51.890 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:52.324 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:52.760 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:53.192 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:53.663 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:54.151 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:54.621 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:55.082 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:55.659 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:56.094 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:56.535 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:56.978 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:57.423 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:57.873 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:58.314 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:58.744 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:59.174 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:45:59.598 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:00.045 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:00.484 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:00.933 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:01.373 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:01.801 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:02.233 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:02.676 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:03.129 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:03.566 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:03.996 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:04.425 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:04.869 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:05.328 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:05.785 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:06.219 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:06.660 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:07.099 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:07.526 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:08.019 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:08.483 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:08.924 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:09.352 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:09.794 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:10.251 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:10.727 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:11.213 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:11.677 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:12.106 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:12.545 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:12.968 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:13.416 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:13.858 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:14.305 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:14.737 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:15.182 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:15.614 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:16.051 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:16.484 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:16.935 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:17.379 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:17.813 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:18.255 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:18.719 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:19.170 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:19.603 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:20.031 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:20.521 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:20.942 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:21.372 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:21.812 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:22.255 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:22.695 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:23.125 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:23.549 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:23.989 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:24.431 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:24.860 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:25.301 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:25.721 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:26.153 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:26.592 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:27.017 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:27.449 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:27.910 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:28.342 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:28.763 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:29.199 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:29.629 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 11:46:30.059 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 12:51:34.336 error : Redis Connection Error connect ECONNREFUSED 127.0.0.1:6379
+2026-03-17 12:51:47.627 info : Successfully connected to Redis
+2026-03-17 12:51:47.638 info : ✔ Database connected
+2026-03-17 12:52:17.111 info : Successfully connected to Redis
+2026-03-17 12:52:17.122 info : ✔ Database connected
+2026-03-17 12:52:17.124 info : ✔ Middlewares loaded
+2026-03-17 12:52:17.125 info : ✔ Routes loaded
+2026-03-17 12:52:17.126 info : Background Email Worker initialized
+2026-03-17 12:52:17.127 info : ✔ Server started on port 3001
+2026-03-17 14:41:29.856 info : Successfully connected to Redis
+2026-03-17 14:41:29.883 info : ✔ Database connected
+2026-03-17 14:41:29.887 info : ✔ Middlewares loaded
+2026-03-17 14:41:29.888 info : ✔ Routes loaded
+2026-03-17 14:41:29.889 info : Background Email Worker initialized
+2026-03-17 14:41:29.892 info : ✔ Server started on port 3001
+2026-03-17 15:56:17.188 info [ID:4ad04e33-01ae-4c74-a941-844ad62bcec5] : Starting Email Job: for hesta@gmail.com
+2026-03-17 15:56:21.912 info [ID:4ad04e33-01ae-4c74-a941-844ad62bcec5] : Email sent successfully: <e6d92fa6-c416-cac6-52ea-aac060fa585c@localhost>
+2026-03-17 16:01:27.894 error [ID:ef5dbe7d-c4b2-414b-9c45-88ec6e81a3ad] : Error Occured Message: body.firstName: Only alphabets allowed statusCode: 422
