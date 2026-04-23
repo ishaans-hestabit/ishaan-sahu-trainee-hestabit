@@ -9,18 +9,6 @@ MAX_CONTEXT_CHARS = 3000
 MAX_VALIDATOR_RETRIES = 3
 
 
-@contextmanager
-def _suppress_output():
-    devnull = open(os.devnull, "w")
-    old_stdout, old_stderr = sys.stdout, sys.stderr
-    sys.stdout, sys.stderr = devnull, devnull
-    try:
-        yield
-    finally:
-        sys.stdout, sys.stderr = old_stdout, old_stderr
-        devnull.close()
-
-
 async def think(agent, prompt):
     result = await asyncio.to_thread(
         agent.generate_reply,
