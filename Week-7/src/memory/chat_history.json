@@ -358,5 +358,15 @@
     "role": "assistant",
     "content": "I don't have enough information in the documents to answer this question. The provided context does not mention burgers or flying ingredients. It appears to be a collection of unrelated texts, including financial reports, technical notes, and training materials, but none of them relate to burgers or flying ingredients.",
     "timestamp": "2026-04-16T13:28:28.013904"
+  },
+  {
+    "role": "user",
+    "content": "what are the types of cows?",
+    "timestamp": "2026-04-16T14:08:40.388300"
+  },
+  {
+    "role": "assistant",
+    "content": "According to the provided context, the types of cows mentioned are:\n\n1. Bulls - a fully grown male used for breeding purposes.\n2. Cows - a fully grown female animal of a domesticated breed that has given birth to at least one or two calves, kept to produce beef or milk.\n3. Calves - a young female or male in its first year.\n4. Heifers - female cattle that have not had a calf.\n5. Steers - male cattle that are used primarily for beef (and not for breeding).\n\nAdditionally, it is mentioned that there are many breeds of cows, but only a few are listed, implying that there are over 1000 breeds of cattle worldwide, but the exact types are not specified in the provided context.",
+    "timestamp": "2026-04-16T14:08:40.392266"
   }
 ]

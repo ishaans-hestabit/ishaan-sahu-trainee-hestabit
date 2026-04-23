@@ -1,0 +1,58 @@
+{
+  "Logistic Regression": {
+    "val_accuracy": 0.5875,
+    "val_precision": 0.637,
+    "val_recall": 0.5882,
+    "val_f1": 0.611,
+    "val_roc_auc": 0.6091,
+    "test_accuracy": 0.545,
+    "test_precision": 0.6163,
+    "test_recall": 0.4775,
+    "test_f1": 0.5381,
+    "test_roc_auc": 0.5702,
+    "overfit_gap": 0.0356,
+    "is_best": true
+  },
+  "Random Forest": {
+    "val_accuracy": 0.585,
+    "val_precision": 0.6216,
+    "val_recall": 0.6356,
+    "val_f1": 0.628,
+    "val_roc_auc": 0.6235,
+    "test_accuracy": 0.57,
+    "test_precision": 0.6,
+    "test_recall": 0.6757,
+    "test_f1": 0.6356,
+    "test_roc_auc": 0.5722,
+    "overfit_gap": 0.1916,
+    "is_best": false
+  },
+  "XGBoost": {
+    "val_accuracy": 0.5688,
+    "val_precision": 0.6,
+    "val_recall": 0.6719,
+    "val_f1": 0.6325,
+    "val_roc_auc": 0.6032,
+    "test_accuracy": 0.525,
+    "test_precision": 0.5588,
+    "test_recall": 0.6847,
+    "test_f1": 0.6154,
+    "test_roc_auc": 0.5267,
+    "overfit_gap": 0.3603,
+    "is_best": false
+  },
+  "Neural Network": {
+    "val_accuracy": 0.535,
+    "val_precision": 0.579,
+    "val_recall": 0.5793,
+    "val_f1": 0.5781,
+    "val_roc_auc": 0.5537,
+    "test_accuracy": 0.55,
+    "test_precision": 0.5897,
+    "test_recall": 0.6216,
+    "test_f1": 0.6053,
+    "test_roc_auc": 0.5364,
+    "overfit_gap": 0.465,
+    "is_best": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "selected_features": [
+        "ssc_p",
+        "hsc_p",
+        "degree_p",
+        "mba_p",
+        "academic_avg",
+        "academic_trend",
+        "weighted_academic",
+        "is_top_performer",
+        "gender_M",
+        "hsc_s_Commerce",
+        "degree_t_Others",
+        "degree_t_Sci&Tech",
+        "workex_Yes",
+        "specialisation_Mkt&HR",
+        "mba_grade_Average",
+        "mba_grade_Good",
+        "mba_grade_VeryGood",
+        "mba_grade_Excellent",
+        "etest_tier_Medium",
+        "etest_tier_High"
+    ]
+}
