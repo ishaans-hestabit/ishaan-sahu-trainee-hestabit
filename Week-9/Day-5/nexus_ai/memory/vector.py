@@ -3,6 +3,7 @@ import sys
 import json
 import numpy as np
 import faiss
+from sentence_transformers import SentenceTransformer
 from nexus_ai.config import VECTOR_FILE, TEXT_FILE, VECTOR_DIR
 
 DIMENSION = 384
@@ -10,23 +11,23 @@ DIMENSION = 384
 
 SIMILARITY_THRESHOLD = 1.2
 
-_model = None
+model = None
 index = None
 texts = []
 
 
-def _get_model():
-    global _model
-    if _model is None:
+def get_model():
+    global model
+    if model is None:
         stderr = sys.stderr
         sys.stderr = open(os.devnull, "w")
         try:
-            from sentence_transformers import SentenceTransformer
-            _model = SentenceTransformer("all-MiniLM-L6-v2")
+            
+            model = SentenceTransformer("all-MiniLM-L6-v2")
         finally:
             sys.stderr.close()
             sys.stderr = stderr
-    return _model
+    return model
 
 
 def load():
@@ -52,18 +53,18 @@ def save():
 
 def add_to_vector_store(text):
     load()
-    vector = np.array(_get_model().encode([text])).astype("float32")
+    vector = np.array(get_model().encode([text])).astype("float32")
     index.add(vector)
     texts.append(text)
     save()
 
 
 def search_vector_store(query, top_k=3):
-    """Return only past tasks that are actually semantically similar."""
+
     load()
     if index.ntotal == 0:
         return []
-    vector = np.array(_get_model().encode([query])).astype("float32")
+    vector = np.array(get_model().encode([query])).astype("float32")
     distances, indices = index.search(vector, min(top_k, index.ntotal))
 
     
